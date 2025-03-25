@@ -96,13 +96,13 @@ set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4
 set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_proc_sys_reset_0_0/LED_2_patterns_proc_sys_reset_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_proc_sys_reset_0_0/LED_2_patterns_proc_sys_reset_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_proc_sys_reset_0_0/LED_2_patterns_proc_sys_reset_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_axi_gpio_0_0/LED_2_patterns_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_axi_gpio_0_0/LED_2_patterns_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_axi_gpio_0_0/LED_2_patterns_axi_gpio_0_0.xdc]
 set_property used_in_synthesis false [get_files -all /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_auto_ds_0/LED_2_patterns_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_auto_ds_0/LED_2_patterns_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_auto_ds_0/LED_2_patterns_auto_ds_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_auto_pc_0/LED_2_patterns_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_axi_gpio_0_0/LED_2_patterns_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_axi_gpio_0_0/LED_2_patterns_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_axi_gpio_0_0/LED_2_patterns_axi_gpio_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/LED_2_patterns_ooc.xdc]
 
 OPTRACE "Adding files" END { }

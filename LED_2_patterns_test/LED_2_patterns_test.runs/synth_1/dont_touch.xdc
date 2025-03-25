@@ -12,12 +12,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LED_2_patte
 # IP: bd/LED_2_patterns/ip/LED_2_patterns_proc_sys_reset_0_0/LED_2_patterns_proc_sys_reset_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LED_2_patterns_proc_sys_reset_0_0 || ORIG_REF_NAME==LED_2_patterns_proc_sys_reset_0_0} -quiet] -quiet
 
-# IP: bd/LED_2_patterns/ip/LED_2_patterns_auto_ds_0/LED_2_patterns_auto_ds_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LED_2_patterns_auto_ds_0 || ORIG_REF_NAME==LED_2_patterns_auto_ds_0} -quiet] -quiet
-
-# IP: bd/LED_2_patterns/ip/LED_2_patterns_auto_pc_0/LED_2_patterns_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LED_2_patterns_auto_pc_0 || ORIG_REF_NAME==LED_2_patterns_auto_pc_0} -quiet] -quiet
-
 # IP: bd/LED_2_patterns/ip/LED_2_patterns_axi_interconnect_0_0/LED_2_patterns_axi_interconnect_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LED_2_patterns_axi_interconnect_0_0 || ORIG_REF_NAME==LED_2_patterns_axi_interconnect_0_0} -quiet] -quiet
 
@@ -26,5 +20,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LED_2_patte
 
 # IP: bd/LED_2_patterns/ip/LED_2_patterns_axi_gpio_0_0/LED_2_patterns_axi_gpio_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LED_2_patterns_axi_gpio_0_0 || ORIG_REF_NAME==LED_2_patterns_axi_gpio_0_0} -quiet] -quiet
+
+# IP: bd/LED_2_patterns/ip/LED_2_patterns_auto_ds_0/LED_2_patterns_auto_ds_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LED_2_patterns_auto_ds_0 || ORIG_REF_NAME==LED_2_patterns_auto_ds_0} -quiet] -quiet
+
+# IP: bd/LED_2_patterns/ip/LED_2_patterns_auto_pc_0/LED_2_patterns_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LED_2_patterns_auto_pc_0 || ORIG_REF_NAME==LED_2_patterns_auto_pc_0} -quiet] -quiet
 
 # XDC: /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/LED_2_patterns_ooc.xdc

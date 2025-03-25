@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Tue Mar 25 13:22:17 2025
-# Process ID: 3378959
+# Start of session at: Tue Mar 25 13:50:16 2025
+# Process ID: 3395437
 # Current directory: /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1
 # Command line: vivado -log LED_2_patterns_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LED_2_patterns_wrapper.tcl
 # Log file: /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/LED_2_patterns_wrapper.vds
@@ -12,7 +12,7 @@
 # Running On: Caribou-VM-HEPHY, OS: Linux, CPU Frequency: 3249.996 MHz, CPU Physical cores: 8, Host memory: 66951 MB
 #-----------------------------------------------------------
 source LED_2_patterns_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1571.859 ; gain = 2.016 ; free physical = 41044 ; free virtual = 58558
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1575.512 ; gain = 2.016 ; free physical = 45360 ; free virtual = 62868
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/pct/Caribou/MPW4/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/pct/Caribou/vivado/Vivado/2023.2/data/ip'.
@@ -28,39 +28,40 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 3379020
+INFO: [Synth 8-7075] Helper process launched with PID 3395464
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2856.648 ; gain = 298.691 ; free physical = 39484 ; free virtual = 56997
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2856.332 ; gain = 297.691 ; free physical = 43797 ; free virtual = 61304
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns_wrapper' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/hdl/LED_2_patterns_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:13]
-INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns_axi_gpio_0_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3378959-Caribou-VM-HEPHY/realtime/LED_2_patterns_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns_axi_gpio_0_0' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3378959-Caribou-VM-HEPHY/realtime/LED_2_patterns_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns_axi_interconnect_0_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:217]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1WODK76' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:517]
-INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns_auto_ds_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3378959-Caribou-VM-HEPHY/realtime/LED_2_patterns_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns_auto_ds_0' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3378959-Caribou-VM-HEPHY/realtime/LED_2_patterns_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns_auto_pc_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3378959-Caribou-VM-HEPHY/realtime/LED_2_patterns_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns_auto_pc_0' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3378959-Caribou-VM-HEPHY/realtime/LED_2_patterns_auto_pc_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'LED_2_patterns_auto_pc_0' is unconnected for instance 'auto_pc' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:860]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'LED_2_patterns_auto_pc_0' is unconnected for instance 'auto_pc' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:860]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'LED_2_patterns_auto_pc_0' has 56 connections declared, but only 54 given [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:860]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1WODK76' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:517]
-INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns_axi_interconnect_0_0' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:217]
-INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns_led_blink_patterns_0_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3378959-Caribou-VM-HEPHY/realtime/LED_2_patterns_led_blink_patterns_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns_led_blink_patterns_0_0' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3378959-Caribou-VM-HEPHY/realtime/LED_2_patterns_led_blink_patterns_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns_proc_sys_reset_0_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3378959-Caribou-VM-HEPHY/realtime/LED_2_patterns_proc_sys_reset_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns_proc_sys_reset_0_0' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3378959-Caribou-VM-HEPHY/realtime/LED_2_patterns_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns_axi_gpio_0_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3395437-Caribou-VM-HEPHY/realtime/LED_2_patterns_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns_axi_gpio_0_0' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3395437-Caribou-VM-HEPHY/realtime/LED_2_patterns_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns_axi_interconnect_0_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:218]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1WODK76' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:518]
+INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns_auto_ds_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3395437-Caribou-VM-HEPHY/realtime/LED_2_patterns_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns_auto_ds_0' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3395437-Caribou-VM-HEPHY/realtime/LED_2_patterns_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns_auto_pc_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3395437-Caribou-VM-HEPHY/realtime/LED_2_patterns_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns_auto_pc_0' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3395437-Caribou-VM-HEPHY/realtime/LED_2_patterns_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'LED_2_patterns_auto_pc_0' is unconnected for instance 'auto_pc' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:861]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'LED_2_patterns_auto_pc_0' is unconnected for instance 'auto_pc' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:861]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'LED_2_patterns_auto_pc_0' has 56 connections declared, but only 54 given [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:861]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1WODK76' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:518]
+INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns_axi_interconnect_0_0' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:218]
+INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns_led_blink_patterns_0_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3395437-Caribou-VM-HEPHY/realtime/LED_2_patterns_led_blink_patterns_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns_led_blink_patterns_0_0' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3395437-Caribou-VM-HEPHY/realtime/LED_2_patterns_led_blink_patterns_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns_proc_sys_reset_0_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3395437-Caribou-VM-HEPHY/realtime/LED_2_patterns_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns_proc_sys_reset_0_0' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3395437-Caribou-VM-HEPHY/realtime/LED_2_patterns_proc_sys_reset_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'LED_2_patterns_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:166]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'LED_2_patterns_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:166]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'LED_2_patterns_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:166]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'LED_2_patterns_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:166]
 WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'LED_2_patterns_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:166]
-INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns_zynq_ultra_ps_e_0_1' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3378959-Caribou-VM-HEPHY/realtime/LED_2_patterns_zynq_ultra_ps_e_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns_zynq_ultra_ps_e_0_1' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3378959-Caribou-VM-HEPHY/realtime/LED_2_patterns_zynq_ultra_ps_e_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns_zynq_ultra_ps_e_0_1' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3395437-Caribou-VM-HEPHY/realtime/LED_2_patterns_zynq_ultra_ps_e_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns_zynq_ultra_ps_e_0_1' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/.Xil/Vivado-3395437-Caribou-VM-HEPHY/realtime/LED_2_patterns_zynq_ultra_ps_e_0_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'LED_2_patterns_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:173]
 WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'LED_2_patterns_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:173]
-WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'LED_2_patterns_zynq_ultra_ps_e_0_1' has 43 connections declared, but only 41 given [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:173]
+WARNING: [Synth 8-7071] port 'emio_uart0_txd' of module 'LED_2_patterns_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:173]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'LED_2_patterns_zynq_ultra_ps_e_0_1' has 45 connections declared, but only 42 given [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:173]
 INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/synth/LED_2_patterns.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns_wrapper' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/hdl/LED_2_patterns_wrapper.v:13]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1WODK76 is either unconnected or has no load
@@ -68,18 +69,18 @@ WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1WODK76 is eit
 WARNING: [Synth 8-7129] Port ACLK in module LED_2_patterns_axi_interconnect_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ARESETN in module LED_2_patterns_axi_interconnect_0_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2935.617 ; gain = 377.660 ; free physical = 39399 ; free virtual = 56914
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2935.301 ; gain = 376.660 ; free physical = 43722 ; free virtual = 61230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2941.555 ; gain = 383.598 ; free physical = 39396 ; free virtual = 56911
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2938.270 ; gain = 379.629 ; free physical = 43722 ; free virtual = 61230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2941.555 ; gain = 383.598 ; free physical = 39396 ; free virtual = 56911
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2938.270 ; gain = 379.629 ; free physical = 43722 ; free virtual = 61230
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2945.555 ; gain = 0.000 ; free physical = 39394 ; free virtual = 56909
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2938.270 ; gain = 0.000 ; free physical = 43722 ; free virtual = 61230
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -104,15 +105,15 @@ Parsing XDC File [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test
 Finished Parsing XDC File [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3017.219 ; gain = 0.000 ; free physical = 39385 ; free virtual = 56899
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3012.902 ; gain = 0.000 ; free physical = 43709 ; free virtual = 61217
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3017.254 ; gain = 0.000 ; free physical = 39384 ; free virtual = 56899
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3012.938 ; gain = 0.000 ; free physical = 43709 ; free virtual = 61217
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3017.254 ; gain = 459.297 ; free physical = 39383 ; free virtual = 56898
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3012.938 ; gain = 454.297 ; free physical = 43708 ; free virtual = 61216
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -120,7 +121,7 @@ Start Loading Part and Timing Information
 Loading part: xczu9eg-ffvb1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3017.254 ; gain = 459.297 ; free physical = 39383 ; free virtual = 56898
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3012.938 ; gain = 454.297 ; free physical = 43708 ; free virtual = 61216
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -134,10 +135,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for LED_2_patterns_i/axi_interconnect
 Applied set_property KEEP_HIERARCHY = SOFT for LED_2_patterns_i/led_blink_patterns_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for LED_2_patterns_i/axi_gpio_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3017.254 ; gain = 459.297 ; free physical = 39383 ; free virtual = 56898
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3012.938 ; gain = 454.297 ; free physical = 43708 ; free virtual = 61216
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3017.254 ; gain = 459.297 ; free physical = 39382 ; free virtual = 56898
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3012.938 ; gain = 454.297 ; free physical = 43707 ; free virtual = 61216
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -164,25 +165,25 @@ WARNING: [Synth 8-7129] Port ARESETN in module LED_2_patterns_axi_interconnect_0
 WARNING: [Synth 8-7129] Port M00_ACLK in module LED_2_patterns_axi_interconnect_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M00_ARESETN in module LED_2_patterns_axi_interconnect_0_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3017.254 ; gain = 459.297 ; free physical = 39379 ; free virtual = 56898
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3012.938 ; gain = 454.297 ; free physical = 43703 ; free virtual = 61217
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3493.766 ; gain = 935.809 ; free physical = 38940 ; free virtual = 56459
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3494.121 ; gain = 935.480 ; free physical = 43264 ; free virtual = 60777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3493.766 ; gain = 935.809 ; free physical = 38940 ; free virtual = 56459
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3494.121 ; gain = 935.480 ; free physical = 43264 ; free virtual = 60777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3503.781 ; gain = 945.824 ; free physical = 38931 ; free virtual = 56450
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3504.137 ; gain = 945.496 ; free physical = 43255 ; free virtual = 60768
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -200,37 +201,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3518.656 ; gain = 960.699 ; free physical = 38924 ; free virtual = 56444
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3519.012 ; gain = 960.371 ; free physical = 43243 ; free virtual = 60756
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3518.656 ; gain = 960.699 ; free physical = 38924 ; free virtual = 56444
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3519.012 ; gain = 960.371 ; free physical = 43243 ; free virtual = 60756
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3518.656 ; gain = 960.699 ; free physical = 38924 ; free virtual = 56444
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3519.012 ; gain = 960.371 ; free physical = 43243 ; free virtual = 60756
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3518.656 ; gain = 960.699 ; free physical = 38924 ; free virtual = 56444
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3519.012 ; gain = 960.371 ; free physical = 43243 ; free virtual = 60756
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3518.656 ; gain = 960.699 ; free physical = 38924 ; free virtual = 56444
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3519.012 ; gain = 960.371 ; free physical = 43243 ; free virtual = 60756
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3518.656 ; gain = 960.699 ; free physical = 38924 ; free virtual = 56444
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3519.012 ; gain = 960.371 ; free physical = 43243 ; free virtual = 60756
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -261,27 +262,27 @@ Report Cell Usage:
 |7     |OBUF                                |     8|
 +------+------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3518.656 ; gain = 960.699 ; free physical = 38924 ; free virtual = 56444
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3519.012 ; gain = 960.371 ; free physical = 43243 ; free virtual = 60756
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 3518.656 ; gain = 885.000 ; free physical = 38924 ; free virtual = 56444
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3518.664 ; gain = 960.699 ; free physical = 38924 ; free virtual = 56444
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 3519.012 ; gain = 885.703 ; free physical = 43243 ; free virtual = 60756
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3519.020 ; gain = 960.371 ; free physical = 43243 ; free virtual = 60756
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3530.625 ; gain = 0.000 ; free physical = 39206 ; free virtual = 56725
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3529.980 ; gain = 0.000 ; free physical = 43525 ; free virtual = 61038
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3558.375 ; gain = 0.000 ; free physical = 39179 ; free virtual = 56698
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3558.730 ; gain = 0.000 ; free physical = 43504 ; free virtual = 61018
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 6f844f51
+Synth Design complete | Checksum: c324e6d0
 INFO: [Common 17-83] Releasing license: Synthesis
-43 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+43 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 3558.410 ; gain = 1926.730 ; free physical = 39179 ; free virtual = 56698
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2804.229; main = 2507.631; forked = 364.128
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5130.305; main = 3558.379; forked = 1626.520
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3558.410 ; gain = 0.000 ; free physical = 39179 ; free virtual = 56698
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:26 . Memory (MB): peak = 3558.766 ; gain = 1927.402 ; free physical = 43504 ; free virtual = 61017
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2880.919; main = 2581.767; forked = 388.667
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5131.148; main = 3558.734; forked = 1627.008
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3558.766 ; gain = 0.000 ; free physical = 43504 ; free virtual = 61017
 INFO: [Common 17-1381] The checkpoint '/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/synth_1/LED_2_patterns_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file LED_2_patterns_wrapper_utilization_synth.rpt -pb LED_2_patterns_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 25 13:22:53 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 25 13:50:52 2025...

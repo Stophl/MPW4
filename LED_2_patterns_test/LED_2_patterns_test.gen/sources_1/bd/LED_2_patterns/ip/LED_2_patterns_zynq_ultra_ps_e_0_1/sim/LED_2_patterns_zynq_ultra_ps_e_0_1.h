@@ -120,6 +120,8 @@ public:
   sc_core::sc_out< bool > maxigp0_rready;
   sc_core::sc_out< sc_dt::sc_bv<4> > maxigp0_awqos;
   sc_core::sc_out< sc_dt::sc_bv<4> > maxigp0_arqos;
+  sc_core::sc_out< bool > emio_uart0_txd;
+  sc_core::sc_in< bool > emio_uart0_rxd;
   sc_core::sc_in< sc_dt::sc_bv<1> > pl_ps_irq0;
   sc_core::sc_out< bool > pl_resetn0;
   sc_core::sc_out< bool > pl_clk0;
@@ -192,6 +194,8 @@ public:
   sc_core::sc_out< bool > maxigp0_rready;
   sc_core::sc_out< sc_dt::sc_bv<4> > maxigp0_awqos;
   sc_core::sc_out< sc_dt::sc_bv<4> > maxigp0_arqos;
+  sc_core::sc_out< bool > emio_uart0_txd;
+  sc_core::sc_in< bool > emio_uart0_rxd;
   sc_core::sc_in< sc_dt::sc_bv<1> > pl_ps_irq0;
   sc_core::sc_out< bool > pl_resetn0;
   sc_core::sc_out< bool > pl_clk0;
@@ -264,6 +268,8 @@ public:
   sc_core::sc_out< bool > maxigp0_rready;
   sc_core::sc_out< sc_dt::sc_bv<4> > maxigp0_awqos;
   sc_core::sc_out< sc_dt::sc_bv<4> > maxigp0_arqos;
+  sc_core::sc_out< bool > emio_uart0_txd;
+  sc_core::sc_in< bool > emio_uart0_rxd;
   sc_core::sc_in< sc_dt::sc_bv<1> > pl_ps_irq0;
   sc_core::sc_out< bool > pl_resetn0;
   sc_core::sc_out< bool > pl_clk0;
@@ -338,6 +344,8 @@ public:
   sc_core::sc_out< bool > maxigp0_rready;
   sc_core::sc_out< sc_dt::sc_bv<4> > maxigp0_awqos;
   sc_core::sc_out< sc_dt::sc_bv<4> > maxigp0_arqos;
+  sc_core::sc_out< bool > emio_uart0_txd;
+  sc_core::sc_in< bool > emio_uart0_rxd;
   sc_core::sc_in< sc_dt::sc_bv<1> > pl_ps_irq0;
   sc_core::sc_out< bool > pl_resetn0;
   sc_core::sc_out< bool > pl_clk0;
@@ -418,6 +426,8 @@ public:
   sc_core::sc_out< bool > maxigp0_rready;
   sc_core::sc_out< sc_dt::sc_bv<4> > maxigp0_awqos;
   sc_core::sc_out< sc_dt::sc_bv<4> > maxigp0_arqos;
+  sc_core::sc_out< bool > emio_uart0_txd;
+  sc_core::sc_in< bool > emio_uart0_rxd;
   sc_core::sc_in< sc_dt::sc_bv<1> > pl_ps_irq0;
   sc_core::sc_out< bool > pl_resetn0;
   sc_core::sc_out< bool > pl_clk0;

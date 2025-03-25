@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Tue Mar 25 13:21:17 2025
-# Process ID: 3377646
+# Start of session at: Tue Mar 25 13:49:11 2025
+# Process ID: 3392167
 # Current directory: /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/LED_2_patterns_zynq_ultra_ps_e_0_1_synth_1
 # Command line: vivado -log LED_2_patterns_zynq_ultra_ps_e_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LED_2_patterns_zynq_ultra_ps_e_0_1.tcl
 # Log file: /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/LED_2_patterns_zynq_ultra_ps_e_0_1_synth_1/LED_2_patterns_zynq_ultra_ps_e_0_1.vds
@@ -12,7 +12,7 @@
 # Running On: Caribou-VM-HEPHY, OS: Linux, CPU Frequency: 3249.996 MHz, CPU Physical cores: 8, Host memory: 66951 MB
 #-----------------------------------------------------------
 source LED_2_patterns_zynq_ultra_ps_e_0_1.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1575.402 ; gain = 2.016 ; free physical = 40588 ; free virtual = 58092
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1568.719 ; gain = 36.828 ; free physical = 43070 ; free virtual = 60564
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/pct/Caribou/MPW4/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/pct/Caribou/vivado/Vivado/2023.2/data/ip'.
@@ -24,9 +24,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg
 INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 3377798
+INFO: [Synth 8-7075] Helper process launched with PID 3392431
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2852.309 ; gain = 296.777 ; free physical = 37479 ; free virtual = 54983
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2851.562 ; gain = 296.777 ; free physical = 34754 ; free virtual = 52248
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'dp_audi_ref_clk', assumed default net type 'wire' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_5_1.v:2486]
 INFO: [Synth 8-6157] synthesizing module 'LED_2_patterns_zynq_ultra_ps_e_0_1' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/synth/LED_2_patterns_zynq_ultra_ps_e_0_1.v:53]
@@ -97,11 +97,11 @@ WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP2IN' of module 'PS8' is unco
 WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP3IN' of module 'PS8' is unconnected for instance 'PS8_i' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_5_1.v:3861]
 WARNING: [Synth 8-7023] instance 'PS8_i' of module 'PS8' has 1015 connections declared, but only 957 given [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_5_1.v:3861]
 INFO: [Synth 8-6155] done synthesizing module 'zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_5_1.v:68]
-WARNING: [Synth 8-7071] port 'emio_enet0_signal_detect' of module 'zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e' is unconnected for instance 'inst' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/synth/LED_2_patterns_zynq_ultra_ps_e_0_1.v:236]
-WARNING: [Synth 8-7071] port 'emio_enet1_signal_detect' of module 'zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e' is unconnected for instance 'inst' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/synth/LED_2_patterns_zynq_ultra_ps_e_0_1.v:236]
-WARNING: [Synth 8-7071] port 'emio_enet2_signal_detect' of module 'zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e' is unconnected for instance 'inst' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/synth/LED_2_patterns_zynq_ultra_ps_e_0_1.v:236]
-WARNING: [Synth 8-7071] port 'emio_enet3_signal_detect' of module 'zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e' is unconnected for instance 'inst' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/synth/LED_2_patterns_zynq_ultra_ps_e_0_1.v:236]
-WARNING: [Synth 8-7023] instance 'inst' of module 'zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e' has 1491 connections declared, but only 1487 given [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/synth/LED_2_patterns_zynq_ultra_ps_e_0_1.v:236]
+WARNING: [Synth 8-7071] port 'emio_enet0_signal_detect' of module 'zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e' is unconnected for instance 'inst' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/synth/LED_2_patterns_zynq_ultra_ps_e_0_1.v:242]
+WARNING: [Synth 8-7071] port 'emio_enet1_signal_detect' of module 'zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e' is unconnected for instance 'inst' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/synth/LED_2_patterns_zynq_ultra_ps_e_0_1.v:242]
+WARNING: [Synth 8-7071] port 'emio_enet2_signal_detect' of module 'zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e' is unconnected for instance 'inst' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/synth/LED_2_patterns_zynq_ultra_ps_e_0_1.v:242]
+WARNING: [Synth 8-7071] port 'emio_enet3_signal_detect' of module 'zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e' is unconnected for instance 'inst' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/synth/LED_2_patterns_zynq_ultra_ps_e_0_1.v:242]
+WARNING: [Synth 8-7023] instance 'inst' of module 'zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e' has 1491 connections declared, but only 1487 given [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/synth/LED_2_patterns_zynq_ultra_ps_e_0_1.v:242]
 INFO: [Synth 8-6155] done synthesizing module 'LED_2_patterns_zynq_ultra_ps_e_0_1' (0#1) [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/synth/LED_2_patterns_zynq_ultra_ps_e_0_1.v:53]
 WARNING: [Synth 8-3848] Net dp_audio_ref_clk in module/entity zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e does not have driver. [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_5_1.v:360]
 WARNING: [Synth 8-3848] Net irq_ipi_pl_0 in module/entity zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e does not have driver. [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/hdl/zynq_ultra_ps_e_v3_5_1.v:1380]
@@ -210,18 +210,18 @@ WARNING: [Synth 8-7129] Port test_adc2_in[8] in module zynq_ultra_ps_e_v3_5_1_zy
 WARNING: [Synth 8-7129] Port test_adc2_in[7] in module zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2939.277 ; gain = 383.746 ; free physical = 37348 ; free virtual = 54853
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2938.531 ; gain = 383.746 ; free physical = 33437 ; free virtual = 50932
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2939.277 ; gain = 383.746 ; free physical = 37341 ; free virtual = 54846
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2938.531 ; gain = 383.746 ; free physical = 33399 ; free virtual = 50894
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2939.277 ; gain = 383.746 ; free physical = 37341 ; free virtual = 54846
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2938.531 ; gain = 383.746 ; free physical = 33399 ; free virtual = 50894
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2947.277 ; gain = 0.000 ; free physical = 37327 ; free virtual = 54832
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2949.500 ; gain = 0.000 ; free physical = 33212 ; free virtual = 50709
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -234,14 +234,14 @@ Parsing XDC File [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test
 Finished Parsing XDC File [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/LED_2_patterns_zynq_ultra_ps_e_0_1_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3011.309 ; gain = 0.000 ; free physical = 37172 ; free virtual = 54678
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3013.531 ; gain = 0.000 ; free physical = 32754 ; free virtual = 50253
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3011.344 ; gain = 0.000 ; free physical = 37171 ; free virtual = 54677
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3013.566 ; gain = 0.000 ; free physical = 32751 ; free virtual = 50250
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3011.344 ; gain = 455.812 ; free physical = 37169 ; free virtual = 54675
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3013.566 ; gain = 458.781 ; free physical = 32605 ; free virtual = 50105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -249,7 +249,7 @@ Start Loading Part and Timing Information
 Loading part: xczu9eg-ffvb1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3011.344 ; gain = 455.812 ; free physical = 37169 ; free virtual = 54675
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3013.566 ; gain = 458.781 ; free physical = 32605 ; free virtual = 50105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -257,10 +257,10 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for inst/PS8_i. (constraint file  /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_zynq_ultra_ps_e_0_1/LED_2_patterns_zynq_ultra_ps_e_0_1.xdc, line 25).
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/LED_2_patterns_zynq_ultra_ps_e_0_1_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3011.344 ; gain = 455.812 ; free physical = 37170 ; free virtual = 54675
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3013.566 ; gain = 458.781 ; free physical = 32605 ; free virtual = 50106
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3011.344 ; gain = 455.812 ; free physical = 37170 ; free virtual = 54677
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3013.566 ; gain = 458.781 ; free physical = 32585 ; free virtual = 50088
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -285,25 +285,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3011.344 ; gain = 455.812 ; free physical = 37169 ; free virtual = 54676
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3013.566 ; gain = 458.781 ; free physical = 32512 ; free virtual = 50015
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4598.621 ; gain = 2043.090 ; free physical = 35668 ; free virtual = 53176
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 4597.875 ; gain = 2043.090 ; free physical = 30048 ; free virtual = 47552
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4623.629 ; gain = 2068.098 ; free physical = 35642 ; free virtual = 53150
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 4622.883 ; gain = 2068.098 ; free physical = 30023 ; free virtual = 47526
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4631.637 ; gain = 2076.105 ; free physical = 35634 ; free virtual = 53142
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 4630.891 ; gain = 2076.105 ; free physical = 30008 ; free virtual = 47511
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -422,37 +422,37 @@ INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[5] to co
 INFO: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[4] to constant 0
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 4642.543 ; gain = 2087.012 ; free physical = 35628 ; free virtual = 53136
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 4641.797 ; gain = 2087.012 ; free physical = 30228 ; free virtual = 47730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 4642.543 ; gain = 2087.012 ; free physical = 35628 ; free virtual = 53136
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 4641.797 ; gain = 2087.012 ; free physical = 30228 ; free virtual = 47730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 4642.543 ; gain = 2087.012 ; free physical = 35628 ; free virtual = 53136
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 4641.797 ; gain = 2087.012 ; free physical = 30228 ; free virtual = 47730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 4642.543 ; gain = 2087.012 ; free physical = 35628 ; free virtual = 53136
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 4641.797 ; gain = 2087.012 ; free physical = 30228 ; free virtual = 47730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 4642.543 ; gain = 2087.012 ; free physical = 35628 ; free virtual = 53136
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 4641.797 ; gain = 2087.012 ; free physical = 30228 ; free virtual = 47730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 4642.543 ; gain = 2087.012 ; free physical = 35628 ; free virtual = 53136
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 4641.797 ; gain = 2087.012 ; free physical = 30228 ; free virtual = 47730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -473,28 +473,28 @@ Report Cell Usage:
 |3     |PS8     |     1|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 4642.543 ; gain = 2087.012 ; free physical = 35628 ; free virtual = 53136
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 4641.797 ; gain = 2087.012 ; free physical = 30228 ; free virtual = 47730
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 570 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 4642.543 ; gain = 2014.945 ; free physical = 35628 ; free virtual = 53136
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 4642.551 ; gain = 2087.012 ; free physical = 35628 ; free virtual = 53136
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 4641.797 ; gain = 2011.977 ; free physical = 30228 ; free virtual = 47730
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 4641.805 ; gain = 2087.012 ; free physical = 30228 ; free virtual = 47730
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4642.551 ; gain = 0.000 ; free physical = 35920 ; free virtual = 53428
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4641.805 ; gain = 0.000 ; free physical = 30596 ; free virtual = 48098
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4687.199 ; gain = 0.000 ; free physical = 35863 ; free virtual = 53371
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4686.453 ; gain = 0.000 ; free physical = 30538 ; free virtual = 48039
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 6fc2aab9
+Synth Design complete | Checksum: 3b0b9f59
 INFO: [Common 17-83] Releasing license: Synthesis
 129 Infos, 172 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 4687.234 ; gain = 3054.980 ; free physical = 35861 ; free virtual = 53369
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3522.425; main = 3522.425; forked = 342.583
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5133.250; main = 4687.203; forked = 1653.625
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 4686.488 ; gain = 3054.980 ; free physical = 30537 ; free virtual = 48039
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3450.339; main = 3450.339; forked = 392.385
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5085.535; main = 4686.457; forked = 1692.656
 INFO: [Common 17-1381] The checkpoint '/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/LED_2_patterns_zynq_ultra_ps_e_0_1_synth_1/LED_2_patterns_zynq_ultra_ps_e_0_1.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP LED_2_patterns_zynq_ultra_ps_e_0_1, cache-ID = e23d81031afa21d0
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP LED_2_patterns_zynq_ultra_ps_e_0_1, cache-ID = 165073251111e149
 INFO: [Common 17-1381] The checkpoint '/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/LED_2_patterns_zynq_ultra_ps_e_0_1_synth_1/LED_2_patterns_zynq_ultra_ps_e_0_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file LED_2_patterns_zynq_ultra_ps_e_0_1_utilization_synth.rpt -pb LED_2_patterns_zynq_ultra_ps_e_0_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 25 13:21:56 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 25 13:49:52 2025...

@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-// Date        : Tue Mar 25 10:32:52 2025
+// Date        : Tue Mar 25 13:49:55 2025
 // Host        : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
-// Command     : write_verilog -force -mode synth_stub -rename_top LED_2_patterns_auto_pc_0 -prefix
-//               LED_2_patterns_auto_pc_0_ LED_2_patterns_auto_pc_0_stub.v
+// Command     : write_verilog -force -mode synth_stub
+//               /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_auto_pc_0/LED_2_patterns_auto_pc_0_stub.v
 // Design      : LED_2_patterns_auto_pc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xczu9eg-ffvb1156-2-e

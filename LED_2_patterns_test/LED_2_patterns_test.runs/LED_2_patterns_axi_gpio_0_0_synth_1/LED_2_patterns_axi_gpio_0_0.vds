@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Tue Mar 25 10:32:08 2025
-# Process ID: 3314849
+# Start of session at: Tue Mar 25 13:49:12 2025
+# Process ID: 3392178
 # Current directory: /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/LED_2_patterns_axi_gpio_0_0_synth_1
 # Command line: vivado -log LED_2_patterns_axi_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LED_2_patterns_axi_gpio_0_0.tcl
 # Log file: /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/LED_2_patterns_axi_gpio_0_0_synth_1/LED_2_patterns_axi_gpio_0_0.vds
@@ -12,7 +12,7 @@
 # Running On: Caribou-VM-HEPHY, OS: Linux, CPU Frequency: 3249.996 MHz, CPU Physical cores: 8, Host memory: 66951 MB
 #-----------------------------------------------------------
 source LED_2_patterns_axi_gpio_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1573.574 ; gain = 2.016 ; free physical = 39781 ; free virtual = 56438
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1578.402 ; gain = 2.016 ; free physical = 42991 ; free virtual = 60485
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/pct/Caribou/MPW4/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/pct/Caribou/vivado/Vivado/2023.2/data/ip'.
@@ -24,9 +24,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg
 INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 3315224
+INFO: [Synth 8-7075] Helper process launched with PID 3392438
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2842.832 ; gain = 299.746 ; free physical = 30895 ; free virtual = 47683
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2839.996 ; gain = 296.777 ; free physical = 34652 ; free virtual = 52146
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'LED_2_patterns_axi_gpio_0_0' [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.gen/sources_1/bd/LED_2_patterns/ip/LED_2_patterns_axi_gpio_0_0/synth/LED_2_patterns_axi_gpio_0_0.vhd:84]
 	Parameter C_FAMILY bound to: zynquplus - type: string 
@@ -141,18 +141,18 @@ WARNING: [Synth 8-7129] Port S_AXI_WSTRB[2] in module slave_attachment is either
 WARNING: [Synth 8-7129] Port S_AXI_WSTRB[1] in module slave_attachment is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_WSTRB[0] in module slave_attachment is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2922.801 ; gain = 379.715 ; free physical = 29917 ; free virtual = 46716
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2921.965 ; gain = 378.746 ; free physical = 33232 ; free virtual = 50729
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2922.801 ; gain = 379.715 ; free physical = 29915 ; free virtual = 46714
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2921.965 ; gain = 378.746 ; free physical = 33214 ; free virtual = 50711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2922.801 ; gain = 379.715 ; free physical = 29915 ; free virtual = 46714
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2921.965 ; gain = 378.746 ; free physical = 33214 ; free virtual = 50711
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2933.770 ; gain = 0.000 ; free physical = 29894 ; free virtual = 46695
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2932.934 ; gain = 0.000 ; free physical = 33202 ; free virtual = 50700
 INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -169,15 +169,15 @@ Parsing XDC File [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test
 Finished Parsing XDC File [/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/LED_2_patterns_axi_gpio_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3038.613 ; gain = 0.000 ; free physical = 29407 ; free virtual = 46209
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3039.777 ; gain = 0.000 ; free physical = 32754 ; free virtual = 50253
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 6 instances were transformed.
   FDR => FDRE: 6 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3038.648 ; gain = 0.000 ; free physical = 29407 ; free virtual = 46210
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3039.812 ; gain = 0.000 ; free physical = 32752 ; free virtual = 50251
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3038.648 ; gain = 495.562 ; free physical = 29275 ; free virtual = 46078
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3039.812 ; gain = 496.594 ; free physical = 32606 ; free virtual = 50106
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -185,14 +185,14 @@ Start Loading Part and Timing Information
 Loading part: xczu9eg-ffvb1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3038.648 ; gain = 495.562 ; free physical = 29274 ; free virtual = 46078
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3039.812 ; gain = 496.594 ; free physical = 32606 ; free virtual = 50106
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/LED_2_patterns_axi_gpio_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3038.648 ; gain = 495.562 ; free physical = 29273 ; free virtual = 46077
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3039.812 ; gain = 496.594 ; free physical = 32606 ; free virtual = 50106
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 ---------------------------------------------------------------------------------------------------
@@ -205,7 +205,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3038.648 ; gain = 495.562 ; free physical = 29241 ; free virtual = 46048
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3039.812 ; gain = 496.594 ; free physical = 32593 ; free virtual = 50097
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -289,25 +289,25 @@ INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3038.648 ; gain = 495.562 ; free physical = 29121 ; free virtual = 45997
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3039.812 ; gain = 496.594 ; free physical = 32519 ; free virtual = 50022
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 3477.723 ; gain = 934.637 ; free physical = 27918 ; free virtual = 44805
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 3477.121 ; gain = 933.902 ; free physical = 31307 ; free virtual = 48812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 3507.770 ; gain = 964.684 ; free physical = 27879 ; free virtual = 44767
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 3507.168 ; gain = 963.949 ; free physical = 31247 ; free virtual = 48753
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 3507.770 ; gain = 964.684 ; free physical = 27876 ; free virtual = 44763
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 3507.168 ; gain = 963.949 ; free physical = 31242 ; free virtual = 48747
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -325,37 +325,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3507.770 ; gain = 964.684 ; free physical = 26884 ; free virtual = 43772
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3507.168 ; gain = 963.949 ; free physical = 29932 ; free virtual = 47436
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3507.770 ; gain = 964.684 ; free physical = 26884 ; free virtual = 43772
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3507.168 ; gain = 963.949 ; free physical = 29932 ; free virtual = 47436
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3507.770 ; gain = 964.684 ; free physical = 26884 ; free virtual = 43772
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3507.168 ; gain = 963.949 ; free physical = 29928 ; free virtual = 47432
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3507.770 ; gain = 964.684 ; free physical = 26884 ; free virtual = 43772
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3507.168 ; gain = 963.949 ; free physical = 29928 ; free virtual = 47432
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3507.770 ; gain = 964.684 ; free physical = 26884 ; free virtual = 43772
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3507.168 ; gain = 963.949 ; free physical = 29926 ; free virtual = 47430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3507.770 ; gain = 964.684 ; free physical = 26884 ; free virtual = 43772
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3507.168 ; gain = 963.949 ; free physical = 29926 ; free virtual = 47430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -381,16 +381,16 @@ Report Cell Usage:
 |8     |FDSE |     1|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3507.770 ; gain = 964.684 ; free physical = 26881 ; free virtual = 43768
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3507.168 ; gain = 963.949 ; free physical = 29926 ; free virtual = 47429
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 3507.770 ; gain = 848.836 ; free physical = 26875 ; free virtual = 43762
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3507.777 ; gain = 964.684 ; free physical = 26875 ; free virtual = 43762
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 3507.168 ; gain = 846.102 ; free physical = 29915 ; free virtual = 47418
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3507.176 ; gain = 963.949 ; free physical = 29915 ; free virtual = 47418
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3507.777 ; gain = 0.000 ; free physical = 26875 ; free virtual = 43762
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3507.176 ; gain = 0.000 ; free physical = 29915 ; free virtual = 47418
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3574.473 ; gain = 0.000 ; free physical = 27060 ; free virtual = 43947
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3573.840 ; gain = 0.000 ; free physical = 30399 ; free virtual = 47902
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -398,14 +398,14 @@ Synth Design complete | Checksum: 9378f7c6
 INFO: [Common 17-83] Releasing license: Synthesis
 59 Infos, 97 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 3574.508 ; gain = 1954.363 ; free physical = 27041 ; free virtual = 43928
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2504.435; main = 2352.629; forked = 311.836
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5005.371; main = 3574.477; forked = 1626.520
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3598.484 ; gain = 0.000 ; free physical = 27025 ; free virtual = 43913
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 3573.875 ; gain = 1953.598 ; free physical = 30380 ; free virtual = 47883
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2558.516; main = 2360.675; forked = 316.380
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5045.645; main = 3573.844; forked = 1626.520
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3597.852 ; gain = 0.000 ; free physical = 30372 ; free virtual = 47876
 INFO: [Common 17-1381] The checkpoint '/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/LED_2_patterns_axi_gpio_0_0_synth_1/LED_2_patterns_axi_gpio_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP LED_2_patterns_axi_gpio_0_0, cache-ID = c2e7d5bf1f053682
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3598.484 ; gain = 0.000 ; free physical = 26928 ; free virtual = 43816
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3597.852 ; gain = 0.000 ; free physical = 30283 ; free virtual = 47787
 INFO: [Common 17-1381] The checkpoint '/home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.runs/LED_2_patterns_axi_gpio_0_0_synth_1/LED_2_patterns_axi_gpio_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file LED_2_patterns_axi_gpio_0_0_utilization_synth.rpt -pb LED_2_patterns_axi_gpio_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 25 10:32:47 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 25 13:49:49 2025...

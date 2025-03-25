@@ -97,6 +97,8 @@ module LED_2_patterns_zynq_ultra_ps_e_0_1 (
   maxigp0_rready,
   maxigp0_awqos,
   maxigp0_arqos,
+  emio_uart0_txd,
+  emio_uart0_rxd,
   pl_ps_irq0,
   pl_resetn0,
   pl_clk0
@@ -185,6 +187,10 @@ output wire [3 : 0] maxigp0_awqos;
 D_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM0_FPD ARQOS" *)
 output wire [3 : 0] maxigp0_arqos;
+(* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 TxD" *)
+output wire emio_uart0_txd;
+(* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 RxD" *)
+input wire emio_uart0_rxd;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME PL_PS_IRQ0, SENSITIVITY LEVEL_HIGH, PortWidth 1" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 PL_PS_IRQ0 INTERRUPT" *)
 input wire [0 : 0] pl_ps_irq0;
@@ -1019,8 +1025,8 @@ output wire pl_clk0;
     .emio_i2c1_sda_i(1'B0),
     .emio_i2c1_sda_o(),
     .emio_i2c1_sda_t(),
-    .emio_uart0_txd(),
-    .emio_uart0_rxd(1'B0),
+    .emio_uart0_txd(emio_uart0_txd),
+    .emio_uart0_rxd(emio_uart0_rxd),
     .emio_uart0_ctsn(1'B0),
     .emio_uart0_rtsn(),
     .emio_uart0_dsrn(1'B0),
