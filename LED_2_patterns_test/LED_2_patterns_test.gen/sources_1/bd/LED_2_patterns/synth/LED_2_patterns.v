@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-//Date        : Tue Mar 25 12:35:05 2025
+//Date        : Tue Mar 25 13:20:57 2025
 //Host        : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
 //Command     : generate_target LED_2_patterns.bd
 //Design      : LED_2_patterns
@@ -61,16 +61,16 @@ module LED_2_patterns
   wire zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_BREADY;
   wire [1:0]zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_BRESP;
   wire zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_BVALID;
-  wire [127:0]zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_RDATA;
+  wire [63:0]zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_RDATA;
   wire [15:0]zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_RID;
   wire zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_RLAST;
   wire zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_RREADY;
   wire [1:0]zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_RRESP;
   wire zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_RVALID;
-  wire [127:0]zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_WDATA;
+  wire [63:0]zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_WDATA;
   wire zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_WLAST;
   wire zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_WREADY;
-  wire [15:0]zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_WSTRB;
+  wire [7:0]zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_WSTRB;
   wire zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_WVALID;
   wire zynq_ultra_ps_e_0_pl_clk0;
   wire zynq_ultra_ps_e_0_pl_resetn0;
@@ -210,6 +210,7 @@ module LED_2_patterns
         .maxigp0_wvalid(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_WVALID),
         .maxihpm0_fpd_aclk(zynq_ultra_ps_e_0_pl_clk0),
         .pl_clk0(zynq_ultra_ps_e_0_pl_clk0),
+        .pl_ps_irq0(1'b0),
         .pl_resetn0(zynq_ultra_ps_e_0_pl_resetn0));
 endmodule
 
@@ -323,16 +324,16 @@ module LED_2_patterns_axi_interconnect_0_0
   input S00_AXI_bready;
   output [1:0]S00_AXI_bresp;
   output S00_AXI_bvalid;
-  output [127:0]S00_AXI_rdata;
+  output [63:0]S00_AXI_rdata;
   output [15:0]S00_AXI_rid;
   output S00_AXI_rlast;
   input S00_AXI_rready;
   output [1:0]S00_AXI_rresp;
   output S00_AXI_rvalid;
-  input [127:0]S00_AXI_wdata;
+  input [63:0]S00_AXI_wdata;
   input S00_AXI_wlast;
   output S00_AXI_wready;
-  input [15:0]S00_AXI_wstrb;
+  input [7:0]S00_AXI_wstrb;
   input S00_AXI_wvalid;
 
   wire S00_ACLK_1;
@@ -365,16 +366,16 @@ module LED_2_patterns_axi_interconnect_0_0
   wire axi_interconnect_0_to_s00_couplers_BREADY;
   wire [1:0]axi_interconnect_0_to_s00_couplers_BRESP;
   wire axi_interconnect_0_to_s00_couplers_BVALID;
-  wire [127:0]axi_interconnect_0_to_s00_couplers_RDATA;
+  wire [63:0]axi_interconnect_0_to_s00_couplers_RDATA;
   wire [15:0]axi_interconnect_0_to_s00_couplers_RID;
   wire axi_interconnect_0_to_s00_couplers_RLAST;
   wire axi_interconnect_0_to_s00_couplers_RREADY;
   wire [1:0]axi_interconnect_0_to_s00_couplers_RRESP;
   wire axi_interconnect_0_to_s00_couplers_RVALID;
-  wire [127:0]axi_interconnect_0_to_s00_couplers_WDATA;
+  wire [63:0]axi_interconnect_0_to_s00_couplers_WDATA;
   wire axi_interconnect_0_to_s00_couplers_WLAST;
   wire axi_interconnect_0_to_s00_couplers_WREADY;
-  wire [15:0]axi_interconnect_0_to_s00_couplers_WSTRB;
+  wire [7:0]axi_interconnect_0_to_s00_couplers_WSTRB;
   wire axi_interconnect_0_to_s00_couplers_WVALID;
   wire [39:0]s00_couplers_to_axi_interconnect_0_ARADDR;
   wire s00_couplers_to_axi_interconnect_0_ARREADY;
@@ -410,7 +411,7 @@ module LED_2_patterns_axi_interconnect_0_0
   assign S00_AXI_bid[15:0] = axi_interconnect_0_to_s00_couplers_BID;
   assign S00_AXI_bresp[1:0] = axi_interconnect_0_to_s00_couplers_BRESP;
   assign S00_AXI_bvalid = axi_interconnect_0_to_s00_couplers_BVALID;
-  assign S00_AXI_rdata[127:0] = axi_interconnect_0_to_s00_couplers_RDATA;
+  assign S00_AXI_rdata[63:0] = axi_interconnect_0_to_s00_couplers_RDATA;
   assign S00_AXI_rid[15:0] = axi_interconnect_0_to_s00_couplers_RID;
   assign S00_AXI_rlast = axi_interconnect_0_to_s00_couplers_RLAST;
   assign S00_AXI_rresp[1:0] = axi_interconnect_0_to_s00_couplers_RRESP;
@@ -440,9 +441,9 @@ module LED_2_patterns_axi_interconnect_0_0
   assign axi_interconnect_0_to_s00_couplers_AWVALID = S00_AXI_awvalid;
   assign axi_interconnect_0_to_s00_couplers_BREADY = S00_AXI_bready;
   assign axi_interconnect_0_to_s00_couplers_RREADY = S00_AXI_rready;
-  assign axi_interconnect_0_to_s00_couplers_WDATA = S00_AXI_wdata[127:0];
+  assign axi_interconnect_0_to_s00_couplers_WDATA = S00_AXI_wdata[63:0];
   assign axi_interconnect_0_to_s00_couplers_WLAST = S00_AXI_wlast;
-  assign axi_interconnect_0_to_s00_couplers_WSTRB = S00_AXI_wstrb[15:0];
+  assign axi_interconnect_0_to_s00_couplers_WSTRB = S00_AXI_wstrb[7:0];
   assign axi_interconnect_0_to_s00_couplers_WVALID = S00_AXI_wvalid;
   assign s00_couplers_to_axi_interconnect_0_ARREADY = M00_AXI_arready;
   assign s00_couplers_to_axi_interconnect_0_AWREADY = M00_AXI_awready;
@@ -619,16 +620,16 @@ module s00_couplers_imp_1WODK76
   input S_AXI_bready;
   output [1:0]S_AXI_bresp;
   output S_AXI_bvalid;
-  output [127:0]S_AXI_rdata;
+  output [63:0]S_AXI_rdata;
   output [15:0]S_AXI_rid;
   output S_AXI_rlast;
   input S_AXI_rready;
   output [1:0]S_AXI_rresp;
   output S_AXI_rvalid;
-  input [127:0]S_AXI_wdata;
+  input [63:0]S_AXI_wdata;
   input S_AXI_wlast;
   output S_AXI_wready;
-  input [15:0]S_AXI_wstrb;
+  input [7:0]S_AXI_wstrb;
   input S_AXI_wvalid;
 
   wire S_ACLK_1;
@@ -711,16 +712,16 @@ module s00_couplers_imp_1WODK76
   wire s00_couplers_to_auto_ds_BREADY;
   wire [1:0]s00_couplers_to_auto_ds_BRESP;
   wire s00_couplers_to_auto_ds_BVALID;
-  wire [127:0]s00_couplers_to_auto_ds_RDATA;
+  wire [63:0]s00_couplers_to_auto_ds_RDATA;
   wire [15:0]s00_couplers_to_auto_ds_RID;
   wire s00_couplers_to_auto_ds_RLAST;
   wire s00_couplers_to_auto_ds_RREADY;
   wire [1:0]s00_couplers_to_auto_ds_RRESP;
   wire s00_couplers_to_auto_ds_RVALID;
-  wire [127:0]s00_couplers_to_auto_ds_WDATA;
+  wire [63:0]s00_couplers_to_auto_ds_WDATA;
   wire s00_couplers_to_auto_ds_WLAST;
   wire s00_couplers_to_auto_ds_WREADY;
-  wire [15:0]s00_couplers_to_auto_ds_WSTRB;
+  wire [7:0]s00_couplers_to_auto_ds_WSTRB;
   wire s00_couplers_to_auto_ds_WVALID;
 
   assign M_AXI_araddr[39:0] = auto_pc_to_s00_couplers_ARADDR;
@@ -739,7 +740,7 @@ module s00_couplers_imp_1WODK76
   assign S_AXI_bid[15:0] = s00_couplers_to_auto_ds_BID;
   assign S_AXI_bresp[1:0] = s00_couplers_to_auto_ds_BRESP;
   assign S_AXI_bvalid = s00_couplers_to_auto_ds_BVALID;
-  assign S_AXI_rdata[127:0] = s00_couplers_to_auto_ds_RDATA;
+  assign S_AXI_rdata[63:0] = s00_couplers_to_auto_ds_RDATA;
   assign S_AXI_rid[15:0] = s00_couplers_to_auto_ds_RID;
   assign S_AXI_rlast = s00_couplers_to_auto_ds_RLAST;
   assign S_AXI_rresp[1:0] = s00_couplers_to_auto_ds_RRESP;
@@ -775,9 +776,9 @@ module s00_couplers_imp_1WODK76
   assign s00_couplers_to_auto_ds_AWVALID = S_AXI_awvalid;
   assign s00_couplers_to_auto_ds_BREADY = S_AXI_bready;
   assign s00_couplers_to_auto_ds_RREADY = S_AXI_rready;
-  assign s00_couplers_to_auto_ds_WDATA = S_AXI_wdata[127:0];
+  assign s00_couplers_to_auto_ds_WDATA = S_AXI_wdata[63:0];
   assign s00_couplers_to_auto_ds_WLAST = S_AXI_wlast;
-  assign s00_couplers_to_auto_ds_WSTRB = S_AXI_wstrb[15:0];
+  assign s00_couplers_to_auto_ds_WSTRB = S_AXI_wstrb[7:0];
   assign s00_couplers_to_auto_ds_WVALID = S_AXI_wvalid;
   LED_2_patterns_auto_ds_0 auto_ds
        (.m_axi_araddr(auto_ds_to_auto_pc_ARADDR),
