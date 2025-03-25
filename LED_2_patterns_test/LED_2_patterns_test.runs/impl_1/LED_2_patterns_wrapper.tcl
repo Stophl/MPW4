@@ -123,11 +123,7 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param power.enableLutRouteBelPower 1
-  set_param power.enableCarry8RouteBelPower 1
-  set_param power.enableUnconnectedCarry8PinPower 1
   set_param chipscope.maxJobs 2
-  set_param power.BramSDPPropagationFix 1
   set_param runs.launchOptions { -jobs 8  }
   open_checkpoint LED_2_patterns_wrapper_routed.dcp
   set_property webtalk.parent_dir /home/pct/Caribou/MPW4/LED_2_patterns_test/LED_2_patterns_test.cache/wt [current_project]

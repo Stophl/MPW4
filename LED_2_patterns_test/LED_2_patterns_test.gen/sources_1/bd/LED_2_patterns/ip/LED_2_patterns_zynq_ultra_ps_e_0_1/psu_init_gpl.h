@@ -901,6 +901,8 @@
 #define CRF_APB_VPLL_TO_LPD_CTRL_DIVISOR0_DEFVAL               0x00000400
 #define CRF_APB_VPLL_TO_LPD_CTRL_DIVISOR0_SHIFT                8
 #define CRF_APB_VPLL_TO_LPD_CTRL_DIVISOR0_MASK                 0x00003F00U
+#undef CRL_APB_I2C0_REF_CTRL_OFFSET 
+#define CRL_APB_I2C0_REF_CTRL_OFFSET                                               0XFF5E0120
 #undef CRL_APB_CPU_R5_CTRL_OFFSET 
 #define CRL_APB_CPU_R5_CTRL_OFFSET                                                 0XFF5E0090
 #undef CRL_APB_IOU_SWITCH_CTRL_OFFSET 
@@ -949,6 +951,48 @@
 #define IOU_SLCR_WDT_CLK_SEL_OFFSET                                                0XFF180300
 #undef LPD_SLCR_CSUPMU_WDT_CLK_SEL_OFFSET 
 #define LPD_SLCR_CSUPMU_WDT_CLK_SEL_OFFSET                                         0XFF410050
+
+/*
+* Clock active signal. Switch to 0 to disable the clock
+*/
+#undef CRL_APB_I2C0_REF_CTRL_CLKACT_DEFVAL 
+#undef CRL_APB_I2C0_REF_CTRL_CLKACT_SHIFT 
+#undef CRL_APB_I2C0_REF_CTRL_CLKACT_MASK 
+#define CRL_APB_I2C0_REF_CTRL_CLKACT_DEFVAL                    0x01000500
+#define CRL_APB_I2C0_REF_CTRL_CLKACT_SHIFT                     24
+#define CRL_APB_I2C0_REF_CTRL_CLKACT_MASK                      0x01000000U
+
+/*
+* 6 bit divider
+*/
+#undef CRL_APB_I2C0_REF_CTRL_DIVISOR1_DEFVAL 
+#undef CRL_APB_I2C0_REF_CTRL_DIVISOR1_SHIFT 
+#undef CRL_APB_I2C0_REF_CTRL_DIVISOR1_MASK 
+#define CRL_APB_I2C0_REF_CTRL_DIVISOR1_DEFVAL                  0x01000500
+#define CRL_APB_I2C0_REF_CTRL_DIVISOR1_SHIFT                   16
+#define CRL_APB_I2C0_REF_CTRL_DIVISOR1_MASK                    0x003F0000U
+
+/*
+* 6 bit divider
+*/
+#undef CRL_APB_I2C0_REF_CTRL_DIVISOR0_DEFVAL 
+#undef CRL_APB_I2C0_REF_CTRL_DIVISOR0_SHIFT 
+#undef CRL_APB_I2C0_REF_CTRL_DIVISOR0_MASK 
+#define CRL_APB_I2C0_REF_CTRL_DIVISOR0_DEFVAL                  0x01000500
+#define CRL_APB_I2C0_REF_CTRL_DIVISOR0_SHIFT                   8
+#define CRL_APB_I2C0_REF_CTRL_DIVISOR0_MASK                    0x00003F00U
+
+/*
+* 000 = IOPLL; 010 = RPLL; 011 = DPLL; (This signal may only be toggled af
+    * ter 4 cycles of the old clock and 4 cycles of the new clock. This is not
+    *  usually an issue, but designers must be aware.)
+*/
+#undef CRL_APB_I2C0_REF_CTRL_SRCSEL_DEFVAL 
+#undef CRL_APB_I2C0_REF_CTRL_SRCSEL_SHIFT 
+#undef CRL_APB_I2C0_REF_CTRL_SRCSEL_MASK 
+#define CRL_APB_I2C0_REF_CTRL_SRCSEL_DEFVAL                    0x01000500
+#define CRL_APB_I2C0_REF_CTRL_SRCSEL_SHIFT                     0
+#define CRL_APB_I2C0_REF_CTRL_SRCSEL_MASK                      0x00000007U
 
 /*
 * Turing this off will shut down the OCM, some parts of the APM, and preve
@@ -22831,6 +22875,12 @@
 #define AFIFM6_AFIFM_WRQOS_VALUE_DEFVAL                        0x00000007
 #define AFIFM6_AFIFM_WRQOS_VALUE_SHIFT                         0
 #define AFIFM6_AFIFM_WRQOS_VALUE_MASK                          0x0000000FU
+#undef IOU_SLCR_MIO_PIN_2_OFFSET 
+#define IOU_SLCR_MIO_PIN_2_OFFSET                                                  0XFF180008
+#undef IOU_SLCR_MIO_PIN_3_OFFSET 
+#define IOU_SLCR_MIO_PIN_3_OFFSET                                                  0XFF18000C
+#undef IOU_SLCR_MIO_MST_TRI0_OFFSET 
+#define IOU_SLCR_MIO_MST_TRI0_OFFSET                                               0XFF180204
 #undef IOU_SLCR_BANK0_CTRL0_OFFSET 
 #define IOU_SLCR_BANK0_CTRL0_OFFSET                                                0XFF180138
 #undef IOU_SLCR_BANK0_CTRL1_OFFSET 
@@ -22869,6 +22919,125 @@
 #define IOU_SLCR_BANK2_CTRL6_OFFSET                                                0XFF180184
 #undef IOU_SLCR_MIO_LOOPBACK_OFFSET 
 #define IOU_SLCR_MIO_LOOPBACK_OFFSET                                               0XFF180200
+
+/*
+* Level 0 Mux Select 0= Level 1 Mux Output 1= qspi, Input, qspi_mi2- (QSPI
+    *  Databus) 1= qspi, Output, qspi_mo2- (QSPI Databus)
+*/
+#undef IOU_SLCR_MIO_PIN_2_L0_SEL_DEFVAL 
+#undef IOU_SLCR_MIO_PIN_2_L0_SEL_SHIFT 
+#undef IOU_SLCR_MIO_PIN_2_L0_SEL_MASK 
+#define IOU_SLCR_MIO_PIN_2_L0_SEL_DEFVAL                       0x00000000
+#define IOU_SLCR_MIO_PIN_2_L0_SEL_SHIFT                        1
+#define IOU_SLCR_MIO_PIN_2_L0_SEL_MASK                         0x00000002U
+
+/*
+* Level 1 Mux Select 0= Level 2 Mux Output 1= Not Used
+*/
+#undef IOU_SLCR_MIO_PIN_2_L1_SEL_DEFVAL 
+#undef IOU_SLCR_MIO_PIN_2_L1_SEL_SHIFT 
+#undef IOU_SLCR_MIO_PIN_2_L1_SEL_MASK 
+#define IOU_SLCR_MIO_PIN_2_L1_SEL_DEFVAL                       0x00000000
+#define IOU_SLCR_MIO_PIN_2_L1_SEL_SHIFT                        2
+#define IOU_SLCR_MIO_PIN_2_L1_SEL_MASK                         0x00000004U
+
+/*
+* Level 2 Mux Select 0= Level 3 Mux Output 1= Not Used 2= test_scan, Input
+    * , test_scan_in[2]- (Test Scan Port) = test_scan, Output, test_scan_out[2
+    * ]- (Test Scan Port) 3= Not Used
+*/
+#undef IOU_SLCR_MIO_PIN_2_L2_SEL_DEFVAL 
+#undef IOU_SLCR_MIO_PIN_2_L2_SEL_SHIFT 
+#undef IOU_SLCR_MIO_PIN_2_L2_SEL_MASK 
+#define IOU_SLCR_MIO_PIN_2_L2_SEL_DEFVAL                       0x00000000
+#define IOU_SLCR_MIO_PIN_2_L2_SEL_SHIFT                        3
+#define IOU_SLCR_MIO_PIN_2_L2_SEL_MASK                         0x00000018U
+
+/*
+* Level 3 Mux Select 0= gpio0, Input, gpio_0_pin_in[2]- (GPIO bank 0) 0= g
+    * pio0, Output, gpio_0_pin_out[2]- (GPIO bank 0) 1= can0, Input, can0_phy_
+    * rx- (Can RX signal) 2= i2c0, Input, i2c0_scl_input- (SCL signal) 2= i2c0
+    * , Output, i2c0_scl_out- (SCL signal) 3= pjtag, Output, pjtag_tdo- (PJTAG
+    *  TDO) 4= spi0, Output, spi0_n_ss_out[1]- (SPI Master Selects) 5= ttc2, I
+    * nput, ttc2_clk_in- (TTC Clock) 6= ua0, Input, ua0_rxd- (UART receiver se
+    * rial input) 7= trace, Output, tracedq[0]- (Trace Port Databus)
+*/
+#undef IOU_SLCR_MIO_PIN_2_L3_SEL_DEFVAL 
+#undef IOU_SLCR_MIO_PIN_2_L3_SEL_SHIFT 
+#undef IOU_SLCR_MIO_PIN_2_L3_SEL_MASK 
+#define IOU_SLCR_MIO_PIN_2_L3_SEL_DEFVAL                       0x00000000
+#define IOU_SLCR_MIO_PIN_2_L3_SEL_SHIFT                        5
+#define IOU_SLCR_MIO_PIN_2_L3_SEL_MASK                         0x000000E0U
+
+/*
+* Level 0 Mux Select 0= Level 1 Mux Output 1= qspi, Input, qspi_mi3- (QSPI
+    *  Databus) 1= qspi, Output, qspi_mo3- (QSPI Databus)
+*/
+#undef IOU_SLCR_MIO_PIN_3_L0_SEL_DEFVAL 
+#undef IOU_SLCR_MIO_PIN_3_L0_SEL_SHIFT 
+#undef IOU_SLCR_MIO_PIN_3_L0_SEL_MASK 
+#define IOU_SLCR_MIO_PIN_3_L0_SEL_DEFVAL                       0x00000000
+#define IOU_SLCR_MIO_PIN_3_L0_SEL_SHIFT                        1
+#define IOU_SLCR_MIO_PIN_3_L0_SEL_MASK                         0x00000002U
+
+/*
+* Level 1 Mux Select 0= Level 2 Mux Output 1= Not Used
+*/
+#undef IOU_SLCR_MIO_PIN_3_L1_SEL_DEFVAL 
+#undef IOU_SLCR_MIO_PIN_3_L1_SEL_SHIFT 
+#undef IOU_SLCR_MIO_PIN_3_L1_SEL_MASK 
+#define IOU_SLCR_MIO_PIN_3_L1_SEL_DEFVAL                       0x00000000
+#define IOU_SLCR_MIO_PIN_3_L1_SEL_SHIFT                        2
+#define IOU_SLCR_MIO_PIN_3_L1_SEL_MASK                         0x00000004U
+
+/*
+* Level 2 Mux Select 0= Level 3 Mux Output 1= Not Used 2= test_scan, Input
+    * , test_scan_in[3]- (Test Scan Port) = test_scan, Output, test_scan_out[3
+    * ]- (Test Scan Port) 3= Not Used
+*/
+#undef IOU_SLCR_MIO_PIN_3_L2_SEL_DEFVAL 
+#undef IOU_SLCR_MIO_PIN_3_L2_SEL_SHIFT 
+#undef IOU_SLCR_MIO_PIN_3_L2_SEL_MASK 
+#define IOU_SLCR_MIO_PIN_3_L2_SEL_DEFVAL                       0x00000000
+#define IOU_SLCR_MIO_PIN_3_L2_SEL_SHIFT                        3
+#define IOU_SLCR_MIO_PIN_3_L2_SEL_MASK                         0x00000018U
+
+/*
+* Level 3 Mux Select 0= gpio0, Input, gpio_0_pin_in[3]- (GPIO bank 0) 0= g
+    * pio0, Output, gpio_0_pin_out[3]- (GPIO bank 0) 1= can0, Output, can0_phy
+    * _tx- (Can TX signal) 2= i2c0, Input, i2c0_sda_input- (SDA signal) 2= i2c
+    * 0, Output, i2c0_sda_out- (SDA signal) 3= pjtag, Input, pjtag_tms- (PJTAG
+    *  TMS) 4= spi0, Input, spi0_n_ss_in- (SPI Master Selects) 4= spi0, Output
+    * , spi0_n_ss_out[0]- (SPI Master Selects) 5= ttc2, Output, ttc2_wave_out-
+    *  (TTC Waveform Clock) 6= ua0, Output, ua0_txd- (UART transmitter serial
+    * output) 7= trace, Output, tracedq[1]- (Trace Port Databus)
+*/
+#undef IOU_SLCR_MIO_PIN_3_L3_SEL_DEFVAL 
+#undef IOU_SLCR_MIO_PIN_3_L3_SEL_SHIFT 
+#undef IOU_SLCR_MIO_PIN_3_L3_SEL_MASK 
+#define IOU_SLCR_MIO_PIN_3_L3_SEL_DEFVAL                       0x00000000
+#define IOU_SLCR_MIO_PIN_3_L3_SEL_SHIFT                        5
+#define IOU_SLCR_MIO_PIN_3_L3_SEL_MASK                         0x000000E0U
+
+/*
+* Master Tri-state Enable for pin 2, active high
+*/
+#undef IOU_SLCR_MIO_MST_TRI0_PIN_02_TRI_DEFVAL 
+#undef IOU_SLCR_MIO_MST_TRI0_PIN_02_TRI_SHIFT 
+#undef IOU_SLCR_MIO_MST_TRI0_PIN_02_TRI_MASK 
+#define IOU_SLCR_MIO_MST_TRI0_PIN_02_TRI_DEFVAL                0xFFFFFFFF
+#define IOU_SLCR_MIO_MST_TRI0_PIN_02_TRI_SHIFT                 2
+#define IOU_SLCR_MIO_MST_TRI0_PIN_02_TRI_MASK                  0x00000004U
+
+/*
+* Master Tri-state Enable for pin 3, active high
+*/
+#undef IOU_SLCR_MIO_MST_TRI0_PIN_03_TRI_DEFVAL 
+#undef IOU_SLCR_MIO_MST_TRI0_PIN_03_TRI_SHIFT 
+#undef IOU_SLCR_MIO_MST_TRI0_PIN_03_TRI_MASK 
+#define IOU_SLCR_MIO_MST_TRI0_PIN_03_TRI_DEFVAL                0xFFFFFFFF
+#define IOU_SLCR_MIO_MST_TRI0_PIN_03_TRI_SHIFT                 3
+#define IOU_SLCR_MIO_MST_TRI0_PIN_03_TRI_MASK                  0x00000008U
 
 /*
 * Each bit applies to a single IO. Bit 0 for MIO[0].
@@ -27649,6 +27818,8 @@
 #define CRL_APB_RST_LPD_TOP_OFFSET                                                 0XFF5E023C
 #undef CRL_APB_RST_LPD_IOU2_OFFSET 
 #define CRL_APB_RST_LPD_IOU2_OFFSET                                                0XFF5E0238
+#undef CRL_APB_RST_LPD_IOU2_OFFSET 
+#define CRL_APB_RST_LPD_IOU2_OFFSET                                                0XFF5E0238
 #undef LPD_SLCR_SECURE_SLCR_ADMA_OFFSET 
 #define LPD_SLCR_SECURE_SLCR_ADMA_OFFSET                                           0XFF4B0024
 #undef CSU_TAMPER_STATUS_OFFSET 
@@ -27821,6 +27992,16 @@
 #define CRL_APB_RST_LPD_TOP_OCM_RESET_DEFVAL                   0x00188FDF
 #define CRL_APB_RST_LPD_TOP_OCM_RESET_SHIFT                    3
 #define CRL_APB_RST_LPD_TOP_OCM_RESET_MASK                     0x00000008U
+
+/*
+* Block level reset
+*/
+#undef CRL_APB_RST_LPD_IOU2_I2C0_RESET_DEFVAL 
+#undef CRL_APB_RST_LPD_IOU2_I2C0_RESET_SHIFT 
+#undef CRL_APB_RST_LPD_IOU2_I2C0_RESET_MASK 
+#define CRL_APB_RST_LPD_IOU2_I2C0_RESET_DEFVAL                 0x0017FFFF
+#define CRL_APB_RST_LPD_IOU2_I2C0_RESET_SHIFT                  9
+#define CRL_APB_RST_LPD_IOU2_I2C0_RESET_MASK                   0x00000200U
 
 /*
 * Block level reset

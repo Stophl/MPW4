@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date             : Tue Mar 25 10:56:03 2025
+| Date             : Tue Mar 25 12:39:05 2025
 | Host             : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
 | Command          : report_power -file LED_2_patterns_wrapper_power_routed.rpt -pb LED_2_patterns_wrapper_power_summary_routed.pb -rpx LED_2_patterns_wrapper_power_routed.rpx
 | Design           : LED_2_patterns_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.969        |
+| Total On-Chip Power (W)  | 2.974        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.220        |
+| Dynamic (W)              | 2.224        |
 | Device Static (W)        | 0.749        |
 | Effective TJA (C/W)      | 1.0          |
 | Max Ambient (C)          | 97.1         |
@@ -63,11 +63,11 @@ Table of Contents
 |   F7/F8 Muxes            |     0.000 |        2 |    274080 |           <0.01 |
 | Signals                  |     0.001 |     1972 |       --- |             --- |
 | I/O                      |     0.001 |        8 |       328 |            2.44 |
-| PS8                      |     2.210 |        1 |       --- |             --- |
+| PS8                      |     2.215 |        1 |       --- |             --- |
 | Static Power             |     0.749 |          |           |                 |
 |   PS Static              |     0.101 |          |           |                 |
 |   PL Static              |     0.648 |          |           |                 |
-| Total                    |     2.969 |          |           |                 |
+| Total                    |     2.974 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -100,7 +100,7 @@ Table of Contents
 | VCC_PSAUX       |       1.800 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
 | VCC_PSBATT      |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | VCC_PSDDR_PLL   |       1.800 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
-| VCCO_PSIO0_500  |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| VCCO_PSIO0_500  |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | VCCO_PSIO1_501  |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | VCCO_PSIO2_502  |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | VCCO_PSIO3_503  |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
@@ -164,12 +164,12 @@ Table of Contents
 +------------------------+-----------+
 | Name                   | Power (W) |
 +------------------------+-----------+
-| LED_2_patterns_wrapper |     2.220 |
-|   LED_2_patterns_i     |     2.218 |
+| LED_2_patterns_wrapper |     2.224 |
+|   LED_2_patterns_i     |     2.223 |
 |     axi_interconnect_0 |     0.008 |
 |       s00_couplers     |     0.008 |
-|     zynq_ultra_ps_e_0  |     2.210 |
-|       inst             |     2.210 |
+|     zynq_ultra_ps_e_0  |     2.215 |
+|       inst             |     2.215 |
 +------------------------+-----------+
 
 

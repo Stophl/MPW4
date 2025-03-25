@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="LED_2_patterns_zynq_ultra_ps_e_0_1_synth_1" LaunchPart="xczu9eg-ffvb1156-2-e" LaunchTime="1742895125">
+<GenRun Id="LED_2_patterns_zynq_ultra_ps_e_0_1_synth_1" LaunchPart="xczu9eg-ffvb1156-2-e" LaunchTime="1742902520">
   <File Type="VDS-TIMINGSUMMARY" Name="LED_2_patterns_zynq_ultra_ps_e_0_1_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="LED_2_patterns_zynq_ultra_ps_e_0_1.dcp"/>
   <File Type="RDS-UTIL-PB" Name="LED_2_patterns_zynq_ultra_ps_e_0_1_utilization_synth.pb"/>
@@ -39,6 +39,14 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/LED_2_patterns_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Tue Mar 25 10:56:02 2025
+| Date         : Tue Mar 25 12:39:04 2025
 | Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
 | Command      : report_methodology -file LED_2_patterns_wrapper_methodology_drc_routed.rpt -pb LED_2_patterns_wrapper_methodology_drc_routed.pb -rpx LED_2_patterns_wrapper_methodology_drc_routed.rpx
 | Design       : LED_2_patterns_wrapper
