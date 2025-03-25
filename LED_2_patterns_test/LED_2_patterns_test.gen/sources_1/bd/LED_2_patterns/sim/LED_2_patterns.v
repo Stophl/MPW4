@@ -2,8 +2,8 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-//Date        : Tue Mar 25 13:48:50 2025
-//Host        : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+//Date        : Tue Mar 25 16:26:52 2025
+//Host        : silicon-NUC14RVK-B running 64-bit unknown
 //Command     : generate_target LED_2_patterns.bd
 //Design      : LED_2_patterns
 //Purpose     : IP block netlist
@@ -171,8 +171,7 @@ module LED_2_patterns
         .peripheral_aresetn(proc_sys_reset_0_peripheral_aresetn),
         .slowest_sync_clk(zynq_ultra_ps_e_0_pl_clk0));
   LED_2_patterns_zynq_ultra_ps_e_0_1 zynq_ultra_ps_e_0
-       (.emio_uart0_rxd(1'b0),
-        .maxigp0_araddr(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARADDR),
+       (.maxigp0_araddr(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARADDR),
         .maxigp0_arburst(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARBURST),
         .maxigp0_arcache(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARCACHE),
         .maxigp0_arid(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARID),

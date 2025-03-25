@@ -17,7 +17,7 @@ preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 3 670 20 1000 80 NJ
 preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 4 20 10 660 10 1010 60 NJ
 preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 30 190 650
 preplace netloc axi_interconnect_0_M00_AXI 1 2 1 N 140
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 650 70n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 N 80
 levelinfo -pg 1 0 340 820 1150 1430 1560
 pagesize -pg 1 -db -bbox -sgen 0 0 1700 400
 "

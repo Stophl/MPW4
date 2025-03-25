@@ -243,8 +243,8 @@
         "SUBPRESET1": [ { "value": "Custom", "resolve_type": "user", "usage": "all" } ],
         "SUBPRESET2": [ { "value": "Custom", "resolve_type": "user", "usage": "all" } ],
         "PSU_UIPARAM_GENERATE_SUMMARY": [ { "value": "<Select>", "resolve_type": "user", "usage": "all" } ],
-        "PSU_MIO_TREE_PERIPHERALS": [ { "value": "Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Feedback Clk#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash##I2C 0#I2C 0#I2C 1#I2C 1#######CAN 1#CAN 1##DPAUX#DPAUX#DPAUX#DPAUX#PCIE###PMU GPO 2#####SD 1#SD 1#SD 1#SD 1##SD 1#SD 1#SD 1#SD 1#SD 1#SD 1#SD 1#SD 1#############Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#MDIO 3#MDIO 3", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
-        "PSU_MIO_TREE_SIGNALS": [ { "value": "sclk_out#miso_mo1#mo2#mo3#mosi_mi0#n_ss_out#clk_for_lpbk#n_ss_out_upper#mo_upper[0]#mo_upper[1]#mo_upper[2]#mo_upper[3]#sclk_out_upper##scl_out#sda_out#scl_out#sda_out#######phy_tx#phy_rx##dp_aux_data_out#dp_hot_plug_detect#dp_aux_data_oe#dp_aux_data_in#reset_n###gpo[2]#####sdio1_data_out[4]#sdio1_data_out[5]#sdio1_data_out[6]#sdio1_data_out[7]##sdio1_wp#sdio1_cd_n#sdio1_data_out[0]#sdio1_data_out[1]#sdio1_data_out[2]#sdio1_data_out[3]#sdio1_cmd_out#sdio1_clk_out#############rgmii_tx_clk#rgmii_txd[0]#rgmii_txd[1]#rgmii_txd[2]#rgmii_txd[3]#rgmii_tx_ctl#rgmii_rx_clk#rgmii_rxd[0]#rgmii_rxd[1]#rgmii_rxd[2]#rgmii_rxd[3]#rgmii_rx_ctl#gem3_mdc#gem3_mdio_out", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+        "PSU_MIO_TREE_PERIPHERALS": [ { "value": "Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Feedback Clk#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash##I2C 0#I2C 0#I2C 1#I2C 1#UART 0#UART 0#####CAN 1#CAN 1##DPAUX#DPAUX#DPAUX#DPAUX#PCIE###PMU GPO 2#####SD 1#SD 1#SD 1#SD 1##SD 1#SD 1#SD 1#SD 1#SD 1#SD 1#SD 1#SD 1#############Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#MDIO 3#MDIO 3", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+        "PSU_MIO_TREE_SIGNALS": [ { "value": "sclk_out#miso_mo1#mo2#mo3#mosi_mi0#n_ss_out#clk_for_lpbk#n_ss_out_upper#mo_upper[0]#mo_upper[1]#mo_upper[2]#mo_upper[3]#sclk_out_upper##scl_out#sda_out#scl_out#sda_out#rxd#txd#####phy_tx#phy_rx##dp_aux_data_out#dp_hot_plug_detect#dp_aux_data_oe#dp_aux_data_in#reset_n###gpo[2]#####sdio1_data_out[4]#sdio1_data_out[5]#sdio1_data_out[6]#sdio1_data_out[7]##sdio1_wp#sdio1_cd_n#sdio1_data_out[0]#sdio1_data_out[1]#sdio1_data_out[2]#sdio1_data_out[3]#sdio1_cmd_out#sdio1_clk_out#############rgmii_tx_clk#rgmii_txd[0]#rgmii_txd[1]#rgmii_txd[2]#rgmii_txd[3]#rgmii_tx_ctl#rgmii_rx_clk#rgmii_rxd[0]#rgmii_rxd[1]#rgmii_rxd[2]#rgmii_rxd[3]#rgmii_rx_ctl#gem3_mdc#gem3_mdio_out", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
         "PSU_PERIPHERAL_BOARD_PRESET": [ { "value": "", "resolve_type": "user", "usage": "all" } ],
         "PSU__NAND__PERIPHERAL__IO": [ { "value": "<Select>", "resolve_type": "user", "enabled": false, "usage": "all" } ],
         "PSU__NAND__PERIPHERAL__ENABLE": [ { "value": "0", "resolve_type": "user", "usage": "all" } ],
@@ -541,7 +541,7 @@
         "PSU__ACPU2__POWER__ON": [ { "value": "1", "resolve_type": "user", "usage": "all" } ],
         "PSU__ACPU3__POWER__ON": [ { "value": "1", "resolve_type": "user", "usage": "all" } ],
         "PSU__UART0__PERIPHERAL__ENABLE": [ { "value": "1", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
-        "PSU__UART0__PERIPHERAL__IO": [ { "value": "EMIO", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+        "PSU__UART0__PERIPHERAL__IO": [ { "value": "MIO 18 .. 19", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
         "PSU__UART0__MODEM__ENABLE": [ { "value": "0", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
         "PSU__UART1__PERIPHERAL__ENABLE": [ { "value": "0", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
         "PSU__UART1__PERIPHERAL__IO": [ { "value": "<Select>", "resolve_type": "user", "enabled": false, "usage": "all" } ],
@@ -753,17 +753,17 @@
         "PSU_MIO_17_SLEW": [ { "value": "fast", "resolve_type": "user", "usage": "all" } ],
         "PSU_MIO_17_DIRECTION": [ { "value": "inout", "value_src": "user", "resolve_type": "user", "enabled": false, "usage": "all" } ],
         "PSU_MIO_18_PULLUPDOWN": [ { "value": "pullup", "resolve_type": "user", "usage": "all" } ],
-        "PSU_MIO_18_DRIVE_STRENGTH": [ { "value": "12", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+        "PSU_MIO_18_DRIVE_STRENGTH": [ { "value": "12", "value_src": "user", "resolve_type": "user", "enabled": false, "usage": "all" } ],
         "PSU_MIO_18_POLARITY": [ { "value": "Default", "value_src": "user", "resolve_type": "user", "enabled": false, "usage": "all" } ],
         "PSU_MIO_18_INPUT_TYPE": [ { "value": "cmos", "resolve_type": "user", "usage": "all" } ],
-        "PSU_MIO_18_SLEW": [ { "value": "fast", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
-        "PSU_MIO_18_DIRECTION": [ { "value": "<Select>", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+        "PSU_MIO_18_SLEW": [ { "value": "fast", "value_src": "user", "resolve_type": "user", "enabled": false, "usage": "all" } ],
+        "PSU_MIO_18_DIRECTION": [ { "value": "in", "value_src": "user", "resolve_type": "user", "enabled": false, "usage": "all" } ],
         "PSU_MIO_19_PULLUPDOWN": [ { "value": "pullup", "resolve_type": "user", "usage": "all" } ],
         "PSU_MIO_19_DRIVE_STRENGTH": [ { "value": "12", "resolve_type": "user", "usage": "all" } ],
         "PSU_MIO_19_POLARITY": [ { "value": "Default", "value_src": "user", "resolve_type": "user", "enabled": false, "usage": "all" } ],
-        "PSU_MIO_19_INPUT_TYPE": [ { "value": "cmos", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+        "PSU_MIO_19_INPUT_TYPE": [ { "value": "cmos", "value_src": "user", "resolve_type": "user", "enabled": false, "usage": "all" } ],
         "PSU_MIO_19_SLEW": [ { "value": "fast", "resolve_type": "user", "usage": "all" } ],
-        "PSU_MIO_19_DIRECTION": [ { "value": "<Select>", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+        "PSU_MIO_19_DIRECTION": [ { "value": "out", "value_src": "user", "resolve_type": "user", "enabled": false, "usage": "all" } ],
         "PSU_MIO_20_PULLUPDOWN": [ { "value": "pullup", "resolve_type": "user", "usage": "all" } ],
         "PSU_MIO_20_DRIVE_STRENGTH": [ { "value": "12", "resolve_type": "user", "usage": "all" } ],
         "PSU_MIO_20_POLARITY": [ { "value": "Default", "value_src": "user", "resolve_type": "user", "enabled": false, "usage": "all" } ],
@@ -1813,8 +1813,6 @@
         "maxigp0_rready": [ { "direction": "out" } ],
         "maxigp0_awqos": [ { "direction": "out", "size_left": "3", "size_right": "0" } ],
         "maxigp0_arqos": [ { "direction": "out", "size_left": "3", "size_right": "0" } ],
-        "emio_uart0_txd": [ { "direction": "out" } ],
-        "emio_uart0_rxd": [ { "direction": "in", "driver_value": "0" } ],
         "pl_ps_irq0": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
         "pl_resetn0": [ { "direction": "out", "driver_value": "0" } ],
         "pl_clk0": [ { "direction": "out" } ]
@@ -1916,15 +1914,6 @@
           },
           "port_maps": {
             "CLK": [ { "physical_name": "maxihpm0_fpd_aclk" } ]
-          }
-        },
-        "UART_0": {
-          "vlnv": "xilinx.com:interface:uart:1.0",
-          "abstraction_type": "xilinx.com:interface:uart_rtl:1.0",
-          "mode": "master",
-          "port_maps": {
-            "TxD": [ { "physical_name": "emio_uart0_txd" } ],
-            "RxD": [ { "physical_name": "emio_uart0_rxd" } ]
           }
         },
         "PMU_PL_GPO": {
