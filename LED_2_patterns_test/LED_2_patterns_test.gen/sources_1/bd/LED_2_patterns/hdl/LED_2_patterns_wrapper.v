@@ -2,8 +2,8 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-//Date        : Tue Mar 25 16:26:52 2025
-//Host        : silicon-NUC14RVK-B running 64-bit unknown
+//Date        : Wed Mar 26 13:08:38 2025
+//Host        : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
 //Command     : generate_target LED_2_patterns_wrapper.bd
 //Design      : LED_2_patterns_wrapper
 //Purpose     : IP block netlist
