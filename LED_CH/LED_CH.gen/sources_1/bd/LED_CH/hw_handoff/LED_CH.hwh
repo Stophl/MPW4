@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Mar 26 17:22:53 2025" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Mar 26 17:33:37 2025" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:zcu102:part0:3.4" DEVICE="xczu9eg" NAME="LED_CH" PACKAGE="ffvb1156" SPEEDGRADE="-2"/>
 
   <EXTERNALPORTS>
-    <PORT DIR="O" LEFT="7" NAME="led_o_0" RIGHT="0" SIGIS="undef" SIGNAME="led_blink_patterns_0_led_o">
+    <PORT DIR="O" LEFT="7" NAME="led_o" RIGHT="0" SIGIS="undef" SIGNAME="led_blink_patterns_0_led_o">
       <CONNECTIONS>
         <CONNECTION INSTANCE="led_blink_patterns_0" PORT="led_o"/>
       </CONNECTIONS>
@@ -1078,7 +1078,7 @@
         </PORT>
         <PORT DIR="O" LEFT="7" NAME="led_o" RIGHT="0" SIGIS="undef" SIGNAME="led_blink_patterns_0_led_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="led_o_0"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="led_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="pattern_sel" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">

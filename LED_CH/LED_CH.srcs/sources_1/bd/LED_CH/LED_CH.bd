@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x15A729B115A729B1",
+      "boundary_crc": "0xDB508E82DB508E82",
       "device": "xczu9eg-ffvb1156-2-e",
       "gen_directory": "../../../../LED_CH.gen/sources_1/bd/LED_CH",
       "name": "LED_CH",
@@ -23,7 +23,7 @@
       "led_blink_patterns_0": ""
     },
     "ports": {
-      "led_o_0": {
+      "led_o": {
         "direction": "O",
         "left": "7",
         "right": "0"
@@ -3520,7 +3520,7 @@
       "led_blink_patterns_0_led_o": {
         "ports": [
           "led_blink_patterns_0/led_o",
-          "led_o_0"
+          "led_o"
         ]
       },
       "rst_ps8_0_99M_peripheral_aresetn": {

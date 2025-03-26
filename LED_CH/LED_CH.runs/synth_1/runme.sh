@@ -8,9 +8,9 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/home/silicon/Desktop/Caribou/Vivado/Vivado/2023.2/ids_lite/ISE/bin/lin64:/home/silicon/Desktop/Caribou/Vivado/Vivado/2023.2/bin
+  PATH=/home/pct/Caribou/vivado/Vivado/2023.2/ids_lite/ISE/bin/lin64:/home/pct/Caribou/vivado/Vivado/2023.2/bin
 else
-  PATH=/home/silicon/Desktop/Caribou/Vivado/Vivado/2023.2/ids_lite/ISE/bin/lin64:/home/silicon/Desktop/Caribou/Vivado/Vivado/2023.2/bin:$PATH
+  PATH=/home/pct/Caribou/vivado/Vivado/2023.2/ids_lite/ISE/bin/lin64:/home/pct/Caribou/vivado/Vivado/2023.2/bin:$PATH
 fi
 export PATH
 
@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/silicon/Desktop/MPW4/LED_CH/LED_CH.runs/synth_1'
+HD_PWD='/home/pct/Caribou/MPW4/LED_CH/LED_CH.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

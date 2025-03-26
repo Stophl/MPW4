@@ -2,8 +2,8 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-//Date        : Wed Mar 26 17:22:37 2025
-//Host        : silicon-NUC14RVK-B running 64-bit unknown
+//Date        : Wed Mar 26 17:33:36 2025
+//Host        : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
 //Command     : generate_target LED_CH.bd
 //Design      : LED_CH
 //Purpose     : IP block netlist
@@ -12,8 +12,8 @@
 
 (* CORE_GENERATION_INFO = "LED_CH,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=LED_CH,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=8,numReposBlks=6,numNonXlnxBlks=1,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,da_clkrst_cnt=2,da_zynq_ultra_ps_e_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "LED_CH.hwdef" *) 
 module LED_CH
-   (led_o_0);
-  output [7:0]led_o_0;
+   (led_o);
+  output [7:0]led_o;
 
   wire [0:0]axi_gpio_0_gpio_io_o;
   wire [39:0]axi_interconnect_0_M00_AXI_ARADDR;
@@ -75,7 +75,7 @@ module LED_CH
   wire zynq_ultra_ps_e_0_pl_clk0;
   wire zynq_ultra_ps_e_0_pl_resetn0;
 
-  assign led_o_0[7:0] = led_blink_patterns_0_led_o;
+  assign led_o[7:0] = led_blink_patterns_0_led_o;
   LED_CH_axi_gpio_0_0 axi_gpio_0
        (.gpio_io_o(axi_gpio_0_gpio_io_o),
         .s_axi_aclk(zynq_ultra_ps_e_0_pl_clk0),

@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/silicon/Desktop/MPW4/LED_CH/LED_CH.runs/synth_1/LED_CH_wrapper.tcl"
+  variable script "/home/pct/Caribou/MPW4/LED_CH/LED_CH.runs/synth_1/LED_CH_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
 set_msg_config  -id {Common 17-55}  -string {{ERROR: [Common 17-55] 'set_property' expects at least one object. [/home/yotarid/work/caribou/boreal/fw/src/usr/H2M/xdc/H2M_device_phy.tcl:11]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.}}  -suppress 
 set_msg_config  -id {Vivado 12-584}  -string {{WARNING: [Vivado 12-584] No ports matched 'fmc_dp_m2c_*_o[*]'. [/home/yotarid/work/caribou/boreal/fw/src/usr/H2M/xdc/H2M_device_phy.tcl:11]}}  -suppress 
@@ -85,33 +86,33 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/silicon/Desktop/MPW4/LED_CH/LED_CH.cache/wt [current_project]
-set_property parent.project_path /home/silicon/Desktop/MPW4/LED_CH/LED_CH.xpr [current_project]
+set_property webtalk.parent_dir /home/pct/Caribou/MPW4/LED_CH/LED_CH.cache/wt [current_project]
+set_property parent.project_path /home/pct/Caribou/MPW4/LED_CH/LED_CH.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:zcu102:part0:3.4 [current_project]
-set_property ip_repo_paths /home/silicon/Desktop/MPW4/ip_repo [current_project]
+set_property ip_repo_paths /home/pct/Caribou/MPW4/ip_repo [current_project]
 update_ip_catalog
-set_property ip_output_repo /home/silicon/Desktop/MPW4/LED_CH/LED_CH.cache/ip [current_project]
+set_property ip_output_repo /home/pct/Caribou/MPW4/LED_CH/LED_CH.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib /home/silicon/Desktop/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/hdl/LED_CH_wrapper.v
-add_files /home/silicon/Desktop/MPW4/LED_CH/LED_CH.srcs/sources_1/bd/LED_CH/LED_CH.bd
-set_property used_in_implementation false [get_files -all /home/silicon/Desktop/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_zynq_ultra_ps_e_0_0/LED_CH_zynq_ultra_ps_e_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/silicon/Desktop/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_zynq_ultra_ps_e_0_0/LED_CH_zynq_ultra_ps_e_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/silicon/Desktop/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_rst_ps8_0_99M_0/LED_CH_rst_ps8_0_99M_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/silicon/Desktop/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_rst_ps8_0_99M_0/LED_CH_rst_ps8_0_99M_0.xdc]
-set_property used_in_implementation false [get_files -all /home/silicon/Desktop/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_rst_ps8_0_99M_0/LED_CH_rst_ps8_0_99M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/silicon/Desktop/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_axi_gpio_0_0/LED_CH_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/silicon/Desktop/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_axi_gpio_0_0/LED_CH_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/silicon/Desktop/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_axi_gpio_0_0/LED_CH_axi_gpio_0_0.xdc]
-set_property used_in_synthesis false [get_files -all /home/silicon/Desktop/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_auto_ds_0/LED_CH_auto_ds_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/silicon/Desktop/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_auto_ds_0/LED_CH_auto_ds_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/silicon/Desktop/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_auto_ds_0/LED_CH_auto_ds_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/silicon/Desktop/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_auto_pc_0/LED_CH_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/silicon/Desktop/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/LED_CH_ooc.xdc]
+read_verilog -library xil_defaultlib /home/pct/Caribou/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/hdl/LED_CH_wrapper.v
+add_files /home/pct/Caribou/MPW4/LED_CH/LED_CH.srcs/sources_1/bd/LED_CH/LED_CH.bd
+set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_zynq_ultra_ps_e_0_0/LED_CH_zynq_ultra_ps_e_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_zynq_ultra_ps_e_0_0/LED_CH_zynq_ultra_ps_e_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_rst_ps8_0_99M_0/LED_CH_rst_ps8_0_99M_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_rst_ps8_0_99M_0/LED_CH_rst_ps8_0_99M_0.xdc]
+set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_rst_ps8_0_99M_0/LED_CH_rst_ps8_0_99M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_axi_gpio_0_0/LED_CH_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_axi_gpio_0_0/LED_CH_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_axi_gpio_0_0/LED_CH_axi_gpio_0_0.xdc]
+set_property used_in_synthesis false [get_files -all /home/pct/Caribou/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_auto_ds_0/LED_CH_auto_ds_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_auto_ds_0/LED_CH_auto_ds_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_auto_ds_0/LED_CH_auto_ds_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/ip/LED_CH_auto_pc_0/LED_CH_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pct/Caribou/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/LED_CH_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -122,12 +123,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/silicon/Desktop/MPW4/LED_CH/LED_CH.srcs/constrs_1/new/Pins.xdc
-set_property used_in_implementation false [get_files /home/silicon/Desktop/MPW4/LED_CH/LED_CH.srcs/constrs_1/new/Pins.xdc]
+read_xdc /home/pct/Caribou/MPW4/LED_CH/LED_CH.srcs/constrs_1/new/Pins.xdc
+set_property used_in_implementation false [get_files /home/pct/Caribou/MPW4/LED_CH/LED_CH.srcs/constrs_1/new/Pins.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental /home/pct/Caribou/MPW4/LED_CH/LED_CH.srcs/utils_1/imports/synth_1/LED_CH_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

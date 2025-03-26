@@ -27,4 +27,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LED_CH_auto
 # IP: bd/LED_CH/ip/LED_CH_auto_pc_0/LED_CH_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==LED_CH_auto_pc_0 || ORIG_REF_NAME==LED_CH_auto_pc_0} -quiet] -quiet
 
-# XDC: /home/silicon/Desktop/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/LED_CH_ooc.xdc
+# XDC: /home/pct/Caribou/MPW4/LED_CH/LED_CH.gen/sources_1/bd/LED_CH/LED_CH_ooc.xdc

@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "/home/silicon/Desktop/MPW4/LED_CH/LED_CH.runs/impl_1/LED_CH_wrapper.tcl"
+  variable script "/home/pct/Caribou/MPW4/LED_CH/LED_CH.runs/impl_1/LED_CH_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -130,8 +130,8 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 4
-  set_param runs.launchOptions { -jobs 6  }
+  set_param chipscope.maxJobs 2
+  set_param runs.launchOptions { -jobs 8  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xczu9eg-ffvb1156-2-e
   set_property board_part xilinx.com:zcu102:part0:3.4 [current_project]
@@ -139,22 +139,22 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir /home/silicon/Desktop/MPW4/LED_CH/LED_CH.cache/wt [current_project]
-  set_property parent.project_path /home/silicon/Desktop/MPW4/LED_CH/LED_CH.xpr [current_project]
-  set_property ip_repo_paths /home/silicon/Desktop/MPW4/ip_repo [current_project]
+  set_property webtalk.parent_dir /home/pct/Caribou/MPW4/LED_CH/LED_CH.cache/wt [current_project]
+  set_property parent.project_path /home/pct/Caribou/MPW4/LED_CH/LED_CH.xpr [current_project]
+  set_property ip_repo_paths /home/pct/Caribou/MPW4/ip_repo [current_project]
   update_ip_catalog
-  set_property ip_output_repo /home/silicon/Desktop/MPW4/LED_CH/LED_CH.cache/ip [current_project]
+  set_property ip_output_repo /home/pct/Caribou/MPW4/LED_CH/LED_CH.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet /home/silicon/Desktop/MPW4/LED_CH/LED_CH.runs/synth_1/LED_CH_wrapper.dcp
+  add_files -quiet /home/pct/Caribou/MPW4/LED_CH/LED_CH.runs/synth_1/LED_CH_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/silicon/Desktop/MPW4/LED_CH/LED_CH.srcs/sources_1/bd/LED_CH/LED_CH.bd
+  add_files /home/pct/Caribou/MPW4/LED_CH/LED_CH.srcs/sources_1/bd/LED_CH/LED_CH.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/silicon/Desktop/MPW4/LED_CH/LED_CH.srcs/constrs_1/new/Pins.xdc
+  read_xdc /home/pct/Caribou/MPW4/LED_CH/LED_CH.srcs/constrs_1/new/Pins.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
