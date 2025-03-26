@@ -18,7 +18,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>3cf45f53</spirit:value>
+            <spirit:value>b6d41ff3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -34,7 +34,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>3cf45f53</spirit:value>
+            <spirit:value>b6d41ff3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -216,12 +216,12 @@
       </xilinx:taxonomies>
       <xilinx:displayName>led_blink_CH</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-03-25T08:49:25Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2025-03-26T15:05:18Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2023.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="06d0743e"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1ccb8ea9"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="5b4d9aa0"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="945dc711"/>
     </xilinx:packagingInfo>

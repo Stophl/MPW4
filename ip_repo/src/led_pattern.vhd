@@ -12,14 +12,14 @@ entity led_pattern is
 end led_pattern;
 
 architecture Behavioral of led_pattern is
-    signal counter   : unsigned(27 downto 0) := (others => '0');
+    signal counter   : unsigned(20 downto 0) := (others => '0');
     signal led_reg   : std_logic_vector(7 downto 0) := "00000000";
 begin
 
     process(clk)
     begin
         if rising_edge(clk) then
-            if arstn = '1' then
+            if arstn = '0' then
                 counter  <= (others => '0');
                 led_reg  <= (others => '0');
             else
