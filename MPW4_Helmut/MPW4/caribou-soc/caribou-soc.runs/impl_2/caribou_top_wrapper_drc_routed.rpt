@@ -1,0 +1,101 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Mon Mar 24 14:08:46 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : report_drc -file caribou_top_wrapper_drc_routed.rpt -pb caribou_top_wrapper_drc_routed.pb -rpx caribou_top_wrapper_drc_routed.rpx
+| Design       : caribou_top_wrapper
+| Device       : xc7z045ffg900-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 12
++-----------+----------+--------------------------+------------+
+| Rule      | Severity | Description              | Violations |
++-----------+----------+--------------------------+------------+
+| BUFC-1    | Warning  | Input Buffer Connections | 4          |
+| RTSTAT-10 | Warning  | No routable loads        | 1          |
+| UTLZ-3    | Warning  | Resource utilization     | 7          |
++-----------+----------+--------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+BUFC-1#1 Warning
+Input Buffer Connections  
+Input buffer Deser_inst/IBUFDS_DIFF_OUT_SIN/IBUFDS_0 (in Deser_inst/IBUFDS_DIFF_OUT_SIN macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#2 Warning
+Input Buffer Connections  
+Input buffer Deser_inst/IBUFDS_DIFF_OUT_SIN1/IBUFDS_0 (in Deser_inst/IBUFDS_DIFF_OUT_SIN1 macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#3 Warning
+Input Buffer Connections  
+Input buffer IBUFDS_inst_TLU_RST_in/IBUFDS_0 (in IBUFDS_inst_TLU_RST_in macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#4 Warning
+Input Buffer Connections  
+Input buffer IBUFDS_inst_TLU_TRG_in/IBUFDS_0 (in IBUFDS_inst_TLU_TRG_in macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+4 net(s) have no routable loads. The problem bus(es) and/or net(s) are DATA_FIFO_inst1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i,
+DATA_FIFO_inst1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb,
+DATA_FIFO_inst1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i
+DATA_FIFO_inst1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i.
+Related violations: <none>
+
+UTLZ-3#1 Warning
+Resource utilization  - PBlock:GBE_arp_ping_UDP
+FIFO18 over-utilized in Pblock GBE_arp_ping_UDP (This design requires more FIFO18 cells than are available in Pblock 'GBE_arp_ping_UDP'. This design requires 1 of such cell types but no compatible site is available in Pblock 'GBE_arp_ping_UDP'. Please consider increasing the span of Pblock 'GBE_arp_ping_UDP' or removing cells from it.)
+Related violations: <none>
+
+UTLZ-3#2 Warning
+Resource utilization  - PBlock:GBE_arp_ping_UDP
+RAMB18 over-utilized in Pblock GBE_arp_ping_UDP (This design requires more RAMB18 cells than are available in Pblock 'GBE_arp_ping_UDP'. This design requires 1 of such cell types but no compatible site is available in Pblock 'GBE_arp_ping_UDP'. Please consider increasing the span of Pblock 'GBE_arp_ping_UDP' or removing cells from it.)
+Related violations: <none>
+
+UTLZ-3#3 Warning
+Resource utilization  - PBlock:DECODE
+RAMB36/FIFO over-utilized in Pblock DECODE (This design requires more RAMB36/FIFO cells than are available in Pblock 'DECODE'. This design requires 2 of such cell types but no compatible site is available in Pblock 'DECODE'. Please consider increasing the span of Pblock 'DECODE' or removing cells from it.)
+Related violations: <none>
+
+UTLZ-3#4 Warning
+Resource utilization  - PBlock:DECODE1
+RAMB36/FIFO over-utilized in Pblock DECODE1 (This design requires more RAMB36/FIFO cells than are available in Pblock 'DECODE1'. This design requires 2 of such cell types but no compatible site is available in Pblock 'DECODE1'. Please consider increasing the span of Pblock 'DECODE1' or removing cells from it.)
+Related violations: <none>
+
+UTLZ-3#5 Warning
+Resource utilization  - PBlock:GBE_arp_ping_UDP
+RAMB36/FIFO over-utilized in Pblock GBE_arp_ping_UDP (This design requires more RAMB36/FIFO cells than are available in Pblock 'GBE_arp_ping_UDP'. This design requires 8 of such cell types but no compatible site is available in Pblock 'GBE_arp_ping_UDP'. Please consider increasing the span of Pblock 'GBE_arp_ping_UDP' or removing cells from it.)
+Related violations: <none>
+
+UTLZ-3#6 Warning
+Resource utilization  - PBlock:GBE_MAC
+Slice over-utilized in Pblock GBE_MAC (This design requires more Slice cells than are available in Pblock 'GBE_MAC'. This design requires 232 of such cell types but only 168 compatible sites are available in Pblock 'GBE_MAC'. Please consider increasing the span of Pblock 'GBE_MAC' or removing cells from it.)
+Related violations: <none>
+
+UTLZ-3#7 Warning
+Resource utilization  - PBlock:GBE_PCS_PMA
+Slice over-utilized in Pblock GBE_PCS_PMA (This design requires more Slice cells than are available in Pblock 'GBE_PCS_PMA'. This design requires 195 of such cell types but only 168 compatible sites are available in Pblock 'GBE_PCS_PMA'. Please consider increasing the span of Pblock 'GBE_PCS_PMA' or removing cells from it.)
+Related violations: <none>
+
+

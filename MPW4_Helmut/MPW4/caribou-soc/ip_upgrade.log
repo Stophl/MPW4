@@ -1,0 +1,1051 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:50 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'tri_mode_ethernet_mac_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of tri_mode_ethernet_mac_1 (xilinx.com:ip:tri_mode_ethernet_mac:9.0) from (Rev. 13) to (Rev. 29)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:50 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'transmit_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of transmit_fifo (xilinx.com:ip:fifo_generator:13.2) from (Rev. 3) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:49 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'gig_ethernet_pcs_pma_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of gig_ethernet_pcs_pma_1 from xilinx.com:ip:gig_ethernet_pcs_pma:16.1 (Rev. 5) to xilinx.com:ip:gig_ethernet_pcs_pma:16.2 (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:49 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_generator_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fifo_generator_1 (xilinx.com:ip:fifo_generator:13.2) from (Rev. 3) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:48 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_generator_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fifo_generator_0 (xilinx.com:ip:fifo_generator:13.2) from (Rev. 3) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:48 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_ADC_TLU_hist'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fifo_ADC_TLU_hist (xilinx.com:ip:fifo_generator:13.2) from (Rev. 3) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:47 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'data_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of data_fifo (xilinx.com:ip:fifo_generator:13.2) from (Rev. 3) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:47 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clock_domain_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of clock_domain_fifo (xilinx.com:ip:fifo_generator:13.2) from (Rev. 3) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:46 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of clk_wiz_0 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 2) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:46 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_div'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of clk_div (xilinx.com:ip:clk_wiz:6.0) from (Rev. 2) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:45 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_xlconcat_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_xlconcat_1_0 (xilinx.com:ip:xlconcat:2.1) from (Rev. 1) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:45 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_rst_ps7_0_100M_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_rst_ps7_0_100M_0 (xilinx.com:ip:proc_sys_reset:5.0) from (Rev. 13) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:44 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_ps7_0_axi_periph_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_ps7_0_axi_periph_1 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 19) to (Rev. 30)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:44 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_processing_system7_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of caribou_top_processing_system7_0_0 (xilinx.com:ip:processing_system7:5.5 (Rev. 6)) to current project options.
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter PCW_TRACE_INTERNAL_WIDTH with default value 32 : a parameter called PCW_TRACE_INTERNAL_WIDTH already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_USE_AXI_NONSECURE with default value 0 : a parameter called PCW_USE_AXI_NONSECURE already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP0_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP0_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP1_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP1_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP0_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP1_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:44 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_axi_iic_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_axi_iic_0_1 from xilinx.com:ip:axi_iic:2.0 (Rev. 21) to xilinx.com:ip:axi_iic:2.1 (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:44 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_axi_iic_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_axi_iic_0_0 from xilinx.com:ip:axi_iic:2.0 (Rev. 21) to xilinx.com:ip:axi_iic:2.1 (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:44 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_axi_gpio_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_axi_gpio_3_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 20) to (Rev. 31)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:44 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_axi_gpio_2_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_axi_gpio_2_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 20) to (Rev. 31)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:44 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_axi_gpio_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_axi_gpio_0_1 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 20) to (Rev. 31)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:44 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_axi_gpio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 20) to (Rev. 31)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:44 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_axi_fifo_mm_s_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_axi_fifo_mm_s_1_0 from xilinx.com:ip:axi_fifo_mm_s:4.2 to xilinx.com:ip:axi_fifo_mm_s:4.3 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:44 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_axi_fifo_mm_s_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_axi_fifo_mm_s_0_1 from xilinx.com:ip:axi_fifo_mm_s:4.2 to xilinx.com:ip:axi_fifo_mm_s:4.3 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:37 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'WBC_RBC_FIFO'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of WBC_RBC_FIFO (xilinx.com:ip:fifo_generator:13.2) from (Rev. 3) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:37 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PLL_40MHz_to_640MHz'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PLL_40MHz_to_640MHz (xilinx.com:ip:clk_wiz:6.0) from (Rev. 2) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:36 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PLL_40MHz_to_320MHz'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PLL_40MHz_to_320MHz (xilinx.com:ip:clk_wiz:6.0) from (Rev. 2) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:35 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PLL_20MHz_to_320MHz'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PLL_20MHz_to_320MHz (xilinx.com:ip:clk_wiz:6.0) from (Rev. 2) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:31 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'GBE_rx_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of GBE_rx_fifo (xilinx.com:ip:fifo_generator:13.2) from (Rev. 3) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Mar 19 13:55:30 2025
+| Host         : Caribou-VM-HEPHY running 64-bit Rocky Linux release 8.9 (Green Obsidian)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ADC_clk_domain_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ADC_clk_domain_fifo (xilinx.com:ip:fifo_generator:13.2) from (Rev. 3) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Oct 28 09:45:45 2019
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of clk_wiz_0 from xilinx.com:ip:clk_wiz:5.4 (Rev. 2) to xilinx.com:ip:clk_wiz:6.0 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Oct 28 09:44:39 2019
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_serial_data_stream'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_serial_data_stream (xilinx.com:ip:ila:6.2) from (Rev. 4) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Oct 28 09:44:00 2019
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_rst_ps7_0_100M_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_rst_ps7_0_100M_0 (xilinx.com:ip:proc_sys_reset:5.0) from (Rev. 12) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Oct 28 09:44:00 2019
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_ps7_0_axi_periph_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_ps7_0_axi_periph_1 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 15) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Oct 28 09:44:00 2019
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_axi_iic_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_axi_iic_0_0 (xilinx.com:ip:axi_iic:2.0) from (Rev. 17) to (Rev. 21)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Oct 28 09:44:00 2019
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_axi_fifo_mm_s_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_axi_fifo_mm_s_1_0 from xilinx.com:ip:axi_fifo_mm_s:4.1 (Rev. 11) to xilinx.com:ip:axi_fifo_mm_s:4.2
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_TX_FIFO_PE_THRESHOLD to value 5 (source 'default')
+Set parameter C_RX_FIFO_PE_THRESHOLD to value 5 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Oct 28 09:44:00 2019
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_axi_fifo_mm_s_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_axi_fifo_mm_s_0_1 from xilinx.com:ip:axi_fifo_mm_s:4.1 (Rev. 11) to xilinx.com:ip:axi_fifo_mm_s:4.2
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_TX_FIFO_PE_THRESHOLD to value 5 (source 'default')
+Set parameter C_RX_FIFO_PE_THRESHOLD to value 5 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Tue Sep  4 13:06:47 2018
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_control_register_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_control_register_0_0 (xilinx.com:user:control_register:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Tue Sep  4 11:24:23 2018
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_control_register_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_control_register_0_0 (xilinx.com:user:control_register:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Mon Sep  3 15:42:27 2018
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_control_register_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_control_register_0_0 (xilinx.com:user:control_register:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Mon Sep  3 15:30:21 2018
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_control_register_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of caribou_top_control_register_0_0 (xilinx.com:user:control_register:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'caribou_top_control_register_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'ctrl_reg_out'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Wed May 30 14:56:15 2018
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_Caribou_control_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_Caribou_control_0_1 (CERN:user:Caribou_control:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Wed May 30 13:53:07 2018
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_CLICpix2_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_CLICpix2_0_2 (user.org:user:CLICpix2:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Thu May 17 13:37:32 2018
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_my_multiplier_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of caribou_top_my_multiplier_0_0 (xilinx.com:user:my_multiplier:1.0) from (Rev. 3) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'caribou_top_my_multiplier_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'LED_out'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Thu May 17 11:33:49 2018
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_my_multiplier_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_my_multiplier_0_0 (xilinx.com:user:my_multiplier:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Wed May 16 14:58:27 2018
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_CLICpix2_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_CLICpix2_0_2 (user.org:user:CLICpix2:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Wed May 16 14:36:27 2018
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_CLICpix2_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_CLICpix2_0_2 (user.org:user:CLICpix2:1.0) from (Rev. 4) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Wed May 16 14:28:44 2018
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_CLICpix2_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_CLICpix2_0_2 (user.org:user:CLICpix2:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Wed May 16 14:00:59 2018
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_CLICpix2_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of caribou_top_CLICpix2_0_2 (user.org:user:CLICpix2:1.0 (Rev. 3)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Wed May 16 13:36:16 2018
+| Host         : steining-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'caribou_top_CLICpix2_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of caribou_top_CLICpix2_0_2 (user.org:user:CLICpix2:1.0) from (Rev. 2) to (Rev. 3)
+

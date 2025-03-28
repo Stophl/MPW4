@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Mar 24 09:31:53 2025
+# Process ID: 3100299
+# Current directory: /home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/GBE_rx_fifo_synth_1
+# Command line: vivado -log GBE_rx_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source GBE_rx_fifo.tcl
+# Log file: /home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/GBE_rx_fifo_synth_1/GBE_rx_fifo.vds
+# Journal file: /home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/GBE_rx_fifo_synth_1/vivado.jou
+# Running On: Caribou-VM-HEPHY, OS: Linux, CPU Frequency: 3249.996 MHz, CPU Physical cores: 8, Host memory: 66951 MB
+#-----------------------------------------------------------
+source GBE_rx_fifo.tcl -notrace

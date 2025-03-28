@@ -1,0 +1,1248 @@
+
+*** Running vivado
+    with args -log caribou_top_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source caribou_top_wrapper.tcl -notrace
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source caribou_top_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1570.648 ; gain = 38.828 ; free physical = 43630 ; free virtual = 60093
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/pct/Caribou/MPW4_Helmut/MPW3/ip_repo/control_register_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/pct/Caribou/MPW4_Helmut/MPW3/ip-repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/pct/Caribou/vivado/Vivado/2023.2/data/ip'.
+Command: link_design -top caribou_top_wrapper -part xc7z045ffg900-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clock_domain_fifo/clock_domain_fifo.dcp' for cell 'AXI_straem1_inst'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/data_fifo/data_fifo.dcp' for cell 'DATA_FIFO_inst1'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clk_div/clk_div.dcp' for cell 'PLL2_inst'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'PLL_clk_main'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/PLL_40MHz_to_640MHz/PLL_40MHz_to_640MHz.dcp' for cell 'TLU_CLK_PLL_inst'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1.dcp' for cell 'UDP_FIFO_base'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/transmit_fifo_1/transmit_fifo.dcp' for cell 'Deser_inst/DATA_FIFO_MPW3_decode/DATA_FIFO_MPW3_decode'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/gig_ethernet_pcs_pma_1/gig_ethernet_pcs_pma_1.dcp' for cell 'GBE_inst/U0'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/tri_mode_ethernet_mac_1.dcp' for cell 'GBE_inst/U1'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/GBE_rx_fifo/GBE_rx_fifo.dcp' for cell 'GBE_inst/receive_fifo_inst'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'GBE_inst/transmit_fifo_inst'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_fifo_mm_s_0_1/caribou_top_axi_fifo_mm_s_0_1.dcp' for cell 'caribou_top_i/axi_fifo_mm_s_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_fifo_mm_s_1_0/caribou_top_axi_fifo_mm_s_1_0.dcp' for cell 'caribou_top_i/axi_fifo_mm_s_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_0_0/caribou_top_axi_gpio_0_0.dcp' for cell 'caribou_top_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_0_1/caribou_top_axi_gpio_0_1.dcp' for cell 'caribou_top_i/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_2_0/caribou_top_axi_gpio_2_0.dcp' for cell 'caribou_top_i/axi_gpio_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_3_0/caribou_top_axi_gpio_3_0.dcp' for cell 'caribou_top_i/axi_gpio_3'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_4_0/caribou_top_axi_gpio_4_0.dcp' for cell 'caribou_top_i/axi_gpio_4'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_5_0/caribou_top_axi_gpio_5_0.dcp' for cell 'caribou_top_i/axi_gpio_5'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_6_0/caribou_top_axi_gpio_6_0.dcp' for cell 'caribou_top_i/axi_gpio_6'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_7_0/caribou_top_axi_gpio_7_0.dcp' for cell 'caribou_top_i/axi_gpio_7'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_8_0/caribou_top_axi_gpio_8_0.dcp' for cell 'caribou_top_i/axi_gpio_8'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_iic_0_0/caribou_top_axi_iic_0_0.dcp' for cell 'caribou_top_i/axi_iic_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_iic_0_1/caribou_top_axi_iic_0_1.dcp' for cell 'caribou_top_i/axi_iic_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_register_array_v_0_0/caribou_top_axi_register_array_v_0_0.dcp' for cell 'caribou_top_i/axi_register_array_v_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_processing_system7_0_0/caribou_top_processing_system7_0_0.dcp' for cell 'caribou_top_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_rst_ps7_0_100M_0/caribou_top_rst_ps7_0_100M_0.dcp' for cell 'caribou_top_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_xbar_0/caribou_top_xbar_0.dcp' for cell 'caribou_top_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_auto_pc_0_1/caribou_top_auto_pc_0.dcp' for cell 'caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_auto_pc_1/caribou_top_auto_pc_1.dcp' for cell 'caribou_top_i/ps7_0_axi_periph/m02_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_auto_pc_2/caribou_top_auto_pc_2.dcp' for cell 'caribou_top_i/ps7_0_axi_periph/m03_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_auto_pc_3/caribou_top_auto_pc_3.dcp' for cell 'caribou_top_i/ps7_0_axi_periph/m04_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_auto_pc_4/caribou_top_auto_pc_4.dcp' for cell 'caribou_top_i/ps7_0_axi_periph/m05_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_auto_pc_5/caribou_top_auto_pc_5.dcp' for cell 'caribou_top_i/ps7_0_axi_periph/m06_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_auto_pc_6/caribou_top_auto_pc_6.dcp' for cell 'caribou_top_i/ps7_0_axi_periph/m07_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_auto_pc_7/caribou_top_auto_pc_7.dcp' for cell 'caribou_top_i/ps7_0_axi_periph/m08_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_auto_pc_8/caribou_top_auto_pc_8.dcp' for cell 'caribou_top_i/ps7_0_axi_periph/m09_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_auto_pc_9/caribou_top_auto_pc_9.dcp' for cell 'caribou_top_i/ps7_0_axi_periph/m10_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_auto_pc_10/caribou_top_auto_pc_10.dcp' for cell 'caribou_top_i/ps7_0_axi_periph/m11_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_auto_pc_11/caribou_top_auto_pc_11.dcp' for cell 'caribou_top_i/ps7_0_axi_periph/m12_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_auto_pc_12/caribou_top_auto_pc_12.dcp' for cell 'caribou_top_i/ps7_0_axi_periph/m13_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_auto_pc_13/caribou_top_auto_pc_13.dcp' for cell 'caribou_top_i/ps7_0_axi_periph/m14_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_auto_pc_14/caribou_top_auto_pc_14.dcp' for cell 'caribou_top_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:00.41 . Memory (MB): peak = 2174.242 ; gain = 4.000 ; free physical = 43019 ; free virtual = 59481
+INFO: [Netlist 29-17] Analyzing 4171 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. PLL_clk_main/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. TLU_CLK_PLL_inst/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. TLU_CLK_PLL_inst/inst/clkin2_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'PLL_clk_main/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'TLU_CLK_PLL_inst/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'TLU_CLK_PLL_inst/clk_in2' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/transmit_fifo_1/transmit_fifo.xdc] for cell 'Deser_inst/DATA_FIFO_MPW3_decode/DATA_FIFO_MPW3_decode/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/transmit_fifo_1/transmit_fifo.xdc] for cell 'Deser_inst/DATA_FIFO_MPW3_decode/DATA_FIFO_MPW3_decode/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/transmit_fifo_1/transmit_fifo.xdc] for cell 'Deser_inst/DATA_FIFO_MPW3_decode1/DATA_FIFO_MPW3_decode/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/transmit_fifo_1/transmit_fifo.xdc] for cell 'Deser_inst/DATA_FIFO_MPW3_decode1/DATA_FIFO_MPW3_decode/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_7_0/caribou_top_axi_gpio_7_0.xdc] for cell 'caribou_top_i/axi_gpio_7/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_7_0/caribou_top_axi_gpio_7_0.xdc] for cell 'caribou_top_i/axi_gpio_7/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_8_0/caribou_top_axi_gpio_8_0_board.xdc] for cell 'caribou_top_i/axi_gpio_8/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_8_0/caribou_top_axi_gpio_8_0_board.xdc] for cell 'caribou_top_i/axi_gpio_8/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_8_0/caribou_top_axi_gpio_8_0.xdc] for cell 'caribou_top_i/axi_gpio_8/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_8_0/caribou_top_axi_gpio_8_0.xdc] for cell 'caribou_top_i/axi_gpio_8/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/gig_ethernet_pcs_pma_1/gig_ethernet_pcs_pma_1_board.xdc] for cell 'GBE_inst/U0/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/gig_ethernet_pcs_pma_1/gig_ethernet_pcs_pma_1_board.xdc] for cell 'GBE_inst/U0/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1.xdc] for cell 'GBE_inst/U0/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1.xdc] for cell 'GBE_inst/U0/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1_board.xdc] for cell 'GBE_inst/U1/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1_board.xdc] for cell 'GBE_inst/U1/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1.xdc] for cell 'GBE_inst/U1/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1.xdc] for cell 'GBE_inst/U1/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'UDP_FIFO_base/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'UDP_FIFO_base/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'UDP_FIFO_piggy/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'UDP_FIFO_piggy/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clock_domain_fifo/clock_domain_fifo.xdc] for cell 'AXI_straem1_inst/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clock_domain_fifo/clock_domain_fifo.xdc] for cell 'AXI_straem1_inst/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clock_domain_fifo/clock_domain_fifo.xdc] for cell 'AXI_straem_inst/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clock_domain_fifo/clock_domain_fifo.xdc] for cell 'AXI_straem_inst/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_7_0/caribou_top_axi_gpio_7_0_board.xdc] for cell 'caribou_top_i/axi_gpio_7/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_7_0/caribou_top_axi_gpio_7_0_board.xdc] for cell 'caribou_top_i/axi_gpio_7/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/data_fifo/data_fifo.xdc] for cell 'DATA_FIFO_inst1/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/data_fifo/data_fifo.xdc] for cell 'DATA_FIFO_inst1/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clk_div/clk_div_board.xdc] for cell 'PLL2_inst/inst'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clk_div/clk_div_board.xdc] for cell 'PLL2_inst/inst'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clk_div/clk_div.xdc] for cell 'PLL2_inst/inst'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clk_div/clk_div.xdc] for cell 'PLL2_inst/inst'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/PLL_40MHz_to_640MHz/PLL_40MHz_to_640MHz_board.xdc] for cell 'TLU_CLK_PLL_inst/inst'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/PLL_40MHz_to_640MHz/PLL_40MHz_to_640MHz_board.xdc] for cell 'TLU_CLK_PLL_inst/inst'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/PLL_40MHz_to_640MHz/PLL_40MHz_to_640MHz.xdc] for cell 'TLU_CLK_PLL_inst/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/PLL_40MHz_to_640MHz/PLL_40MHz_to_640MHz.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/PLL_40MHz_to_640MHz/PLL_40MHz_to_640MHz.xdc:54]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3087.051 ; gain = 666.844 ; free physical = 42275 ; free virtual = 58737
+INFO: [Timing 38-2] Deriving generated clocks [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/PLL_40MHz_to_640MHz/PLL_40MHz_to_640MHz.xdc:57]
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/PLL_40MHz_to_640MHz/PLL_40MHz_to_640MHz.xdc] for cell 'TLU_CLK_PLL_inst/inst'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'PLL_clk_main/inst'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'PLL_clk_main/inst'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'PLL_clk_main/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:54]
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'PLL_clk_main/inst'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'GBE_inst/transmit_fifo_inst/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'GBE_inst/transmit_fifo_inst/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/GBE_rx_fifo/GBE_rx_fifo.xdc] for cell 'GBE_inst/receive_fifo_inst/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/GBE_rx_fifo/GBE_rx_fifo.xdc] for cell 'GBE_inst/receive_fifo_inst/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_3_0/caribou_top_axi_gpio_3_0_board.xdc] for cell 'caribou_top_i/axi_gpio_3/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_3_0/caribou_top_axi_gpio_3_0_board.xdc] for cell 'caribou_top_i/axi_gpio_3/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_rst_ps7_0_100M_0/caribou_top_rst_ps7_0_100M_0_board.xdc] for cell 'caribou_top_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_rst_ps7_0_100M_0/caribou_top_rst_ps7_0_100M_0_board.xdc] for cell 'caribou_top_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_rst_ps7_0_100M_0/caribou_top_rst_ps7_0_100M_0.xdc] for cell 'caribou_top_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_rst_ps7_0_100M_0/caribou_top_rst_ps7_0_100M_0.xdc] for cell 'caribou_top_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_iic_0_0/caribou_top_axi_iic_0_0_board.xdc] for cell 'caribou_top_i/axi_iic_0/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_iic_0_0/caribou_top_axi_iic_0_0_board.xdc] for cell 'caribou_top_i/axi_iic_0/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_0_0/caribou_top_axi_gpio_0_0_board.xdc] for cell 'caribou_top_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_0_0/caribou_top_axi_gpio_0_0_board.xdc] for cell 'caribou_top_i/axi_gpio_0/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_0_0/caribou_top_axi_gpio_0_0.xdc] for cell 'caribou_top_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_0_0/caribou_top_axi_gpio_0_0.xdc] for cell 'caribou_top_i/axi_gpio_0/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_0_1/caribou_top_axi_gpio_0_1_board.xdc] for cell 'caribou_top_i/axi_gpio_1/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_0_1/caribou_top_axi_gpio_0_1_board.xdc] for cell 'caribou_top_i/axi_gpio_1/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_0_1/caribou_top_axi_gpio_0_1.xdc] for cell 'caribou_top_i/axi_gpio_1/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_0_1/caribou_top_axi_gpio_0_1.xdc] for cell 'caribou_top_i/axi_gpio_1/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_2_0/caribou_top_axi_gpio_2_0_board.xdc] for cell 'caribou_top_i/axi_gpio_2/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_2_0/caribou_top_axi_gpio_2_0_board.xdc] for cell 'caribou_top_i/axi_gpio_2/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_2_0/caribou_top_axi_gpio_2_0.xdc] for cell 'caribou_top_i/axi_gpio_2/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_2_0/caribou_top_axi_gpio_2_0.xdc] for cell 'caribou_top_i/axi_gpio_2/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_processing_system7_0_0/caribou_top_processing_system7_0_0.xdc] for cell 'caribou_top_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_processing_system7_0_0/caribou_top_processing_system7_0_0.xdc] for cell 'caribou_top_i/processing_system7_0/inst'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_3_0/caribou_top_axi_gpio_3_0.xdc] for cell 'caribou_top_i/axi_gpio_3/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_3_0/caribou_top_axi_gpio_3_0.xdc] for cell 'caribou_top_i/axi_gpio_3/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_iic_0_1/caribou_top_axi_iic_0_1_board.xdc] for cell 'caribou_top_i/axi_iic_1/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_iic_0_1/caribou_top_axi_iic_0_1_board.xdc] for cell 'caribou_top_i/axi_iic_1/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_4_0/caribou_top_axi_gpio_4_0_board.xdc] for cell 'caribou_top_i/axi_gpio_4/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_4_0/caribou_top_axi_gpio_4_0_board.xdc] for cell 'caribou_top_i/axi_gpio_4/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_4_0/caribou_top_axi_gpio_4_0.xdc] for cell 'caribou_top_i/axi_gpio_4/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_4_0/caribou_top_axi_gpio_4_0.xdc] for cell 'caribou_top_i/axi_gpio_4/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_5_0/caribou_top_axi_gpio_5_0_board.xdc] for cell 'caribou_top_i/axi_gpio_5/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_5_0/caribou_top_axi_gpio_5_0_board.xdc] for cell 'caribou_top_i/axi_gpio_5/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_5_0/caribou_top_axi_gpio_5_0.xdc] for cell 'caribou_top_i/axi_gpio_5/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_5_0/caribou_top_axi_gpio_5_0.xdc] for cell 'caribou_top_i/axi_gpio_5/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_6_0/caribou_top_axi_gpio_6_0_board.xdc] for cell 'caribou_top_i/axi_gpio_6/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_6_0/caribou_top_axi_gpio_6_0_board.xdc] for cell 'caribou_top_i/axi_gpio_6/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_6_0/caribou_top_axi_gpio_6_0.xdc] for cell 'caribou_top_i/axi_gpio_6/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/bd/caribou_top/ip/caribou_top_axi_gpio_6_0/caribou_top_axi_gpio_6_0.xdc] for cell 'caribou_top_i/axi_gpio_6/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/imports/sources/pin_assignment.xdc]
+WARNING: [Vivado 12-508] No pins matched 'caribou_top_i/control_register_2/U0/control_register_v1_0_S00_AXI_inst/inst_control_reg_0/control_reg_out_reg[28]/C'. [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/imports/sources/pin_assignment.xdc:836]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {caribou_top_i/control_register_2/U0/control_register_v1_0_S00_AXI_inst/inst_control_reg_0/control_reg_out_reg[28]/C}]'. [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/imports/sources/pin_assignment.xdc:836]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'caribou_top_i/control_register_0/U0/control_register_v1_0_S00_AXI_inst/inst_control_reg_0/control_reg_out_reg[0]/C'. [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/imports/sources/pin_assignment.xdc:842]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {caribou_top_i/control_register_0/U0/control_register_v1_0_S00_AXI_inst/inst_control_reg_0/control_reg_out_reg[0]/C}]'. [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/imports/sources/pin_assignment.xdc:842]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'caribou_top_i/control_register_0/U0/control_register_v1_0_S00_AXI_inst/inst_control_reg_0/control_reg_out_reg[0]/C'. [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/imports/sources/pin_assignment.xdc:843]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {caribou_top_i/control_register_0/U0/control_register_v1_0_S00_AXI_inst/inst_control_reg_0/control_reg_out_reg[0]/C}]'. [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/imports/sources/pin_assignment.xdc:843]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+INFO: [Timing 38-2] Deriving generated clocks [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/imports/sources/pin_assignment.xdc:854]
+WARNING: [Vivado 12-508] No pins matched 'caribou_top_i/control_register_0/U0/control_register_v1_0_S00_AXI_inst/inst_control_reg_0/control_reg_out_reg[28]/C'. [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/imports/sources/pin_assignment.xdc:876]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {caribou_top_i/control_register_0/U0/control_register_v1_0_S00_AXI_inst/inst_control_reg_0/control_reg_out_reg[28]/C}]'. [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/imports/sources/pin_assignment.xdc:876]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/imports/sources/pin_assignment.xdc]
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/imports/sources/timing_constraints.xdc]
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/imports/sources/timing_constraints.xdc]
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X0Y215:SLICE_X3Y216 [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:15]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X0Y231:SLICE_X3Y232 [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:19]
+INFO: [Vivado 12-3520] Assignment of 'GND, VCC, s_frame_40_d_reg, s_frame_40_pedge_i_1, s_frame_40_pedge_p_reg, s_shift_h[2]_i_1, s_frame_40_pedge_reg, s_frame_40_reg, s_shift_h[3]_i_1, s_shift_h[0]_i_1, s_shift_h[1]_i_1, s_shift_h[4]_i_1, s_shift_h_reg[0], s_shift_h_reg[1], s_shift_h_reg[2], s_shift_h_reg[3], s_shift_h_reg[4], s_shift_l[0]_i_1, s_shift_l[1]_i_1, s_shift_l[2]_i_1, s_shift_l[3]_i_1, s_shift_l[4]_i_1, s_shift_l_reg[0], s_shift_l_reg[1], s_shift_l_reg[2], s_shift_l_reg[3], and s_shift_l_reg[4]' to a pblock 'SEROUT' means that all children of 'SEROUT_inst1' are in the pblock. Changing the pblock assignment to 'SEROUT_inst1'. [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:26]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X0Y142:SLICE_X3Y142 [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:28]
+INFO: [Vivado 12-3520] Assignment of 'Encoder8b10b_inst1, FSM_onehot_s_transmit_state[0]_i_1, FSM_onehot_s_transmit_state[4]_i_1, FSM_onehot_s_transmit_state_reg[0], FSM_onehot_s_transmit_state_reg[10], FSM_onehot_s_transmit_state_reg[15], FSM_onehot_s_transmit_state_reg[11], FSM_onehot_s_transmit_state_reg[12], FSM_onehot_s_transmit_state_reg[16], FSM_onehot_s_transmit_state_reg[13], FSM_onehot_s_transmit_state_reg[14], FSM_onehot_s_transmit_state_reg[17], FSM_onehot_s_transmit_state_reg[18], FSM_onehot_s_transmit_state_reg[19], FSM_onehot_s_transmit_state_reg[1], FSM_onehot_s_transmit_state_reg[20], FSM_onehot_s_transmit_state_reg[21], FSM_onehot_s_transmit_state_reg[22], FSM_onehot_s_transmit_state_reg[23], FSM_onehot_s_transmit_state_reg[24], FSM_onehot_s_transmit_state_reg[25], FSM_onehot_s_transmit_state_reg[26], FSM_onehot_s_transmit_state_reg[27], FSM_onehot_s_transmit_state_reg[28], FSM_onehot_s_transmit_state_reg[29], FSM_onehot_s_transmit_state_reg[2], FSM_onehot_s_transmit_state_reg[30], FSM_onehot_s_transmit_state_reg[31], FSM_onehot_s_transmit_state_reg[32], FSM_onehot_s_transmit_state_reg[33], FSM_onehot_s_transmit_state_reg[34], FSM_onehot_s_transmit_state_reg[35], FSM_onehot_s_transmit_state_reg[36], FSM_onehot_s_transmit_state_reg[37], FSM_onehot_s_transmit_state_reg[38], FSM_onehot_s_transmit_state_reg[39], FSM_onehot_s_transmit_state_reg[3], FSM_onehot_s_transmit_state_reg[4], FSM_onehot_s_transmit_state_reg[5], FSM_onehot_s_transmit_state_reg[6], FSM_onehot_s_transmit_state_reg[7], FSM_onehot_s_transmit_state_reg[8], FSM_onehot_s_transmit_state_reg[9], GND, Q_10b_o_reg[0], Q_10b_o_reg[1], Q_10b_o_reg[2], Q_10b_o_reg[3], Q_10b_o_reg[4], Q_10b_o_reg[5], Q_10b_o_reg[6], Q_10b_o_reg[7], Q_10b_o_reg[8], Q_10b_o_reg[9], VCC, s_k_char_o[0]_i_1, s_k_char_o[0]_i_2, s_k_char_o_reg[0], s_start_i_p_reg, s_start_i_pp_reg, s_start_i_pulse_i_1, s_start_i_pulse_reg, s_start_pulse_pppp_reg_srl4, s_start_pulse_pppp_reg_srl4_i_1, s_start_pulse_ppppp_reg, s_to8b10b[0]_i_1, s_to8b10b[0]_i_2, s_to8b10b[0]_i_3, s_to8b10b[1]_i_1, s_to8b10b[1]_i_2, s_to8b10b[1]_i_3, s_to8b10b[1]_i_4, s_to8b10b[1]_i_5, s_to8b10b[2]_i_1, s_to8b10b[2]_i_2, s_to8b10b[2]_i_3, s_to8b10b[3]_i_1, s_to8b10b[3]_i_2, s_to8b10b[3]_i_3, s_to8b10b[4]_i_1, s_to8b10b[4]_i_2, s_to8b10b[4]_i_3, s_to8b10b[4]_i_4, s_to8b10b[5]_i_1, s_to8b10b[5]_i_2, s_to8b10b[6]_i_1, s_to8b10b[7]_i_1, s_to8b10b[7]_i_10, s_to8b10b[7]_i_2, s_to8b10b[7]_i_3, s_to8b10b[7]_i_4, s_to8b10b[7]_i_5, s_to8b10b[7]_i_6, s_to8b10b[7]_i_7, s_to8b10b[7]_i_8, s_to8b10b[7]_i_9, s_to8b10b_reg[0], s_to8b10b_reg[1], s_to8b10b_reg[2], s_to8b10b_reg[3], s_to8b10b_reg[4], s_to8b10b_reg[5], s_to8b10b_reg[6], and s_to8b10b_reg[7]' to a pblock 'TRANSMIT' means that all children of 'SOUT_testpattern_sm_inst1' are in the pblock. Changing the pblock assignment to 'SOUT_testpattern_sm_inst1'. [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:32]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X4Y140:SLICE_X11Y142 [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:34]
+INFO: [Vivado 12-3520] Assignment of 's_shift_l_reg[3], s_frame_40_pedge_ppp_reg, Qh_reg[4], Q_reg[4], s_frame_40_pedge_pppp_reg, s_frame_40_reg, s_shift_h_reg[0], s_shift_h_reg[1], s_shift_h_reg[4], Ql_reg[4], VCC, s_frame_40_d_reg, s_frame_40_pedge_i_1, s_frame_40_pedge_p_reg, s_frame_40_pedge_pp_reg, Qh_reg[2], Q_reg[8], Qh_reg[1], s_shift_l_reg[2], s_shift_l_reg[0], s_shift_l_reg[1], Q_reg[3], Q_reg[5], Q_reg[9], Q_reg[6], Q_reg[7], Qh[4]_i_1, Qh[4]_i_2, Qh_reg[3], s_frame_40_pedge_reg, Ql_reg[3], Ql_reg[0], Ql_reg[1], Ql_reg[2], s_shift_h_reg[3], s_shift_h_reg[2], Qh_reg[0], GND, Q_reg[0], Q_reg[1], Q_reg[2], and s_shift_l_reg[4]' to a pblock 'SERIN' means that all children of 'DDR_IN_SHIFT_inst' are in the pblock. Changing the pblock assignment to 'DDR_IN_SHIFT_inst'. [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:42]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X0Y107:SLICE_X3Y108 [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:44]
+INFO: [Vivado 12-3520] Assignment of 'dataout_reg[1], dataout_reg[2], dataout_reg[3], dataout_reg[4], dataout_reg[5], dataout_reg[6], dataout_reg[7], disp_err_i_1, disp_err_i_2, disp_err_i_3, disp_err_i_4, disp_err_i_5, disp_err_i_6, disp_err_i_7, disp_err_reg, dispin_i_1, dispin_i_2, dispin_i_3, dispin_i_4, dispin_i_5, dispin_reg, code_err_i_1, code_err_i_10, code_err_i_2, code_err_i_3, code_err_i_4, code_err_i_9, code_err_i_5, code_err_i_6, code_err_reg, code_err_i_7, code_err_i_8, dataout[0]_i_1, dataout[1]_i_1, dataout[2]_i_1, dataout[3]_i_1, dataout[4]_i_1, dataout[6]_i_1, dataout[7]_i_1, dataout[7]_i_2, dataout_reg[0], ko_i_3, ko_i_1, dataout[5]_i_1, ko_i_4, ko_i_5, ko_reg, ko_i_6, and ko_i_2' to a pblock 'DECODE' means that all children of 'CW_8b10b_dec_inst' are in the pblock. Changing the pblock assignment to 'CW_8b10b_dec_inst'. [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:48]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X4Y106:SLICE_X11Y110 [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:50]
+INFO: [Vivado 12-3520] Assignment of 'Qh_reg[3], Ql_reg[0], Ql_reg[1], GND, Q_reg[0], Q_reg[1], Q_reg[2], Q_reg[3], Q_reg[8], Q_reg[4], Q_reg[5], Q_reg[9], Q_reg[6], Q_reg[7], Qh[4]_i_1, Qh[4]_i_2, Qh_reg[0], Qh_reg[1], Qh_reg[2], Qh_reg[4], Ql_reg[3], Ql_reg[2], Ql_reg[4], VCC, s_frame_40_d_reg, s_frame_40_pedge_i_1, s_frame_40_pedge_p_reg, s_frame_40_pedge_pp_reg, s_frame_40_pedge_ppp_reg, s_frame_40_pedge_pppp_reg, s_frame_40_pedge_reg, s_frame_40_reg, s_shift_h_reg[0], s_shift_h_reg[1], s_shift_h_reg[2], s_shift_h_reg[3], s_shift_h_reg[4], s_shift_l_reg[0], s_shift_l_reg[1], s_shift_l_reg[2], s_shift_l_reg[3], and s_shift_l_reg[4]' to a pblock 'SERIN1' means that all children of 'DDR_IN_SHIFT_inst1' are in the pblock. Changing the pblock assignment to 'DDR_IN_SHIFT_inst1'. [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:60]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X0Y113:SLICE_X3Y114 [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:62]
+INFO: [Vivado 12-3520] Assignment of 'dispin_reg, ko_i_1, ko_i_2, ko_i_3, ko_i_4, ko_i_5, ko_i_6, ko_reg, dataout[0]_i_1, dataout[1]_i_1, dataout[2]_i_1, dataout[3]_i_1, dataout[4]_i_1, dataout[5]_i_1, dataout[6]_i_1, dataout[7]_i_1, dataout[7]_i_2, dataout_reg[0], dataout_reg[1], dataout_reg[2], dataout_reg[3], dataout_reg[4], dataout_reg[5], dataout_reg[6], dataout_reg[7], disp_err_i_1, disp_err_i_2, disp_err_i_3, disp_err_i_4, disp_err_i_5, disp_err_i_6, disp_err_i_7, disp_err_reg, dispin_i_1, dispin_i_2, dispin_i_3, dispin_i_4, dispin_i_5, code_err_i_1, code_err_i_10, code_err_i_2, code_err_i_3, code_err_i_4, code_err_i_9, code_err_i_5, code_err_i_6, code_err_i_7, code_err_i_8, and code_err_reg' to a pblock 'DECODE1' means that all children of 'CW_8b10b_dec_inst1' are in the pblock. Changing the pblock assignment to 'CW_8b10b_dec_inst1'. [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:66]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X4Y112:SLICE_X11Y116 [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:68]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X158Y120:SLICE_X163Y147 [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:75]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X152Y120:SLICE_X157Y147 [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:79]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X124Y120:SLICE_X151Y147 [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc:88]
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/constrs_1/new/location_constraints.xdc]
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1_clocks.xdc] for cell 'GBE_inst/U1/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1_clocks.xdc] for cell 'GBE_inst/U1/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'UDP_FIFO_base/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'UDP_FIFO_base/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'UDP_FIFO_piggy/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'UDP_FIFO_piggy/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clock_domain_fifo/clock_domain_fifo_clocks.xdc] for cell 'AXI_straem1_inst/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clock_domain_fifo/clock_domain_fifo_clocks.xdc] for cell 'AXI_straem1_inst/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clock_domain_fifo/clock_domain_fifo_clocks.xdc] for cell 'AXI_straem_inst/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/clock_domain_fifo/clock_domain_fifo_clocks.xdc] for cell 'AXI_straem_inst/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/transmit_fifo_1/transmit_fifo_clocks.xdc] for cell 'Deser_inst/DATA_FIFO_MPW3_decode/DATA_FIFO_MPW3_decode/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/transmit_fifo_1/transmit_fifo_clocks.xdc] for cell 'Deser_inst/DATA_FIFO_MPW3_decode/DATA_FIFO_MPW3_decode/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/transmit_fifo_1/transmit_fifo_clocks.xdc] for cell 'Deser_inst/DATA_FIFO_MPW3_decode1/DATA_FIFO_MPW3_decode/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/transmit_fifo_1/transmit_fifo_clocks.xdc] for cell 'Deser_inst/DATA_FIFO_MPW3_decode1/DATA_FIFO_MPW3_decode/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'GBE_inst/transmit_fifo_inst/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'GBE_inst/transmit_fifo_inst/U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/GBE_rx_fifo/GBE_rx_fifo_clocks.xdc] for cell 'GBE_inst/receive_fifo_inst/U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/GBE_rx_fifo/GBE_rx_fifo_clocks.xdc] for cell 'GBE_inst/receive_fifo_inst/U0'
+INFO: [Project 1-1714] 6 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 18 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 42279 ; free virtual = 58741
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1809 instances were transformed.
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS(x2)): 2 instances
+  IBUFDS_DIFF_OUT_IBUFDISABLE => IBUFDS_DIFF_OUT_IBUFDISABLE (IBUFDS_IBUFDISABLE_INT(x2)): 3 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 1792 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 8 instances
+
+65 Infos, 23 Warnings, 4 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:26 . Memory (MB): peak = 3577.289 ; gain = 1947.969 ; free physical = 42279 ; free virtual = 58741
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.7 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 42278 ; free virtual = 58740
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 21d9e024d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 42252 ; free virtual = 58714
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 21d9e024d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41964 ; free virtual = 58427
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 21d9e024d
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41964 ; free virtual = 58427
+Phase 1 Initialization | Checksum: 21d9e024d
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41964 ; free virtual = 58427
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 21d9e024d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.64 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41962 ; free virtual = 58424
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 21d9e024d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.74 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41957 ; free virtual = 58419
+Phase 2 Timer Update And Timing Data Collection | Checksum: 21d9e024d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.75 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41957 ; free virtual = 58419
+
+Phase 3 Retarget
+INFO: [Opt 31-1566] Pulled 22 inverters resulting in an inversion of 85 pins
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1661dfe0e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41957 ; free virtual = 58419
+Retarget | Checksum: 1661dfe0e
+INFO: [Opt 31-389] Phase Retarget created 929 cells and removed 1053 cells
+INFO: [Opt 31-1021] In phase Retarget, 21 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 15 inverter(s) to 151 load pin(s).
+Phase 4 Constant propagation | Checksum: f4ab9d76
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41957 ; free virtual = 58419
+Constant propagation | Checksum: f4ab9d76
+INFO: [Opt 31-389] Phase Constant propagation created 686 cells and removed 3688 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 4 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 12e4c93d7
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41957 ; free virtual = 58419
+Sweep | Checksum: 12e4c93d7
+INFO: [Opt 31-389] Phase Sweep created 5 cells and removed 3693 cells
+INFO: [Opt 31-1021] In phase Sweep, 11 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-274] Optimized connectivity to 6 cascaded buffer cells
+Phase 6 BUFG optimization | Checksum: 16e87f383
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41957 ; free virtual = 58419
+BUFG optimization | Checksum: 16e87f383
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 6 cells.
+
+Phase 7 Shift Register Optimization
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/READ_FIFO_I/FIFO_RAM[0].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/READ_FIFO_I/FIFO_RAM[1].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/READ_FIFO_I/FIFO_RAM[2].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/READ_FIFO_I/FIFO_RAM[3].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/READ_FIFO_I/FIFO_RAM[4].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/READ_FIFO_I/FIFO_RAM[5].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/READ_FIFO_I/FIFO_RAM[6].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/READ_FIFO_I/FIFO_RAM[7].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_CTRL_I/FIFO_RAM[0].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_CTRL_I/FIFO_RAM[1].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[0].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[1].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[2].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[3].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[4].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[5].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[6].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[7].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/READ_FIFO_I/FIFO_RAM[0].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/READ_FIFO_I/FIFO_RAM[1].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/READ_FIFO_I/FIFO_RAM[2].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/READ_FIFO_I/FIFO_RAM[3].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/READ_FIFO_I/FIFO_RAM[4].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/READ_FIFO_I/FIFO_RAM[5].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/READ_FIFO_I/FIFO_RAM[6].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/READ_FIFO_I/FIFO_RAM[7].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/WRITE_FIFO_CTRL_I/FIFO_RAM[0].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/WRITE_FIFO_CTRL_I/FIFO_RAM[1].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[0].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[1].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[2].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[3].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[4].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[5].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[6].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/axi_iic_1/U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[7].SRL16E_I due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/xbar/inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/gen_srls[0].gen_rep[0].srl_nx1/gen_primitive_shifter.gen_srls[0].srl_inst due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/xbar/inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/gen_srls[0].gen_rep[1].srl_nx1/gen_primitive_shifter.gen_srls[0].srl_inst due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/xbar/inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/gen_srls[0].gen_rep[2].srl_nx1/gen_primitive_shifter.gen_srls[0].srl_inst due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/xbar/inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/gen_srls[0].gen_rep[3].srl_nx1/gen_primitive_shifter.gen_srls[0].srl_inst due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][10]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][11]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][12]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][9]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][1]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][2]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][3]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][4]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][5]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][6]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][7]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][8]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][14]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][15]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][16]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][17]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][18]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][19]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][1]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][20]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][21]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][22]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][23]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][24]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][25]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][26]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][27]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][28]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][29]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][2]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][30]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][31]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][9]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][8]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][3]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][4]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][5]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][6]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][7]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][0]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][10]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][11]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][12]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][13]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][14]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][15]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][16]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][17]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][18]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][19]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][1]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][9]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][2]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from caribou_top_i/ps7_0_axi_periph/m01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][3]_srl4 due to none static srl address bits
+INFO: [Common 17-14] Message 'Opt 31-1131' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: ed07f1f6
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41957 ; free virtual = 58419
+Shift Register Optimization | Checksum: ed07f1f6
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: e7283e05
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41957 ; free virtual = 58419
+Post Processing Netlist | Checksum: e7283e05
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 4 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1d347ed29
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41957 ; free virtual = 58419
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41957 ; free virtual = 58419
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1d347ed29
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41957 ; free virtual = 58419
+Phase 9 Finalization | Checksum: 1d347ed29
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41957 ; free virtual = 58419
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             929  |            1053  |                                             21  |
+|  Constant propagation         |             686  |            3688  |                                              4  |
+|  Sweep                        |               5  |            3693  |                                             11  |
+|  BUFG optimization            |               0  |               6  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              4  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1d347ed29
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41957 ; free virtual = 58419
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3577.289 ; gain = 0.000 ; free physical = 41957 ; free virtual = 58419
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 53 BRAM(s) out of a total of 124 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 101 newly gated: 0 Total Ports: 248
+Number of Flops added for Enable Generation: 1
+
+Ending PowerOpt Patch Enables Task | Checksum: 1b20df118
+
+Time (s): cpu = 00:00:00.5 ; elapsed = 00:00:00.45 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41592 ; free virtual = 58055
+Ending Power Optimization Task | Checksum: 1b20df118
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 4000.762 ; gain = 423.473 ; free physical = 41592 ; free virtual = 58055
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 216ce7efa
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41587 ; free virtual = 58050
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41587 ; free virtual = 58050
+Ending Final Cleanup Task | Checksum: 216ce7efa
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41587 ; free virtual = 58050
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41587 ; free virtual = 58050
+Ending Netlist Obfuscation Task | Checksum: 216ce7efa
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41587 ; free virtual = 58050
+INFO: [Common 17-83] Releasing license: Implementation
+97 Infos, 123 Warnings, 4 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:20 . Memory (MB): peak = 4000.762 ; gain = 423.473 ; free physical = 41587 ; free virtual = 58050
+INFO: [runtcl-4] Executing : report_drc -file caribou_top_wrapper_drc_opted.rpt -pb caribou_top_wrapper_drc_opted.pb -rpx caribou_top_wrapper_drc_opted.rpx
+Command: report_drc -file caribou_top_wrapper_drc_opted.rpt -pb caribou_top_wrapper_drc_opted.pb -rpx caribou_top_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/impl_2/caribou_top_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41586 ; free virtual = 58049
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41586 ; free virtual = 58049
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41582 ; free virtual = 58049
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.06 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41580 ; free virtual = 58049
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41580 ; free virtual = 58049
+Wrote Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41579 ; free virtual = 58049
+Write Physdb Complete: Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.09 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41578 ; free virtual = 58049
+INFO: [Common 17-1381] The checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/impl_2/caribou_top_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 5 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41572 ; free virtual = 58048
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1a733a6c2
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41572 ; free virtual = 58048
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41572 ; free virtual = 58048
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-640] Place Check : This design requires more RAMB36/FIFO cells than are available in Pblock 'DECODE'. This design requires 2 of such cell types but no compatible site is available in Pblock 'DECODE'. Please consider increasing the span of Pblock 'DECODE' or removing cells from it.
+WARNING: [Place 30-640] Place Check : This design requires more RAMB36/FIFO cells than are available in Pblock 'DECODE1'. This design requires 2 of such cell types but no compatible site is available in Pblock 'DECODE1'. Please consider increasing the span of Pblock 'DECODE1' or removing cells from it.
+WARNING: [Place 30-640] Place Check : This design requires more RAMB18 cells than are available in Pblock 'GBE_arp_ping_UDP'. This design requires 1 of such cell types but no compatible site is available in Pblock 'GBE_arp_ping_UDP'. Please consider increasing the span of Pblock 'GBE_arp_ping_UDP' or removing cells from it.
+WARNING: [Place 30-640] Place Check : This design requires more RAMB36/FIFO cells than are available in Pblock 'GBE_arp_ping_UDP'. This design requires 8 of such cell types but no compatible site is available in Pblock 'GBE_arp_ping_UDP'. Please consider increasing the span of Pblock 'GBE_arp_ping_UDP' or removing cells from it.
+WARNING: [Place 30-640] Place Check : This design requires more FIFO18 cells than are available in Pblock 'GBE_arp_ping_UDP'. This design requires 1 of such cell types but no compatible site is available in Pblock 'GBE_arp_ping_UDP'. Please consider increasing the span of Pblock 'GBE_arp_ping_UDP' or removing cells from it.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 39651257
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41569 ; free virtual = 58045
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 159e691f6
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41547 ; free virtual = 58023
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 159e691f6
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41547 ; free virtual = 58023
+Phase 1 Placer Initialization | Checksum: 159e691f6
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41547 ; free virtual = 58023
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 15fbf2777
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41546 ; free virtual = 58022
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 9818a1d2
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:14 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41546 ; free virtual = 58022
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1493fe179
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:14 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41546 ; free virtual = 58022
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 20f6be6cc
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:29 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41544 ; free virtual = 58019
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 782 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 342 nets or LUTs. Breaked 0 LUT, combined 342 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1132] Very high fanout net 'caribou_top_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/wrp_inst/Q[0]' is not considered as a candidate in VHFN optimzation. The fanout considered for this optimization is changed from 4484 to 901 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 901.
+INFO: [Physopt 32-1132] Very high fanout net 'caribou_top_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/wrp_inst/Q[1]' is not considered as a candidate in VHFN optimzation. The fanout considered for this optimization is changed from 4483 to 900 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 900.
+INFO: [Physopt 32-1132] Very high fanout net 'caribou_top_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/wrp_inst/Q[2]' is not considered as a candidate in VHFN optimzation. The fanout considered for this optimization is changed from 4483 to 900 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 900.
+INFO: [Physopt 32-1132] Very high fanout net 'caribou_top_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/wrp_inst/Q[3]' is not considered as a candidate in VHFN optimzation. The fanout considered for this optimization is changed from 4483 to 900 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 900.
+INFO: [Physopt 32-1132] Very high fanout net 'caribou_top_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/wrp_inst/Q[4]' is not considered as a candidate in VHFN optimzation. The fanout considered for this optimization is changed from 4483 to 900 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 900.
+INFO: [Physopt 32-1132] Very high fanout net 'caribou_top_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/wrp_inst/Q[5]' is not considered as a candidate in VHFN optimzation. The fanout considered for this optimization is changed from 4483 to 900 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 900.
+INFO: [Physopt 32-1132] Very high fanout net 'caribou_top_i/axi_fifo_mm_s_1/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/wrp_inst/Q[0]' is not considered as a candidate in VHFN optimzation. The fanout considered for this optimization is changed from 4484 to 901 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 901.
+INFO: [Physopt 32-1132] Very high fanout net 'caribou_top_i/axi_fifo_mm_s_1/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/wrp_inst/Q[1]' is not considered as a candidate in VHFN optimzation. The fanout considered for this optimization is changed from 4483 to 900 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 900.
+INFO: [Physopt 32-1132] Very high fanout net 'caribou_top_i/axi_fifo_mm_s_1/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/wrp_inst/Q[2]' is not considered as a candidate in VHFN optimzation. The fanout considered for this optimization is changed from 4483 to 900 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 900.
+INFO: [Physopt 32-1132] Very high fanout net 'caribou_top_i/axi_fifo_mm_s_1/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/wrp_inst/Q[3]' is not considered as a candidate in VHFN optimzation. The fanout considered for this optimization is changed from 4483 to 900 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 900.
+INFO: [Physopt 32-1132] Very high fanout net 'caribou_top_i/axi_fifo_mm_s_1/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/wrp_inst/Q[4]' is not considered as a candidate in VHFN optimzation. The fanout considered for this optimization is changed from 4483 to 900 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 900.
+INFO: [Physopt 32-1132] Very high fanout net 'caribou_top_i/axi_fifo_mm_s_1/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/wrp_inst/Q[5]' is not considered as a candidate in VHFN optimzation. The fanout considered for this optimization is changed from 4483 to 900 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 900.
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41544 ; free virtual = 58020
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            342  |                   342  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            342  |                   342  |           0  |           9  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 1452cbe86
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:31 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41544 ; free virtual = 58020
+Phase 2.4 Global Placement Core | Checksum: 16dc5c811
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:32 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41544 ; free virtual = 58020
+Phase 2 Global Placement | Checksum: 16dc5c811
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:32 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41544 ; free virtual = 58020
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: d843e65c
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:34 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41544 ; free virtual = 58020
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: a2a3a3ae
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:40 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41543 ; free virtual = 58019
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: e375ad5f
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:40 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41543 ; free virtual = 58019
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: be7f8e32
+
+Time (s): cpu = 00:01:28 ; elapsed = 00:00:41 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41543 ; free virtual = 58019
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 8f4473dc
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:43 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41543 ; free virtual = 58019
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: f9c008bc
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:00:50 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41544 ; free virtual = 58020
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1137f6869
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:00:50 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41544 ; free virtual = 58020
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 154662551
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:00:51 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41544 ; free virtual = 58020
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 15c0d7ee4
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:53 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41544 ; free virtual = 58020
+Phase 3 Detail Placement | Checksum: 15c0d7ee4
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:54 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41544 ; free virtual = 58020
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 23ccc03f8
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.684 | TNS=-101.994 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1c796b5d0
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41544 ; free virtual = 58020
+INFO: [Place 46-33] Processed net caribou_top_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/rdp_inst/enb, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net caribou_top_i/axi_fifo_mm_s_1/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/rdp_inst/enb, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 2 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 2, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 1c796b5d0
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41544 ; free virtual = 58020
+Phase 4.1.1.1 BUFG Insertion | Checksum: 23ccc03f8
+
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:01 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41544 ; free virtual = 58020
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-3.539. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 127c01ecd
+
+Time (s): cpu = 00:02:31 ; elapsed = 00:01:11 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41543 ; free virtual = 58018
+
+Time (s): cpu = 00:02:31 ; elapsed = 00:01:11 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41543 ; free virtual = 58018
+Phase 4.1 Post Commit Optimization | Checksum: 127c01ecd
+
+Time (s): cpu = 00:02:31 ; elapsed = 00:01:11 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41543 ; free virtual = 58018
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 127c01ecd
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:11 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41543 ; free virtual = 58018
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 127c01ecd
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:12 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41543 ; free virtual = 58018
+Phase 4.3 Placer Reporting | Checksum: 127c01ecd
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:12 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41543 ; free virtual = 58018
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41543 ; free virtual = 58018
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:12 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41543 ; free virtual = 58018
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: eae23433
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:12 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41543 ; free virtual = 58018
+Ending Placer Task | Checksum: ca5cb325
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:12 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41543 ; free virtual = 58019
+154 Infos, 128 Warnings, 4 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:36 ; elapsed = 00:01:14 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41543 ; free virtual = 58019
+INFO: [runtcl-4] Executing : report_io -file caribou_top_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.22 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41542 ; free virtual = 58018
+INFO: [runtcl-4] Executing : report_utilization -file caribou_top_wrapper_utilization_placed.rpt -pb caribou_top_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file caribou_top_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.2 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41541 ; free virtual = 58018
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.09 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41529 ; free virtual = 58019
+Wrote PlaceDB: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41485 ; free virtual = 58019
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41485 ; free virtual = 58019
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.07 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41485 ; free virtual = 58019
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41481 ; free virtual = 58019
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41481 ; free virtual = 58019
+Write Physdb Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41481 ; free virtual = 58019
+INFO: [Common 17-1381] The checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/impl_2/caribou_top_wrapper_placed.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 37543719 ConstDB: 0 ShapeSum: 93087c0c RouteDB: 0
+Post Restoration Checksum: NetGraph: 211dbbd7 | NumContArr: 9f17de58 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 245878f69
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:47 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41383 ; free virtual = 57877
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 245878f69
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:47 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41383 ; free virtual = 57877
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 245878f69
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:47 . Memory (MB): peak = 4000.762 ; gain = 0.000 ; free physical = 41383 ; free virtual = 57877
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 1f6678056
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:56 . Memory (MB): peak = 4087.195 ; gain = 86.434 ; free physical = 41285 ; free virtual = 57779
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.515 | TNS=-90.289| WHS=-1.814 | THS=-3257.314|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 31474
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 31472
+  Number of Partially Routed Nets     = 2
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 24c8b8970
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:00 . Memory (MB): peak = 4118.461 ; gain = 117.699 ; free physical = 41254 ; free virtual = 57749
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 24c8b8970
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:00 . Memory (MB): peak = 4118.461 ; gain = 117.699 ; free physical = 41254 ; free virtual = 57749
+
+Phase 3.2 Initial Net Routing
+Phase 3.2 Initial Net Routing | Checksum: 28bb19985
+
+Time (s): cpu = 00:02:17 ; elapsed = 00:01:15 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41107 ; free virtual = 57601
+Phase 3 Initial Routing | Checksum: 28bb19985
+
+Time (s): cpu = 00:02:17 ; elapsed = 00:01:15 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41107 ; free virtual = 57601
+INFO: [Route 35-580] Design has 260 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++================================+==============================+===================================================================================================================================================================================================================================================================+
+| Launch Setup Clock             | Launch Hold Clock            | Pin                                                                                                                                                                                                                                                               |
++================================+==============================+===================================================================================================================================================================================================================================================================+
+| clk_out4_PLL_40MHz_to_640MHz_1 | clk_out4_PLL_40MHz_to_640MHz | s_UDP_FIFO_reset_reg/D                                                                                                                                                                                                                                            |
+| clk_out1_PLL_40MHz_to_640MHz_1 | clk_out1_PLL_40MHz_to_640MHz | pipe_reg[1]/D                                                                                                                                                                                                                                                     |
+| clk_out1_PLL_40MHz_to_640MHz_1 | clk_out1_PLL_40MHz_to_640MHz | DATA_FIFO_inst1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/DIPADIP[0] |
+| clk_out1_PLL_40MHz_to_640MHz_1 | clk_out1_PLL_40MHz_to_640MHz | DATA_FIFO_inst1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/DIADI[0]   |
+| clk_out1_PLL_40MHz_to_640MHz_1 | clk_out1_PLL_40MHz_to_640MHz | DATA_FIFO_inst1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/DIPADIP[0] |
++--------------------------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2745
+ Number of Nodes with overlaps = 24
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.526 | TNS=-104.139| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 33a075bf4
+
+Time (s): cpu = 00:02:45 ; elapsed = 00:01:29 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41107 ; free virtual = 57601
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.526 | TNS=-103.551| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 2f0a2431d
+
+Time (s): cpu = 00:02:46 ; elapsed = 00:01:29 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41106 ; free virtual = 57601
+Phase 4 Rip-up And Reroute | Checksum: 2f0a2431d
+
+Time (s): cpu = 00:02:46 ; elapsed = 00:01:29 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41106 ; free virtual = 57601
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 2cabdf690
+
+Time (s): cpu = 00:02:50 ; elapsed = 00:01:31 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41107 ; free virtual = 57601
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.526 | TNS=-103.551| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 23c6b9043
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:01:31 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41107 ; free virtual = 57601
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 23c6b9043
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:31 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41107 ; free virtual = 57601
+Phase 5 Delay and Skew Optimization | Checksum: 23c6b9043
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:31 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41107 ; free virtual = 57601
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 239383f72
+
+Time (s): cpu = 00:02:57 ; elapsed = 00:01:33 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41107 ; free virtual = 57601
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.526 | TNS=-103.459| WHS=-4.113 | THS=-4.113 |
+
+
+Phase 6.1.2 Lut RouteThru Assignment for hold
+Phase 6.1.2 Lut RouteThru Assignment for hold | Checksum: 1e13e3437
+
+Time (s): cpu = 00:02:58 ; elapsed = 00:01:34 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41107 ; free virtual = 57601
+Phase 6.1 Hold Fix Iter | Checksum: 1e13e3437
+
+Time (s): cpu = 00:02:58 ; elapsed = 00:01:34 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41107 ; free virtual = 57601
+
+Phase 6.2 Additional Hold Fix
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.526 | TNS=-103.459| WHS=-4.113 | THS=-4.113 |
+
+Phase 6.2 Additional Hold Fix | Checksum: 196277acc
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:01:36 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41106 ; free virtual = 57600
+
+Phase 6.3 Non Free Resource Hold Fix Iter
+Phase 6.3 Non Free Resource Hold Fix Iter | Checksum: 244d41f84
+
+Time (s): cpu = 00:03:07 ; elapsed = 00:01:38 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41106 ; free virtual = 57600
+WARNING: [Route 35-468] The router encountered 8 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
+	s_TS_ovfl_cnt_reg[16]/CLR
+	s_TS_ovfl_cnt_reg[24]/CLR
+	s_TS_ovfl_cnt_reg[28]/CLR
+	s_TS_ovfl_cnt_reg[32]/CLR
+	s_TS_ovfl_cnt_reg[36]/CLR
+	s_TS_ovfl_cnt_reg[40]/CLR
+	s_TS_ovfl_cnt_reg[44]/CLR
+	init_TS_inst2/s_UDP_FIFO_reset_i_1/I2
+
+Phase 6 Post Hold Fix | Checksum: 244d41f84
+
+Time (s): cpu = 00:03:07 ; elapsed = 00:01:38 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41106 ; free virtual = 57600
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.82971 %
+  Global Horizontal Routing Utilization  = 3.21144 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 66.6667%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 60.3604%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 75%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 66.1765%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 244d41f84
+
+Time (s): cpu = 00:03:08 ; elapsed = 00:01:38 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41106 ; free virtual = 57600
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 244d41f84
+
+Time (s): cpu = 00:03:08 ; elapsed = 00:01:38 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41103 ; free virtual = 57598
+
+Phase 9 Depositing Routes
+INFO: [Route 35-467] Router swapped GT pin GBE_inst/U0/U0/core_gt_common_i/gtxe2_common_i/GTREFCLK0 to physical pin GTXE2_COMMON_X0Y2/GTNORTHREFCLK0
+INFO: [Route 35-467] Router swapped GT pin GBE_inst/U0/U0/pcs_pma_block_i/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/gtxe2_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y10/GTNORTHREFCLK0
+Phase 9 Depositing Routes | Checksum: 195365167
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:01:40 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41103 ; free virtual = 57598
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin pipe_reg[1]/D driven by global clock buffer BUFGCTRL_X0Y2.
+Resolution: Run report_timing_summary to analyze the hold violations.
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 1b2206069
+
+Time (s): cpu = 00:03:15 ; elapsed = 00:01:41 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41103 ; free virtual = 57598
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-3.526 | TNS=-103.459| WHS=-4.113 | THS=-4.113 |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1b2206069
+
+Time (s): cpu = 00:03:15 ; elapsed = 00:01:41 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41103 ; free virtual = 57598
+INFO: [Route 35-16] Router Completed Successfully
+
+Phase 11 Post-Route Event Processing
+Phase 11 Post-Route Event Processing | Checksum: 18ccc0181
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:01:42 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41104 ; free virtual = 57598
+Ending Routing Task | Checksum: 18ccc0181
+
+Time (s): cpu = 00:03:17 ; elapsed = 00:01:43 . Memory (MB): peak = 4264.461 ; gain = 263.699 ; free physical = 41104 ; free virtual = 57598
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+176 Infos, 131 Warnings, 4 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:21 ; elapsed = 00:01:44 . Memory (MB): peak = 4282.711 ; gain = 281.949 ; free physical = 41104 ; free virtual = 57598
+INFO: [runtcl-4] Executing : report_drc -file caribou_top_wrapper_drc_routed.rpt -pb caribou_top_wrapper_drc_routed.pb -rpx caribou_top_wrapper_drc_routed.rpx
+Command: report_drc -file caribou_top_wrapper_drc_routed.rpt -pb caribou_top_wrapper_drc_routed.pb -rpx caribou_top_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/impl_2/caribou_top_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file caribou_top_wrapper_methodology_drc_routed.rpt -pb caribou_top_wrapper_methodology_drc_routed.pb -rpx caribou_top_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file caribou_top_wrapper_methodology_drc_routed.rpt -pb caribou_top_wrapper_methodology_drc_routed.pb -rpx caribou_top_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/impl_2/caribou_top_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:26 ; elapsed = 00:00:07 . Memory (MB): peak = 4370.688 ; gain = 0.000 ; free physical = 41103 ; free virtual = 57597
+INFO: [runtcl-4] Executing : report_power -file caribou_top_wrapper_power_routed.rpt -pb caribou_top_wrapper_power_summary_routed.pb -rpx caribou_top_wrapper_power_routed.rpx
+Command: report_power -file caribou_top_wrapper_power_routed.rpt -pb caribou_top_wrapper_power_summary_routed.pb -rpx caribou_top_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+186 Infos, 131 Warnings, 4 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 4370.688 ; gain = 0.000 ; free physical = 41087 ; free virtual = 57595
+INFO: [runtcl-4] Executing : report_route_status -file caribou_top_wrapper_route_status.rpt -pb caribou_top_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file caribou_top_wrapper_timing_summary_routed.rpt -pb caribou_top_wrapper_timing_summary_routed.pb -rpx caribou_top_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file caribou_top_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file caribou_top_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file caribou_top_wrapper_bus_skew_routed.rpt -pb caribou_top_wrapper_bus_skew_routed.pb -rpx caribou_top_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.1 . Memory (MB): peak = 4370.688 ; gain = 0.000 ; free physical = 41054 ; free virtual = 57584
+Wrote PlaceDB: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 4370.688 ; gain = 0.000 ; free physical = 41011 ; free virtual = 57584
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4370.688 ; gain = 0.000 ; free physical = 41011 ; free virtual = 57584
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:00.28 . Memory (MB): peak = 4370.688 ; gain = 0.000 ; free physical = 41003 ; free virtual = 57584
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4370.688 ; gain = 0.000 ; free physical = 41000 ; free virtual = 57584
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4370.688 ; gain = 0.000 ; free physical = 40999 ; free virtual = 57584
+Write Physdb Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 4370.688 ; gain = 0.000 ; free physical = 40999 ; free virtual = 57584
+INFO: [Common 17-1381] The checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/impl_2/caribou_top_wrapper_routed.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 24 14:09:05 2025...
+
+*** Running vivado
+    with args -log caribou_top_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source caribou_top_wrapper.tcl -notrace
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source caribou_top_wrapper.tcl -notrace
+Command: open_checkpoint caribou_top_wrapper_routed.dcp
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+Netlist sorting complete. Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.37 . Memory (MB): peak = 2052.992 ; gain = 0.000 ; free physical = 43038 ; free virtual = 59573
+INFO: [Netlist 29-17] Analyzing 3956 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'PLL_clk_main/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'TLU_CLK_PLL_inst/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'TLU_CLK_PLL_inst/clk_in2' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2214.441 ; gain = 15.133 ; free physical = 42885 ; free virtual = 59420
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2906.020 ; gain = 0.000 ; free physical = 42276 ; free virtual = 58811
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2906.020 ; gain = 0.000 ; free physical = 42276 ; free virtual = 58811
+Read PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2933.957 ; gain = 27.938 ; free physical = 42249 ; free virtual = 58784
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2933.957 ; gain = 0.000 ; free physical = 42249 ; free virtual = 58784
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.47 . Memory (MB): peak = 2945.957 ; gain = 12.000 ; free physical = 42237 ; free virtual = 58772
+Read Physdb Files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2945.957 ; gain = 39.938 ; free physical = 42237 ; free virtual = 58772
+Restored from archive | CPU: 1.650000 secs | Memory: 52.917397 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2945.957 ; gain = 39.938 ; free physical = 42237 ; free virtual = 58772
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2945.957 ; gain = 0.000 ; free physical = 42237 ; free virtual = 58772
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1812 instances were transformed.
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS(x2)): 2 instances
+  IBUFDS_DIFF_OUT_IBUFDISABLE => IBUFDS_DIFF_OUT_IBUFDISABLE (IBUFDS_IBUFDISABLE_INT(x2)): 2 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 1792 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 8 instances
+  SRLC32E => SRL16E: 4 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2023.2 (64-bit) build 4029153
+WARNING: [Vivado 12-23575] Critical violations of the methodology design rules detected. Critical violations may contribute to timing failures or cause functional issues in hardware. Run report_methodology for more information.
+open_checkpoint: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2953.957 ; gain = 1381.457 ; free physical = 42234 ; free virtual = 58769
+INFO: [Memdata 28-167] Found XPM memory block caribou_top_i/axi_fifo_mm_s_1/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the caribou_top_i/axi_fifo_mm_s_1/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <caribou_top_i/axi_fifo_mm_s_1/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <caribou_top_i/axi_fifo_mm_s_1>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block caribou_top_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the caribou_top_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <caribou_top_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <caribou_top_i/axi_fifo_mm_s_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force caribou_top_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+CRITICAL WARNING: [Vivado 12-1790] Evaluation License Warning: This design contains one or more IP cores that use separately licensed features. If the design has been configured to make use of evaluation features, please note that these features will cease to function after a certain period of time. Please consult the core datasheet to determine whether the core which you have configured will be affected. Evaluation features should NOT be used in production systems.
+
+Evaluation cores found in this design:
+    IP core 'tri_mode_ethernet_mac_1' (tri_mode_ethernet_mac_1_block) was generated with multiple features:
+        IP feature 'eth_avb_endpoint@2015.04' was enabled using a design_linking license.
+        IP feature 'tri_mode_eth_mac@2015.04' was enabled using a bought license.
+
+Resolution: If a new IP Core license was added, in order for the new license to be picked up, the current netlist needs to be updated by resetting and re-generating the IP output products before bitstream generation.
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/pct/Caribou/vivado/Vivado/2023.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer Deser_inst/IBUFDS_DIFF_OUT_SIN/IBUFDS_0 has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer Deser_inst/IBUFDS_DIFF_OUT_SIN1/IBUFDS_0 has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer IBUFDS_inst_TLU_RST_in/IBUFDS_0 has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer IBUFDS_inst_TLU_TRG_in/IBUFDS_0 has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC RTSTAT-10] No routable loads: 4 net(s) have no routable loads. The problem bus(es) and/or net(s) are DATA_FIFO_inst1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, DATA_FIFO_inst1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, DATA_FIFO_inst1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, and DATA_FIFO_inst1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i.
+WARNING: [DRC UTLZ-3] Resource utilization: FIFO18 over-utilized in Pblock GBE_arp_ping_UDP (This design requires more FIFO18 cells than are available in Pblock 'GBE_arp_ping_UDP'. This design requires 1 of such cell types but no compatible site is available in Pblock 'GBE_arp_ping_UDP'. Please consider increasing the span of Pblock 'GBE_arp_ping_UDP' or removing cells from it.)
+WARNING: [DRC UTLZ-3] Resource utilization: RAMB18 over-utilized in Pblock GBE_arp_ping_UDP (This design requires more RAMB18 cells than are available in Pblock 'GBE_arp_ping_UDP'. This design requires 1 of such cell types but no compatible site is available in Pblock 'GBE_arp_ping_UDP'. Please consider increasing the span of Pblock 'GBE_arp_ping_UDP' or removing cells from it.)
+WARNING: [DRC UTLZ-3] Resource utilization: RAMB36/FIFO over-utilized in Pblock DECODE (This design requires more RAMB36/FIFO cells than are available in Pblock 'DECODE'. This design requires 2 of such cell types but no compatible site is available in Pblock 'DECODE'. Please consider increasing the span of Pblock 'DECODE' or removing cells from it.)
+WARNING: [DRC UTLZ-3] Resource utilization: RAMB36/FIFO over-utilized in Pblock DECODE1 (This design requires more RAMB36/FIFO cells than are available in Pblock 'DECODE1'. This design requires 2 of such cell types but no compatible site is available in Pblock 'DECODE1'. Please consider increasing the span of Pblock 'DECODE1' or removing cells from it.)
+WARNING: [DRC UTLZ-3] Resource utilization: RAMB36/FIFO over-utilized in Pblock GBE_arp_ping_UDP (This design requires more RAMB36/FIFO cells than are available in Pblock 'GBE_arp_ping_UDP'. This design requires 8 of such cell types but no compatible site is available in Pblock 'GBE_arp_ping_UDP'. Please consider increasing the span of Pblock 'GBE_arp_ping_UDP' or removing cells from it.)
+WARNING: [DRC UTLZ-3] Resource utilization: Slice over-utilized in Pblock GBE_MAC (This design requires more Slice cells than are available in Pblock 'GBE_MAC'. This design requires 232 of such cell types but only 168 compatible sites are available in Pblock 'GBE_MAC'. Please consider increasing the span of Pblock 'GBE_MAC' or removing cells from it.)
+WARNING: [DRC UTLZ-3] Resource utilization: Slice over-utilized in Pblock GBE_PCS_PMA (This design requires more Slice cells than are available in Pblock 'GBE_PCS_PMA'. This design requires 195 of such cell types but only 168 compatible sites are available in Pblock 'GBE_PCS_PMA'. Please consider increasing the span of Pblock 'GBE_PCS_PMA' or removing cells from it.)
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 12 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Overwriting "TIMESTAMP" with "C1B2E27B" for option USR_ACCESS
+TIMESTAMP = Mon Mar 24 14:09:59 2025
+
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./caribou_top_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+26 Infos, 16 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:47 ; elapsed = 00:00:28 . Memory (MB): peak = 3752.516 ; gain = 787.652 ; free physical = 41563 ; free virtual = 58111
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 24 14:10:09 2025...

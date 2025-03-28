@@ -1,0 +1,555 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Mar 24 09:30:16 2025
+# Process ID: 3095208
+# Current directory: /home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/tri_mode_ethernet_mac_1_synth_1
+# Command line: vivado -log tri_mode_ethernet_mac_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tri_mode_ethernet_mac_1.tcl
+# Log file: /home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/tri_mode_ethernet_mac_1_synth_1/tri_mode_ethernet_mac_1.vds
+# Journal file: /home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/tri_mode_ethernet_mac_1_synth_1/vivado.jou
+# Running On: Caribou-VM-HEPHY, OS: Linux, CPU Frequency: 3249.996 MHz, CPU Physical cores: 8, Host memory: 66951 MB
+#-----------------------------------------------------------
+source tri_mode_ethernet_mac_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1570.824 ; gain = 37.828 ; free physical = 43713 ; free virtual = 60119
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/pct/Caribou/MPW4_Helmut/MPW3/ip_repo/control_register_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/pct/Caribou/MPW4_Helmut/MPW3/ip-repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/pct/Caribou/vivado/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: tri_mode_ethernet_mac_1
+Command: synth_design -top tri_mode_ethernet_mac_1 -part xc7z045ffg900-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3095623
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2417.844 ; gain = 403.746 ; free physical = 40633 ; free virtual = 57041
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tri_mode_ethernet_mac_1' [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1.vhd:130]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_1_block' declared at '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1_block.vhd:100' bound to instance 'U0' of component 'tri_mode_ethernet_mac_1_block' [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1.vhd:208]
+INFO: [Synth 8-638] synthesizing module 'tri_mode_ethernet_mac_1_block' [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1_block.vhd:165]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_PHYSICAL_INTERFACE bound to: INTERNAL - type: string 
+	Parameter C_INTERNAL_MODE_TYPE bound to: BASEX - type: string 
+	Parameter C_HALF_DUPLEX bound to: 0 - type: integer 
+	Parameter C_HAS_HOST bound to: 0 - type: integer 
+	Parameter C_ADD_FILTER bound to: 1 - type: integer 
+	Parameter C_AT_ENTRIES bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_HAS_2G5 bound to: 0 - type: integer 
+	Parameter C_MAC_SPEED bound to: SPEED_1000_MBPS - type: string 
+	Parameter C_HAS_STATS bound to: 0 - type: integer 
+	Parameter C_NUM_STATS bound to: 34 - type: integer 
+	Parameter C_CNTR_RST bound to: 1 - type: integer 
+	Parameter C_STATS_WIDTH bound to: 64 - type: integer 
+	Parameter C_AVB bound to: 0 - type: integer 
+	Parameter C_RX_VEC_WIDTH bound to: 79 - type: integer 
+	Parameter C_TX_VEC_WIDTH bound to: 79 - type: integer 
+	Parameter C_1588 bound to: 0 - type: integer 
+	Parameter C_TX_INBAND_CF_ENABLE bound to: 0 - type: integer 
+	Parameter C_RX_INBAND_TS_ENABLE bound to: 0 - type: integer 
+	Parameter C_PFC bound to: 0 - type: integer 
+	Parameter C_HAS_MDIO bound to: 0 - type: integer 
+	Parameter C_DEVICE_FAMILY_US bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_v9_0_29' declared at '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/hdl/tri_mode_ethernet_mac_v9_0_rfs.v:17414' bound to instance 'tri_mode_ethernet_mac_1_core' of component 'tri_mode_ethernet_mac_v9_0_29' [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1_block.vhd:439]
+INFO: [Synth 8-6157] synthesizing module 'LUT4' [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81407]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4' (0#1) [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81407]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81407]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (0#1) [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81407]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81407]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (0#1) [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81407]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81407]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (0#1) [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81407]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized3' [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81407]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized3' (0#1) [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81407]
+INFO: [Synth 8-6157] synthesizing module 'RAM64X1D' [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:126152]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64X1D' (0#1) [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:126152]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81365]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (0#1) [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81365]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81365]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (0#1) [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81365]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81365]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (0#1) [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81365]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized2' [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81365]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized2' (0#1) [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81365]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:133737]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [/home/pct/Caribou/vivado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:133737]
+INFO: [Synth 8-256] done synthesizing module 'tri_mode_ethernet_mac_1_block' (0#1) [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1_block.vhd:165]
+INFO: [Synth 8-256] done synthesizing module 'tri_mode_ethernet_mac_1' (0#1) [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1.vhd:130]
+WARNING: [Synth 8-7129] Port rx_filter_enable[0] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_avb_enable[2] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_avb_enable[1] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_avb_enable[0] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[16] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[15] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[14] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[13] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[12] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[11] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[10] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[9] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[8] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[7] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[6] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[1] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[0] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[31] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[30] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[29] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[28] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[27] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[26] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[25] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[24] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[23] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[22] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[21] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[20] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[19] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[18] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[17] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[16] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[15] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[14] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[13] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[12] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[11] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[10] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[9] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[8] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[7] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[6] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[5] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[4] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[3] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[2] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[1] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[0] in module tri_mode_ethernet_mac_v9_0_29_addr_filter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[11] in module tri_mode_ethernet_mac_v9_0_29_addr_filter_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[10] in module tri_mode_ethernet_mac_v9_0_29_addr_filter_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[9] in module tri_mode_ethernet_mac_v9_0_29_addr_filter_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[8] in module tri_mode_ethernet_mac_v9_0_29_addr_filter_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENABLE_HALF_DUPLEX in module PARAM_CHECK is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEST_ADD_FIELD in module PARAM_CHECK is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SOURCE_ADD_FIELD in module PARAM_CHECK is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LENGTH_FIELD in module PARAM_CHECK is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IFG in module PARAM_CHECK is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SPEED_IS_10_100 in module PARAM_CHECK is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIELD_COUNTER[5] in module DECODE_FRAME is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIELD_COUNTER[4] in module DECODE_FRAME is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIELD_COUNTER[3] in module DECODE_FRAME is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIELD_COUNTER[2] in module DECODE_FRAME is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RESET_GMII_MII in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INBAND_TS_ENABLE in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SPEED[1] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SPEED[0] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CORE_HAS_SGMII in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RTC_CLK in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[47] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[46] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[45] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[44] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[43] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[42] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[41] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[40] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[39] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[38] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[37] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[36] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[35] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[34] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[33] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[32] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[31] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[30] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[29] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[28] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[27] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[26] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[25] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[24] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[23] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[22] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[21] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[20] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[19] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[18] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SYSTEMTIMER_S_FIELD[17] in module tri_mode_ethernet_mac_v9_0_29_rx is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2554.812 ; gain = 540.715 ; free physical = 39843 ; free virtual = 56253
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2566.688 ; gain = 552.590 ; free physical = 39817 ; free virtual = 56227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2566.688 ; gain = 552.590 ; free physical = 39817 ; free virtual = 56227
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2569.656 ; gain = 0.000 ; free physical = 39801 ; free virtual = 56214
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1_board.xdc] for cell 'U0'
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tri_mode_ethernet_mac_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/tri_mode_ethernet_mac_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/tri_mode_ethernet_mac_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/tri_mode_ethernet_mac_1_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.srcs/sources_1/ip/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1_clocks.xdc] for cell 'U0'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2705.438 ; gain = 0.000 ; free physical = 40523 ; free virtual = 56936
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 8 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2705.473 ; gain = 0.000 ; free physical = 40520 ; free virtual = 56932
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2705.473 ; gain = 691.375 ; free physical = 40296 ; free virtual = 56708
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z045ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2705.473 ; gain = 691.375 ; free physical = 40296 ; free virtual = 56708
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/tri_mode_ethernet_mac_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2705.473 ; gain = 691.375 ; free physical = 40295 ; free virtual = 56708
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'tri_mode_ethernet_mac_v9_0_29_tx_axi_intf'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'tri_mode_ethernet_mac_v9_0_29_rx_axi_intf'
+INFO: [Synth 8-802] inferred FSM for state register 'state_count_reg' in module 'tri_mode_ethernet_mac_v9_0_29_tx_cntl'
+INFO: [Synth 8-802] inferred FSM for state register 'pause_state_reg' in module 'tri_mode_ethernet_mac_v9_0_29_pfc_tx_cntl'
+INFO: [Synth 8-802] inferred FSM for state register 'legacy_state_reg' in module 'tri_mode_ethernet_mac_v9_0_29_pfc_tx_cntl'
+INFO: [Synth 8-6159] Found Keep on FSM register 'tx_state_reg' in module 'tri_mode_ethernet_mac_v9_0_29_tx_axi_intf', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0000 |                             0000
+                   LOAD1 |                             0001 |                             0001
+                   LOAD2 |                             0010 |                             0010
+                    WAIT |                             0011 |                             0011
+                END_LOAD |                             0100 |                             0100
+              CLEAR_PIPE |                             0101 |                             0101
+                 RELOAD1 |                             0110 |                             0110
+                 RELOAD2 |                             0111 |                             0111
+                    SEND |                             1000 |                             1000
+                   BURST |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               01 |                               00
+                     PKT |                               11 |                               01
+                    WAIT |                               10 |                               10
+                    DONE |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'tri_mode_ethernet_mac_v9_0_29_rx_axi_intf'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                              001 |                              001
+        TRANSMIT_REQUEST |                              010 |                              010
+            TRANSMITTING |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_count_reg' in module 'tri_mode_ethernet_mac_v9_0_29_tx_cntl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                              000
+                     REQ |                             1000 |                              001
+                    WAIT |                             0100 |                              010
+                   COUNT |                             0010 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'legacy_state_reg' using encoding 'one-hot' in module 'tri_mode_ethernet_mac_v9_0_29_pfc_tx_cntl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  P_IDLE |                               00 |                               00
+                   P_REQ |                               01 |                               01
+                  P_WAIT |                               10 |                               10
+                  P_HOLD |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pause_state_reg' using encoding 'sequential' in module 'tri_mode_ethernet_mac_v9_0_29_pfc_tx_cntl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2705.473 ; gain = 691.375 ; free physical = 40016 ; free virtual = 56431
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1090 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (gmii_mii_tx_gen/sync_speed_is_10_100/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (gmii_mii_tx_gen/sync_speed_is_10_100/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (gmii_mii_tx_gen/sync_speed_is_10_100/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (gmii_mii_tx_gen/sync_speed_is_10_100/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (gmii_mii_tx_gen/sync_speed_is_10_100/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (gmii_mii_rx_gen/sync_speed_is_10_100/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (gmii_mii_rx_gen/sync_speed_is_10_100/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (gmii_mii_rx_gen/sync_speed_is_10_100/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (gmii_mii_rx_gen/sync_speed_is_10_100/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (gmii_mii_rx_gen/sync_speed_is_10_100/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[0].sync_rx_pen/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[0].sync_rx_pen/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[0].sync_rx_pen/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[0].sync_rx_pen/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[0].sync_rx_pen/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[0].sync_tx_pen/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[0].sync_tx_pen/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[0].sync_tx_pen/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[0].sync_tx_pen/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[0].sync_tx_pen/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[1].sync_rx_pen/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[1].sync_rx_pen/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[1].sync_rx_pen/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[1].sync_rx_pen/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[1].sync_rx_pen/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[1].sync_tx_pen/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[1].sync_tx_pen/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[1].sync_tx_pen/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[1].sync_tx_pen/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[1].sync_tx_pen/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[2].sync_rx_pen/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[2].sync_rx_pen/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[2].sync_rx_pen/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[2].sync_rx_pen/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[2].sync_rx_pen/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[2].sync_tx_pen/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[2].sync_tx_pen/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[2].sync_tx_pen/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[2].sync_tx_pen/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[2].sync_tx_pen/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[3].sync_rx_pen/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[3].sync_rx_pen/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[3].sync_rx_pen/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[3].sync_rx_pen/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[3].sync_rx_pen/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[3].sync_tx_pen/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[3].sync_tx_pen/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[3].sync_tx_pen/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[3].sync_tx_pen/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[3].sync_tx_pen/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[4].sync_rx_pen/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[4].sync_rx_pen/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[4].sync_rx_pen/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[4].sync_rx_pen/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[4].sync_rx_pen/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[4].sync_tx_pen/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[4].sync_tx_pen/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[4].sync_tx_pen/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[4].sync_tx_pen/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[4].sync_tx_pen/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[5].sync_rx_pen/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[5].sync_rx_pen/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[5].sync_rx_pen/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[5].sync_rx_pen/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[5].sync_rx_pen/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[5].sync_tx_pen/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[5].sync_tx_pen/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[5].sync_tx_pen/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[5].sync_tx_pen/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[5].sync_tx_pen/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[6].sync_rx_pen/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[6].sync_rx_pen/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[6].sync_rx_pen/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[6].sync_rx_pen/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[6].sync_rx_pen/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[6].sync_tx_pen/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[6].sync_tx_pen/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[6].sync_tx_pen/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[6].sync_tx_pen/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[6].sync_tx_pen/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[7].sync_rx_pen/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[7].sync_rx_pen/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[7].sync_rx_pen/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[7].sync_rx_pen/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[7].sync_rx_pen/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[7].sync_tx_pen/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[7].sync_tx_pen/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[7].sync_tx_pen/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[7].sync_tx_pen/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/ppe_sync[7].sync_tx_pen/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/sync_rx_duplex/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/sync_rx_duplex/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/sync_rx_duplex/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/sync_rx_duplex/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/sync_rx_duplex/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/sync_tx_duplex/data_sync_reg0) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/sync_tx_duplex/data_sync_reg1) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/sync_tx_duplex/data_sync_reg2) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/sync_tx_duplex/data_sync_reg3) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+WARNING: [Synth 8-3332] Sequential element (flow/sync_tx_duplex/data_sync_reg4) is unused and will be removed from module tri_mode_ethernet_mac_v9_0_29.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 2705.473 ; gain = 691.375 ; free physical = 39677 ; free virtual = 56094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2705.473 ; gain = 691.375 ; free physical = 38453 ; free virtual = 54871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 2705.473 ; gain = 691.375 ; free physical = 37969 ; free virtual = 54387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 2705.473 ; gain = 691.375 ; free physical = 37781 ; free virtual = 54199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5374] Design tri_mode_ethernet_mac_v9_0_29 has 1 max_fanout requirements that cannot be met.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin txgen/CRC_CE_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin rxgen/CRC_CE_inferred:in0 to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2705.473 ; gain = 691.375 ; free physical = 36325 ; free virtual = 52742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2705.473 ; gain = 691.375 ; free physical = 36323 ; free virtual = 52740
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2705.473 ; gain = 691.375 ; free physical = 36288 ; free virtual = 52704
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2705.473 ; gain = 691.375 ; free physical = 36288 ; free virtual = 52704
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2705.473 ; gain = 691.375 ; free physical = 36286 ; free virtual = 52703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2705.473 ; gain = 691.375 ; free physical = 36286 ; free virtual = 52703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    16|
+|2     |LUT1     |    32|
+|3     |LUT2     |    98|
+|4     |LUT3     |   135|
+|5     |LUT4     |   133|
+|6     |LUT5     |   124|
+|7     |LUT6     |   263|
+|8     |MUXF7    |    16|
+|9     |RAM64X1D |     8|
+|10    |SRL16E   |    14|
+|11    |FDCE     |    20|
+|12    |FDPE     |    15|
+|13    |FDRE     |   882|
+|14    |FDSE     |    43|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2705.473 ; gain = 691.375 ; free physical = 36286 ; free virtual = 52703
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 924 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 2705.473 ; gain = 552.590 ; free physical = 36279 ; free virtual = 52695
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2705.473 ; gain = 691.375 ; free physical = 36279 ; free virtual = 52695
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2705.473 ; gain = 0.000 ; free physical = 36562 ; free virtual = 52978
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2705.473 ; gain = 0.000 ; free physical = 36464 ; free virtual = 52881
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 8 instances
+
+Synth Design complete | Checksum: 3ade8fb7
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 204 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 2705.473 ; gain = 1101.797 ; free physical = 36454 ; free virtual = 52871
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1869.964; main = 1536.264; forked = 333.700
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4327.992; main = 2705.441; forked = 1654.566
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2729.449 ; gain = 0.000 ; free physical = 36340 ; free virtual = 52757
+INFO: [Common 17-1381] The checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/tri_mode_ethernet_mac_1_synth_1/tri_mode_ethernet_mac_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP tri_mode_ethernet_mac_1, cache-ID = 4f0787b899760682
+INFO: [Coretcl 2-1174] Renamed 31 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2729.449 ; gain = 0.000 ; free physical = 36151 ; free virtual = 52573
+INFO: [Common 17-1381] The checkpoint '/home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/tri_mode_ethernet_mac_1_synth_1/tri_mode_ethernet_mac_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tri_mode_ethernet_mac_1_utilization_synth.rpt -pb tri_mode_ethernet_mac_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 24 09:31:10 2025...

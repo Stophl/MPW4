@@ -1,0 +1,307 @@
+14:24:55 **** Auto Build of configuration Debug for project MPW4 ****
+make all 
+'Building file: ../src/MPW4.c'
+'Invoking: ARM v7 Linux gcc compiler'
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MPW4.o" -MMD -MP -MF"src/MPW4.d" -MT"src/MPW4.o" -o "src/MPW4.o" "../src/MPW4.c"
+../src/MPW4.c: In function 'main':
+../src/MPW4.c:719:95: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+         d=*((unsigned int *)(AXI_REG_ARRAY_ptr + AXI_REG_ARRAY_page_offset+0x00)); printf("%08x\n",d);
+                                                                                            ~~~^
+                                                                                            %08lx
+../src/MPW4.c:720:95: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+         d=*((unsigned int *)(AXI_REG_ARRAY_ptr + AXI_REG_ARRAY_page_offset+0x04)); printf("%08x\n",d);
+                                                                                            ~~~^
+                                                                                            %08lx
+../src/MPW4.c:1191:101: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+               d=*((unsigned int *)(AXI_REG_ARRAY_ptr + AXI_REG_ARRAY_page_offset+0x04)); printf("%08x\n",d); //check if dip_switches_4bits_tri_i(1)
+                                                                                                  ~~~^
+                                                                                                  %08lx
+../src/MPW4.c:3367:30: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'int' [-Wformat=]
+         fprintf(ADC_data, "%ld\n",0x0 );
+                            ~~^
+                            %d
+../src/MPW4.c:3375:44: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'int' [-Wformat=]
+         printf("col/row.. %1d/%1d   TOT=%4ld  HIT=%4ld\n",col,row,((TOTcnt/numINJ)*5),(HITcnt) );
+                                         ~~~^                      ~~~~~~~~~~~~~~~~~~~
+                                         %4d
+../src/MPW4.c:3375:54: warning: format '%ld' expects argument of type 'long int', but argument 5 has type 'int' [-Wformat=]
+         printf("col/row.. %1d/%1d   TOT=%4ld  HIT=%4ld\n",col,row,((TOTcnt/numINJ)*5),(HITcnt) );
+                                                   ~~~^
+                                                   %4d
+../src/MPW4.c:3553:35: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'int' [-Wformat=]
+          fprintf(heatmap_data, "%ld\n",(TOTcnt/numINJ)*5 );
+                                 ~~^    ~~~~~~~~~~~~~~~~~
+                                 %d
+../src/MPW4.c:3556:44: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'int' [-Wformat=]
+         printf("col/row.. %1d/%1d   TOT=%4ld  HIT=%4ld\n",col,row,((TOTcnt/numINJ)*5),(HITcnt) );
+                                         ~~~^                      ~~~~~~~~~~~~~~~~~~~
+                                         %4d
+../src/MPW4.c:3556:54: warning: format '%ld' expects argument of type 'long int', but argument 5 has type 'int' [-Wformat=]
+         printf("col/row.. %1d/%1d   TOT=%4ld  HIT=%4ld\n",col,row,((TOTcnt/numINJ)*5),(HITcnt) );
+                                                   ~~~^
+                                                   %4d
+../src/MPW4.c:4098:56: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'long unsigned int *' [-Wformat=]
+                         printf("Shutter= : "); scanf("%d",&shutter_length); fflush(stdin);
+                                                       ~^  ~~~~~~~~~~~~~~~
+                                                       %ld
+../src/MPW4.c:4205:32: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'int' [-Wformat=]
+            printf("TRIMDAC: %2ld         col/row.. %1d/%1d     Hits:%6ld\n",trimdac2[col][row],col,row,data);
+                             ~~~^                                            ~~~~~~~~~~~~~~~~~~
+                             %2d
+../src/MPW4.c:4248:42: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'long unsigned int *' [-Wformat=]
+           printf("Shutter= : "); scanf("%d",&shutter_length); fflush(stdin);
+                                         ~^  ~~~~~~~~~~~~~~~
+                                         %ld
+../src/MPW4.c:4367:33: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'int' [-Wformat=]
+             printf("TRIMDAC: %2ld         col/row.. %1d/%1d     Hits:%6ld\n",trimdac2[col][row],col,row,data);
+                              ~~~^                                            ~~~~~~~~~~~~~~~~~~
+                              %2d
+../src/MPW4.c:4431:72: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'unsigned int' [-Wformat=]
+                         val1= d>>16;    printf("DATAFIFO fill level: %ld \n",val1);
+                                                                      ~~^
+                                                                      %d
+../src/MPW4.c:4446:77: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'unsigned int' [-Wformat=]
+                              val1= d>>16;    printf("DATAFIFO fill level: %ld \n",val1);
+                                                                           ~~^
+                                                                           %d
+../src/MPW4.c:4451:60: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'unsigned int' [-Wformat=]
+       val1= d>>16;    printf("DATAFIFO stat2 fill level: %ld \n",val1);
+                                                          ~~^
+                                                          %d
+../src/MPW4.c:4466:60: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'unsigned int' [-Wformat=]
+       val1= d>>16;    printf("DATAFIFO stat2 fill level: %ld \n",val1);
+                                                          ~~^
+                                                          %d
+../src/MPW4.c:4513:28: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'int' [-Wformat=]
+       fprintf(ADC_data, "%ld\n",0x0 );
+                          ~~^
+                          %d
+../src/MPW4.c:4535:19: warning: variable 's_curve_noise' set but not used [-Wunused-but-set-variable]
+               int s_curve_noise[32][128];
+                   ^~~~~~~~~~~~~
+../src/MPW4.c:4533:31: warning: variable 'vt50_point' set but not used [-Wunused-but-set-variable]
+                           int vt50_point[32][128];
+                               ^~~~~~~~~~
+../src/MPW4.c:4531:28: warning: variable 'scurve_dat' set but not used [-Wunused-but-set-variable]
+                        int scurve_dat[32][128][100];
+                            ^~~~~~~~~~
+../src/MPW4.c:5196:30: warning: unused variable 'buff' [-Wunused-variable]
+                         char buff[1024];
+                              ^~~~
+../src/MPW4.c:5278:53: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'long unsigned int *' [-Wformat=]
+             for (i=0;i<128;i++) { fscanf(TD_base,"%2d",&data); td[j][i]=data; }
+                                                   ~~^  ~~~~~
+                                                   %2ld
+../src/MPW4.c:5579:50: warning: unused variable 'buff' [-Wunused-variable]
+                                             char buff[1024];
+                                                  ^~~~
+../src/MPW4.c:5656:74: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'long unsigned int *' [-Wformat=]
+                                 for (i=0;i<128;i++) { fscanf(TD_piggy,"%2d",&data); td_p[j][i]=data; }
+                                                                        ~~^  ~~~~~
+                                                                        %2ld
+../src/MPW4.c:5783:50: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'long unsigned int *' [-Wformat=]
+          for (i=0;i<128;i++) { fscanf(TD_base,"%2d",&data); td[j][i]=data; }
+                                                ~~^  ~~~~~
+                                                %2ld
+../src/MPW4.c:5983:92: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+      d=*((unsigned int *)(AXI_REG_ARRAY_ptr + AXI_REG_ARRAY_page_offset+0x04)); printf("%08x\n",d); //check if dip_switches_4bits_tri_i(1)
+                                                                                         ~~~^
+                                                                                         %08lx
+../src/MPW4.c:6001:52: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'long unsigned int *' [-Wformat=]
+           for (i=0;i<128;i++) { fscanf(TD_piggy,"%2d",&data); td_p[j][i]=data; }
+                                                  ~~^  ~~~~~
+                                                  %2ld
+../src/MPW4.c:6266:10: warning: unused variable 'buff' [-Wunused-variable]
+     char buff[1024];
+          ^~~~
+../src/MPW4.c:192:22: warning: unused variable 'high' [-Wunused-variable]
+  short a,b,sc,sd,low,high;
+                      ^~~~
+../src/MPW4.c:192:18: warning: unused variable 'low' [-Wunused-variable]
+  short a,b,sc,sd,low,high;
+                  ^~~
+../src/MPW4.c:185:11: warning: unused variable 'fp' [-Wunused-variable]
+     FILE* fp;
+           ^~
+../src/MPW4.c:184:11: warning: unused variable 'TOTcnt_data' [-Wunused-variable]
+     FILE* TOTcnt_data;
+           ^~~~~~~~~~~
+../src/MPW4.c:177:37: warning: unused variable 'pxd' [-Wunused-variable]
+  char str_buf[50],TCP_char_buf[800],pxd;
+                                     ^~~
+../src/MPW4.c:176:84: warning: unused variable 's_new' [-Wunused-variable]
+  unsigned long int d,data,file_data,index,k[256],shutter_length,trig_delay, s_old, s_new,TLU_tst, TS_ovfl, TLU_tst_MSBs, TS_ovfl_MSBs;
+                                                                                    ^~~~~
+../src/MPW4.c:176:77: warning: unused variable 's_old' [-Wunused-variable]
+  unsigned long int d,data,file_data,index,k[256],shutter_length,trig_delay, s_old, s_new,TLU_tst, TS_ovfl, TLU_tst_MSBs, TS_ovfl_MSBs;
+                                                                             ^~~~~
+../src/MPW4.c:162:12: warning: unused variable 'temp_float' [-Wunused-variable]
+     double temp_float;
+            ^~~~~~~~~~
+../src/MPW4.c:158:90: warning: unused variable 'bit' [-Wunused-variable]
+  int i,j,l,fd,MSDB,LSDB,temp,temp_int,temp_frag,s,sa,th_pc,row,col,vt50,pixel_octet,dcol,bit;
+                                                                                          ^~~
+../src/MPW4.c:158:68: warning: unused variable 'vt50' [-Wunused-variable]
+  int i,j,l,fd,MSDB,LSDB,temp,temp_int,temp_frag,s,sa,th_pc,row,col,vt50,pixel_octet,dcol,bit;
+                                                                    ^~~~
+../src/MPW4.c:158:54: warning: unused variable 'th_pc' [-Wunused-variable]
+  int i,j,l,fd,MSDB,LSDB,temp,temp_int,temp_frag,s,sa,th_pc,row,col,vt50,pixel_octet,dcol,bit;
+                                                      ^~~~~
+../src/MPW4.c: In function 'CARread_INA226':
+../src/MPW4.c:6560:9: warning: unused variable 'signed16bit_val' [-Wunused-variable]
+  short  signed16bit_val;
+         ^~~~~~~~~~~~~~~
+../src/MPW4.c: In function 'CARwrite_INA226':
+../src/MPW4.c:6587:9: warning: unused variable 'return_val' [-Wunused-variable]
+ double  return_val;
+         ^~~~~~~~~~
+../src/MPW4.c:6586:9: warning: unused variable 'signed16bit_val' [-Wunused-variable]
+  short  signed16bit_val;
+         ^~~~~~~~~~~~~~~
+../src/MPW4.c:6585:14: warning: unused variable 'LSDB' [-Wunused-variable]
+    int  MSDB,LSDB;
+              ^~~~
+../src/MPW4.c:6585:9: warning: unused variable 'MSDB' [-Wunused-variable]
+    int  MSDB,LSDB;
+         ^~~~
+../src/MPW4.c: In function 'chipboard_read_MAX1161x':
+../src/MPW4.c:6606:97: warning: unused variable 'LSDB7' [-Wunused-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                                                                                 ^~~~~
+../src/MPW4.c:6606:91: warning: unused variable 'MSDB7' [-Wunused-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                                                                           ^~~~~
+../src/MPW4.c:6606:85: warning: unused variable 'LSDB6' [-Wunused-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                                                                     ^~~~~
+../src/MPW4.c:6606:79: warning: unused variable 'MSDB6' [-Wunused-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                                                               ^~~~~
+../src/MPW4.c:6606:73: warning: unused variable 'LSDB5' [-Wunused-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                                                         ^~~~~
+../src/MPW4.c:6606:67: warning: unused variable 'MSDB5' [-Wunused-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                                                   ^~~~~
+../src/MPW4.c:6606:61: warning: unused variable 'LSDB4' [-Wunused-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                                             ^~~~~
+../src/MPW4.c:6606:55: warning: unused variable 'MSDB4' [-Wunused-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                                       ^~~~~
+../src/MPW4.c:6606:37: warning: variable 'LSDB2' set but not used [-Wunused-but-set-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                     ^~~~~
+../src/MPW4.c:6606:31: warning: variable 'MSDB2' set but not used [-Wunused-but-set-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                               ^~~~~
+../src/MPW4.c:6606:25: warning: variable 'LSDB1' set but not used [-Wunused-but-set-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                         ^~~~~
+../src/MPW4.c:6606:19: warning: variable 'MSDB1' set but not used [-Wunused-but-set-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                   ^~~~~
+../src/MPW4.c:6606:14: warning: variable 'LSDB' set but not used [-Wunused-but-set-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+              ^~~~
+../src/MPW4.c:6606:9: warning: variable 'MSDB' set but not used [-Wunused-but-set-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+         ^~~~
+../src/MPW4.c: In function 'chipboard_read_MAX1161x_VNCOMP_FE':
+../src/MPW4.c:6655:97: warning: unused variable 'LSDB7' [-Wunused-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                                                                                 ^~~~~
+../src/MPW4.c:6655:91: warning: unused variable 'MSDB7' [-Wunused-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                                                                           ^~~~~
+../src/MPW4.c:6655:85: warning: unused variable 'LSDB6' [-Wunused-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                                                                     ^~~~~
+../src/MPW4.c:6655:79: warning: unused variable 'MSDB6' [-Wunused-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                                                               ^~~~~
+../src/MPW4.c:6655:73: warning: unused variable 'LSDB5' [-Wunused-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                                                         ^~~~~
+../src/MPW4.c:6655:67: warning: unused variable 'MSDB5' [-Wunused-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                                                   ^~~~~
+../src/MPW4.c:6655:61: warning: unused variable 'LSDB4' [-Wunused-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                                             ^~~~~
+../src/MPW4.c:6655:55: warning: unused variable 'MSDB4' [-Wunused-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                                       ^~~~~
+../src/MPW4.c:6655:37: warning: variable 'LSDB2' set but not used [-Wunused-but-set-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                                     ^~~~~
+../src/MPW4.c:6655:31: warning: variable 'MSDB2' set but not used [-Wunused-but-set-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                               ^~~~~
+../src/MPW4.c:6655:25: warning: variable 'LSDB1' set but not used [-Wunused-but-set-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                         ^~~~~
+../src/MPW4.c:6655:19: warning: variable 'MSDB1' set but not used [-Wunused-but-set-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+                   ^~~~~
+../src/MPW4.c:6655:14: warning: variable 'LSDB' set but not used [-Wunused-but-set-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+              ^~~~
+../src/MPW4.c:6655:9: warning: variable 'MSDB' set but not used [-Wunused-but-set-variable]
+    int  MSDB,LSDB,MSDB1,LSDB1,MSDB2,LSDB2,MSDB3,LSDB3,MSDB4,LSDB4,MSDB5,LSDB5,MSDB6,LSDB6,MSDB7,LSDB7;
+         ^~~~
+../src/MPW4.c: In function 'write_SI5345_REVB_reg':
+../src/MPW4.c:6709:8: warning: unused variable 'page_reg' [-Wunused-variable]
+  FILE* page_reg;
+        ^~~~~~~~
+../src/MPW4.c:6708:7: warning: unused variable 'c' [-Wunused-variable]
+  char c;
+       ^
+../src/MPW4.c:6707:21: warning: unused variable 'data' [-Wunused-variable]
+  unsigned addr[256],data[256];
+                     ^~~~
+../src/MPW4.c:6707:11: warning: unused variable 'addr' [-Wunused-variable]
+  unsigned addr[256],data[256];
+           ^~~~
+../src/MPW4.c:6706:10: warning: unused variable 'index' [-Wunused-variable]
+  int i,j,index;
+          ^~~~~
+../src/MPW4.c:6706:8: warning: unused variable 'j' [-Wunused-variable]
+  int i,j,index;
+        ^
+../src/MPW4.c:6706:6: warning: unused variable 'i' [-Wunused-variable]
+  int i,j,index;
+      ^
+../src/MPW4.c: In function 'read_SI5345_REVB_reg':
+../src/MPW4.c:6812:8: warning: unused variable 'page_reg' [-Wunused-variable]
+  FILE* page_reg;
+        ^~~~~~~~
+../src/MPW4.c:6811:7: warning: unused variable 'c' [-Wunused-variable]
+  char c;
+       ^
+../src/MPW4.c:6810:21: warning: unused variable 'data' [-Wunused-variable]
+  unsigned addr[256],data[256];
+                     ^~~~
+../src/MPW4.c:6810:11: warning: unused variable 'addr' [-Wunused-variable]
+  unsigned addr[256],data[256];
+           ^~~~
+At top level:
+../src/MPW4.c:140:28: warning: 'COL_reordered' defined but not used [-Wunused-const-variable=]
+ static const unsigned char COL_reordered[] =
+                            ^~~~~~~~~~~~~
+'Finished building: ../src/MPW4.c'
+' '
+'Building target: MPW4.elf'
+'Invoking: ARM v7 Linux gcc linker'
+arm-linux-gnueabihf-gcc  -o "MPW4.elf"  ./src/MPW4.o   
+'Finished building target: MPW4.elf'
+' '
+'Invoking: ARM v7 Linux Print Size'
+arm-linux-gnueabihf-size MPW4.elf  |tee "MPW4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188933	    352	  35596	 224881	  36e71	MPW4.elf
+'Finished building: MPW4.elf.size'
+' '
+
+14:24:57 Build Finished (took 1s.891ms)
+

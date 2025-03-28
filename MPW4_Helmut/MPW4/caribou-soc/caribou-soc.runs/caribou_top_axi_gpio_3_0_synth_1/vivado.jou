@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Mar 24 09:27:36 2025
+# Process ID: 3086223
+# Current directory: /home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/caribou_top_axi_gpio_3_0_synth_1
+# Command line: vivado -log caribou_top_axi_gpio_3_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source caribou_top_axi_gpio_3_0.tcl
+# Log file: /home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/caribou_top_axi_gpio_3_0_synth_1/caribou_top_axi_gpio_3_0.vds
+# Journal file: /home/pct/Caribou/MPW4_Helmut/MPW4/caribou-soc/caribou-soc.runs/caribou_top_axi_gpio_3_0_synth_1/vivado.jou
+# Running On: Caribou-VM-HEPHY, OS: Linux, CPU Frequency: 3249.996 MHz, CPU Physical cores: 8, Host memory: 66951 MB
+#-----------------------------------------------------------
+source caribou_top_axi_gpio_3_0.tcl -notrace
